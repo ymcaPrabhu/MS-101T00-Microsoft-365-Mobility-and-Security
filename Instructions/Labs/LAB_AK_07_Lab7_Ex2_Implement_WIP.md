@@ -1,4 +1,4 @@
-# Module 13 - Lab 6 - Exercise 2 - Implement Windows Information Protection  
+# Module 7 - Lab 7 - Exercise 2 - Implement Windows Information Protection  
 
 Now that you have implemented Azure Information Protection as part of your pilot project at Adatum, you’re now ready to implement Windows Information Protection. In this exercise, in your role as Holly Dickson, you will create a WIP policy (Client App protection policy for Windows) that is applied to any member of the WIP Users group who has an MDM enrolled device in Intune.
 
@@ -112,4 +112,4 @@ In this exercise you will enroll the Client 2 VM (LON-CL2) to Azure AD and test 
 You have just enrolled the Client 2 VM to your tenant, so the Client app protection policy **WIP Client Protection** that you configured in the last task could be applied to protect the content of a Word document.
 
 
-# End of Lab 6
+# End of Lab 7
