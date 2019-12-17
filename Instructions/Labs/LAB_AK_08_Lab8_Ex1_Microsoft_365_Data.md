@@ -1,4 +1,4 @@
-# Module 15 - Lab 7 - Exercise 1 - Investigate Your Microsoft 365 Data
+# Module 8 - Lab 8 - Exercise 1 - Investigate Your Microsoft 365 Data
 
 
 In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment. As you proceed with your Microsoft 365 pilot project, you now want to test how Adatum can investigate its Microsoft 365 data. You have decided to focus on performing a content search for deleted emails, which is a common request at Adatum, and then you want to analyze eDiscovery functionality by creating an eDiscovery case. You’ll conclude this portion of the pilot project by creating a GDPR data subject request.
