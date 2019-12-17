@@ -1,10 +1,8 @@
-# Module 3 - Lab 1 - Exercise 2 - Set up your Microsoft 365 Tenant
+# Module 1 - Lab 1 - Exercise 1 - Set up your Microsoft 365 Tenant
 
 In the labs for this course, you are taking on the role of Holly Dickson, Adatum Corporation&#39;s Enterprise Administrator. Adatum does NOT have legacy, on-premises servers; therefore, you will be implementing Microsoft 365 in a cloud-only deployment. You have deployed Microsoft 365 in a virtualized lab environment, and you have been tasked with completing a pilot project that tests Microsoft 365&#39;s security, compliance, and device management features as they relate to Adatum&#39;s business requirements.
 
-You have just started the pilot project; therefore, in this first lab you will set up a personalized Global Admin tenant account for Holly that will be used throughout all the labs in this course. In addition, as part of managing your Microsoft 365 security services, you will edit an ATP Safe Links policy and create a Safe Attachment policy to protect your environment against malware.
-
-This first exercise requires that you perform some setup tasks that will initialize your trial tenant for the remaining labs in this course. You must configure your trial tenant, create a personalized Global Admin account in Microsoft 365, and configure several test users that will be used throughout the remaining labs.
+You have just started the pilot project; therefore, in this first lab you will set up a personalized Global Admin tenant account for Holly that will be used throughout all the labs in this course. This first exercise also requires that you perform several setup tasks that will initialize your trial tenant for the remaining labs in this course. You must configure your trial tenant, create a personalized Global Admin account in Microsoft 365, configure several test users and groups that will be used throughout the remaining labs, and turn on Information Rights Management (IRM) in SharePoint Online as well as audit logging.
 
 ### Task 1 - Obtain Your Office 365 Credentials
 
@@ -193,7 +191,7 @@ In the prior task, you noticed that your Microsoft 365 trial tenant came equippe
 
 In this task, you will turn on Information Rights Management (IRM) for SharePoint Online. 
 
-**Note:** While you will validate IRM in Exchange and SharePoint in Lab 3, you must enable IRM for SharePoint Online now because it can take up to 60 minutes or more for IRM to show up in SharePoint Online. By the time you get to the validation exercise in Lab 3, IRM should have finished its internal configuration and you won’t have to wait for it to be present in SharePoint Online.
+**Note:** While you will validate IRM in Exchange and SharePoint in Lab 4, you must enable IRM for SharePoint Online now because it can take up to 60 minutes or more for IRM to show up in SharePoint Online. By the time you get to the validation exercise in Lab 4, IRM should have finished its internal configuration and you won’t have to wait for it to be present in SharePoint Online.
 
 1. You should still be logged into your Client 1 VM as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
@@ -211,7 +209,7 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 ### Task 6 – Turn on Audit Logging to enable Alert Policies
 
-In Lab2, you will create Alert Policies using the Security and Compliance Center. However, before you can implement alerts, an admin must first turn on Audit Logging for the organization. Since it can take a couple of hours for audit logging to be fully enabled once you turn it on in the Security and Compliance Center, you will turn it on in this lab so that it&#39;s fully enabled by the time you get to Lab 2.
+In Lab 3, you will create Alert Policies using the Security and Compliance Center. However, before you can implement alerts, an admin must first turn on Audit Logging for the organization. Since it can take a couple of hours for audit logging to be fully enabled once you turn it on in the Security and Compliance Center, you will turn it on in this lab so that it&#39;s fully enabled by the time you get to Lab 3.
 
 1. You should still be logged into your Client 1 VM as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 2. In your **Edge** browser, enter the following URL in the address bar: **https://protection.office.com.**
