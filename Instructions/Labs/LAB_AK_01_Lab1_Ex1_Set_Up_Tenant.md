@@ -218,4 +218,4 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 5. Leave the Client 1 VM and the Security and Compliance Center open and proceed to the next task.
 
 
-# Proceed to Exercise 3
+# End of Lab 1
