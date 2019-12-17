@@ -1,4 +1,4 @@
-# Module 11 - Lab 5 - Exercise 2 - Test MRM and DLP Policies
+# Module 6 - Lab 6 - Exercise 2 - Test MRM and DLP Policies
 
 
 You are now at the point in your pilot project where you want to test policies. You have decided to test an MRM policy that affects how email messages are archived, and then you want to test a DLP policy related to emails that contain sensitive information. 
@@ -131,4 +131,4 @@ In the previous exercise, you created a custom DLP policy that searches emails f
 17. Leave both client VMs open for the next lab. Do not close any of the browser tabs.
 
 
-# End of Lab 5
+# End of Lab 6
