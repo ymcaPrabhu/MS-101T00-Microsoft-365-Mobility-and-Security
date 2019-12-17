@@ -66,4 +66,4 @@ To test this default alert, Holly Dickson will create an eDiscovery case. This a
 You have now successfully tested the default Microsoft 365 eDiscovery alert that monitors the creation of an eDiscovery case or data export from an existing case.
 
 
-# End of Lab 2
+# End of Lab 3
