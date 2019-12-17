@@ -1,4 +1,4 @@
-# Module 20 - Lab 9 - Exercise 1 - Enable Device Management
+# Module 11 - Lab 10 - Exercise 1 - Enable Device Management
 
 
 You are the system administrator for Adatum Corporation, and you have Microsoft 365 deployed in a virtualized lab environment. In this lab, you will manage user devices using Intune.
