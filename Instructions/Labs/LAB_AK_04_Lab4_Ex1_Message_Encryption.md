@@ -1,4 +1,4 @@
-# Module 7 - Lab 3 - Exercise 1 - Configure Office 365 Message Encryption
+# Module 4 - Lab 4 - Exercise 1 - Configure Office 365 Message Encryption
 
 
 In this lab, you will take on the persona of Holly Dickson, Adatum’s Enterprise Administrator. You have been tasked with piloting the use of Office 365 message encryption in Adatum’s Microsoft 365 deployment. Since message encryption rules can be created using both Exchange Online and Windows PowerShell, you have decided to test each method to determine which you prefer to use once you go live.
