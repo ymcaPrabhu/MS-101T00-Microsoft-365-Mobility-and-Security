@@ -1,4 +1,4 @@
-# Module 20 - Lab 9 - Exercise 3 - Create Intune Policies 
+# Module 11 - Lab 10 - Exercise 3 - Create Intune Policies 
 
 Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet some requirements. In Intune, these requirements are referred to as compliance policies. Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with Conditional Access, administrators can block users and devices that don't meet the rules.
 
