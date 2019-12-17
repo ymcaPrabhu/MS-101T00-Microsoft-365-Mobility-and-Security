@@ -1,4 +1,4 @@
-# Module 3 - Lab 1 - Exercise 3 - Implement ATP Policies  
+# Module 2 - Lab 2 - Exercise 1 - Implement ATP Policies  
 
 You now have a Global Admin account set up for Holly Dickson, and you&#39;re signed into Microsoft 365 as Holly. In this first phase of your pilot project for Adatum, you want to edit an existing ATP Safe Links policy, and then you want to create a Safe Attachments policy and turn on Advanced Threat Protection for SharePoint, OneDrive, and Microsoft Teams. You will also validate both policies to ensure they work properly.
 
@@ -95,5 +95,5 @@ In this task, you will turn on ATP for SharePoint, OneDrive, and Microsoft Teams
 That being said, after you have defined your ATP Safe Attachment policies in your real-world environment, one good way to see how the service is working is by viewing Advanced Threat Protection reports. For more information on using ATP reporting to validate your Safe Links and Safe Attachment policies, see [View reports for Office 365 Advanced Threat Protection](https://docs.microsoft.com/en-us/office365/securitycompliance/view-reports-for-atp).
 
 
-# End of Lab 1
+# End of Lab 2
 
