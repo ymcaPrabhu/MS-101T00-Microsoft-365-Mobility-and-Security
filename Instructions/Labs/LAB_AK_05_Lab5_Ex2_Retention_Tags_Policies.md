@@ -1,4 +1,4 @@
-# Module 9 - Lab 4 - Exercise 2 - Configure Retention Tags and Policies  
+# Module 5 - Lab 5 - Exercise 2 - Configure Retention Tags and Policies  
 
 In this exercise, you will configure retention tags and policies, and you will implement archiving with MRM retention tags. 
 
@@ -120,5 +120,5 @@ As part of your pilot project for Adatum, you will create a retention policy in 
 
 You have now created a new retention policy in the Security & Compliance Center that retains all Exchange emails from all mailboxes for 7 years after last modification.
 
- # End of Lab 4
+ # End of Lab 5
  
