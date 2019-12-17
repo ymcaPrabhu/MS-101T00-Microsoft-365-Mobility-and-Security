@@ -1,4 +1,4 @@
-# Module 17 - Lab 8 - Exercise 2 - Manage the Microsoft Store for Business
+# Module 9 - Lab 9 - Exercise 2 - Manage the Microsoft Store for Business
 
 
 In this exercise, you will add apps to the company store, and then verify how those apps appear in the store to an Adatum employee.
@@ -101,4 +101,4 @@ In this task, you are going to sign into the Microsoft Store for Business as one
 	- The Collection1 app that you created in the prior task that includes: Fresh Paint, Microsoft Remote Desktop, and Translator.
 
 
-# End of Lab 8
+# End of Lab 9
