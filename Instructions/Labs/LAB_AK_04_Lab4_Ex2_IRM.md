@@ -1,4 +1,4 @@
-# Module 7 - Lab 3 - Exercise 2 - Validate Information Rights Management 
+# Module 4 - Lab 4 - Exercise 2 - Validate Information Rights Management 
 
 In this exercise, you will learn how to validate Information Rights Management for both Exchange Online and SharePoint Online.
  
@@ -146,4 +146,4 @@ You will begin by having Holly create a new SharePoint site collection, configur
 34. Leave your browser open for the next lab. 
 
 
-# End of Lab 3
+# End of Lab 4
