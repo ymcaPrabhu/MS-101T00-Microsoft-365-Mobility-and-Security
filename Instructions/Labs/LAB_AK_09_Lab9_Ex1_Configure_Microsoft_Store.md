@@ -1,4 +1,4 @@
-# Module 17 - Lab 8 - Exercise 1 - Configure the Microsoft Store for Business
+# Module 9 - Lab 9 - Exercise 1 - Configure the Microsoft Store for Business
 
 
 You are the system administrator for Adatum Corporation, and you have Microsoft 365 deployed in a virtualized lab environment. In this lab, you will work with Microsoft Store for Business. 
