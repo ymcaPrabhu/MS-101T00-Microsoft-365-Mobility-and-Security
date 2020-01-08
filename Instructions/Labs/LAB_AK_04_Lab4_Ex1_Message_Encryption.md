@@ -128,7 +128,7 @@ In this task, you will create an encryption rule for messages inside your Exchan
 
 In the prior task, you configured a mail flow rule encryption rule using the Exchange admin center. In this task, you will create a mail flow encryption rule using Windows PowerShell. 
 
-1. On the LON-CL1 VM, the PowerShell session that you used in Task 1 should still be open, so maximize the PowerShell window now. If you closed the previous PowerShell session, then then repeat steps 1-9 from Task 1 to create a PSSession that establishes a remote connection to Exchange Online through PowerShell and then imports the Exchange Online session into the PowerShell GUI.
+1. On the LON-CL1 VM, the PowerShell session that you used in Task 1 should still be open, so maximize the PowerShell window now. If you closed the previous PowerShell session, then repeat steps 1-9 from Task 1 to create a PSSession that establishes a remote connection to Exchange Online through PowerShell and then imports the Exchange Online session into the PowerShell GUI.
 
 2. In this step, you will create a mail flow rule by using the **New-TransportRule** cmdlet, and you’ll set the **ApplyOME** encryption parameter to $true. This rule will encrypt all outgoing mail from Adatum that is being sent to Gservices@contoso.com.  <br/>
 
