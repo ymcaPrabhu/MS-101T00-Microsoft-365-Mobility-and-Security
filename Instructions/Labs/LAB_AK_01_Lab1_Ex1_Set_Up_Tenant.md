@@ -75,11 +75,11 @@ In your role as Holly Dickson, Adatum&#39;s Enterprise Administrator, you have b
 
 24. Select **Close**, and then select **Close** again. This returns you to the **Organization Profile** window.
 25. To the right of **Manage custom themes for your organization**, select the **pencil (Edit)** icon.
-26. In the **Customize Office 365 for your organization** window, you can add the logo of your company and set the background image as the default for all your users. Along with these options you can change the colors for your navigation pane, text color, icon color, and accent color.Go ahead and explore some different options for your tenant. Make any changes that you wish.<br/>
+26. In the **Custom themes** window, scroll though the page and review the various theme and branding options that are available for you to update. For the purpose of this lab, you can change any of the options or leave the default values as is. For example, you can add the logo of your company and set the background image as the default for all your users. Along with these options you can change the colors for your navigation pane, text color, icon color, and accent color. Go ahead and explore the different options for your tenant and make any changes that you wish. <br/>
 
-    **NOTE:** Some colors patterns aesthetically distract users. Avoid using high contrasting colors together, such as neon colors and high-resolution colors like white and bright pink.
+	**Note:** Some color patterns aesthetically distract users. If you do change any of the colors, it is recommended that you avoid using high contrasting colors together, such as neon colors and high-resolution colors like bright pink and white.
 
-27. Once you're done exploring and making any further changes, select **Save** and then **Close**.
+27. If you made any changes in the **Custom themes** window, select **Save changes** when you are done. When you are finished with the Custom themes, select the **X** in the upper right-hand corner to close the window.
 28. Remain logged into the Client 1 VM with Microsoft Edge open to the Microsoft 365 admin center for the next task.
 
 
