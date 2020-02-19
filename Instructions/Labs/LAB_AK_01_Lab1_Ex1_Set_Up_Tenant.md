@@ -79,7 +79,7 @@ In your role as Holly Dickson, Adatum&#39;s Enterprise Administrator, you have b
 
 	**Note:** Some color patterns aesthetically distract users. If you do change any of the colors, it is recommended that you avoid using high contrasting colors together, such as neon colors and high-resolution colors like bright pink and white.
 
-27. If you made any changes in the **Custom themes** window, select **Save changes** when you are done. When you are finished with the Custom themes, select the **X** in the upper right-hand corner to close the window.
+27. If you made any changes in the **Custom themes** window, select **Save changes** when you are done. When you are finished with the **Custom themes**, select the **X** in the upper right-hand corner to close the window.
 28. Remain logged into the Client 1 VM with Microsoft Edge open to the Microsoft 365 admin center for the next task.
 
 
