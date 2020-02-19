@@ -130,7 +130,7 @@ In the prior task, you configured a mail flow rule encryption rule using the Exc
 
 1. On the LON-CL1 VM, the PowerShell session that you used in Task 1 should still be open, so maximize the PowerShell window now. <br/>
 
-	**Important:** If you closed the previous PowerShell session, then repeat steps 1-9 from Task 1 to create a PSSession that establishes a remote connection to Exchange Online through PowerShell and then imports the Exchange Online session into the PowerShell GUI.
+	**Important:** If you closed the previous PowerShell session, then repeat steps 1-9 from Task 1 to create a PSSession that establishes a remote connection to Exchange Online through PowerShell and then imports the Exchange Online session into the PowerShell GUI. This is required because the New-TransportRule cmdlet used in the next step does not exist in MsolService because it is an Exchange Online cmdlet; therefore, you must connect to the Exchange Online session through PowerShell to access this cmdlet.
 
 2. In this step, you will create a mail flow rule by using the **New-TransportRule** cmdlet, and you’ll set the **ApplyOME** encryption parameter to $true. This rule will encrypt all outgoing mail from Adatum that is being sent to Gservices@contoso.com.  <br/>
 
