@@ -1,4 +1,4 @@
-# Module 8 - Lab 8 - Exercise 2 - Implement a Data Subject Request 
+# Module 8 - Lab 8 - Exercise 1 - Implement a Data Subject Request 
 
 
 Data subject requests (DSRs) are used to search for and extract all known information on a person of interest. A DSR can come from the person in question or from an authorized source. In this exercise you will configure and export a DSR from the Microsoft 365 Security and Compliance center.
@@ -95,4 +95,4 @@ When someone files a DSR, you typically need to export the results. In this task
 You have successfully exported a DSR case report to your local computer. Because the report contains only a report and not the message or document content, you could not process this report to fulfil the DSRs legal requirements.
 
 
-# End of Lab 8 
+# Proceed to Exercise 2 
