@@ -6,7 +6,7 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 There are two requirements to viewing alerts in the Security and Compliance Center – turning on Audit Logging and assigning the proper Role Based Access Control (RBAC) permissions to the users who will view alerts. 
 
-- **Audit logging.** If you’ll recall, towards the end of Lab 1 you turned on Audit Logging. You performed this task in Lab 1 because it can take an hour or two to propagate that setting through the system before you can successfully implement alerts. So hopefully this propagation completed while your instructor lectured during the previous module.
+- **Audit logging.** If you’ll recall, towards the end of Lab 1 you turned on Audit Logging. You performed this task in Lab 1 because it can take an hour or two to propagate that setting through the system before you can successfully implement alerts. So hopefully this propagation completed while you completed the previous modules.
 
 - **RBAC permissions.** In this exercise, you will assign the necessary RBAC role group to Lynne Robbins, who is the user that Adatum has selected for testing alerts in their Microsoft 365 pilot project. 
 
