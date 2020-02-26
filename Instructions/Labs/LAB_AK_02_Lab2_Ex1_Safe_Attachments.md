@@ -1,4 +1,4 @@
-# Module 2 - Lab 2 - Exercise 1 - Implement ATP Policies  
+# Module 2 - Lab 2 - Exercise 1 - Implement a Safe Attachments policy 
 
 You now have a Global Admin account set up for Holly Dickson, and you&#39;re signed into Microsoft 365 as Holly. In this first phase of your pilot project for Adatum, you want to create a Safe Attachments policy and turn on Advanced Threat Protection for SharePoint, OneDrive, and Microsoft Teams. 
 
