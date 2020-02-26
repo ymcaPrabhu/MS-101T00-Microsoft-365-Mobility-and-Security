@@ -1,4 +1,4 @@
-# Module 2 - Lab 2 - Exercise 1 - Implement ATP Policies  
+# Module 2 - Lab 2 - Exercise 2 - Implement a Safe Links Policy
 
 In this first phase of your pilot project for Adatum, you want to create an ATP Safe Links policy and then validate the policy to ensure that it works properly.
 
