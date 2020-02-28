@@ -4,7 +4,7 @@
 Holly Dickson is concerned that some users in her organization may require education about phishing attacks.  In this lab you will use the Microsoft 365 Attack simulator to determine your users' susceptibility to phishing attacks.
 
 
-### Task 1: Enable Mulit-factor authentication for Holly Dickson
+### Task 1: Enable Mulit-factor authentication for the Global Admin
 
 1.  Go to the Office 365 Security & Compliance center (https://protection.office.com) and login as Holly Dickson.
 
