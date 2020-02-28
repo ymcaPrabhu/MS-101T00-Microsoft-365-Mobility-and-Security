@@ -1,8 +1,8 @@
-# Module 3 - Lab 3 - Exercise 2 - Conduct password attacks
+# Module 3 - Lab 3 - Exercise 2 - Conduct Password attacks using the Attack Simulator
 
 Holly Dickson is concerned that some users in her organization may require education about secure password strategies.  In this lab you will use the Microsoft 365 Attack simulator to determine your users' susceptibility to password attacks.
 
-### Task 1: Configure and launch a Brute Force attack using the Attack Simulator
+### Task 1: Configure and launch a Brute Force attack 
 
 1.  Go to the Office 365 Security & Compliance center (https://protection.office.com) and login as Holly Dickson.
 
@@ -30,7 +30,7 @@ Holly Dickson is concerned that some users in her organization may require educa
 5. The report lists the current results of the campaign including number of users targeted and success rate.  Since we entered Lynne's password the report shows "1 of 1 users compromised".
    
 
-### Task 3: Configure and launch a Password Spray attack using the Attack Simulator
+### Task 3: Configure and launch a Password Spray attack 
 
 1.  Go to the Office 365 Security & Compliance center (https://protection.office.com).
 
