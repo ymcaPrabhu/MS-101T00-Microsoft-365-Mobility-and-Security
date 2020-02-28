@@ -47,4 +47,4 @@ During her pilot project, Holly plans to use certificates with Intune to authent
 11. Leave the Client 1 VM open for the next exercise.
 
 
-# Proceed to Exercise 5
+# End of Lab for this Lesson
