@@ -1,4 +1,4 @@
-# Module 3 - Lab 3 - Exercise 1 - Prepare for Alert Policies
+# Module 3 - Lab 3 - Exercise 3 - Prepare for Alert Policies
 
 Alerts are policies designed to automatically notify administrators when key actions have occurred in their Microsoft 365 tenant. Alerts can be an easy way to ensure that change logs are up-to-date and that business policies are being followed inside your Microsoft 365 tenant.
 
@@ -51,4 +51,4 @@ Perform the following steps to assign Lynne Robbins the Compliance Data Administ
 You have now added Lynne Robbins to the Compliance Data Administrator role group.
 
 
-# Proceed to Exercise 2
+# Proceed to Exercise 4
