@@ -30,5 +30,5 @@ In this task, you will turn on ATP for SharePoint, OneDrive, and Microsoft Teams
 That being said, after you have defined your ATP Safe Attachment policies in your real-world environment, one good way to see how the service is working is by viewing Advanced Threat Protection reports. For more information on using ATP reporting to validate your Safe Links and Safe Attachment policies, see [View reports for Office 365 Advanced Threat Protection](https://docs.microsoft.com/en-us/office365/securitycompliance/view-reports-for-atp).
 
 
-# Proceed to Exercise 2
+# End of Lab for this Lesson
 
