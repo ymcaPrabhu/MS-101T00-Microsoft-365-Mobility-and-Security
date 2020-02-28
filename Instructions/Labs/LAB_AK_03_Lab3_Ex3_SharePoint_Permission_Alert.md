@@ -1,4 +1,4 @@
-# Module 3 - Lab 3 - Exercise 3 - Implement SharePoint Permission Alert
+# Module 3 - Lab 3 - Exercise 5 - Implement SharePoint Permission Alert
 
 
 In this exercise you will configure and test an alert that will notify Lynne Robbins when a user is added to the site collection administrators for a SharePoint site collection.
@@ -70,4 +70,4 @@ In the prior task, you configured an alert that will notify Lynne Robbins when a
 You have now successfully tested the SharePoint alert to monitor site collection admin permissions on SharePoint sites. 
 
 
-# Proceed to Exercise 4
+# Proceed to Exercise 6
