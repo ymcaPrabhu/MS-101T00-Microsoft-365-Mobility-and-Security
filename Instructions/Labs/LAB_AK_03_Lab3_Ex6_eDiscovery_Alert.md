@@ -1,4 +1,4 @@
-# Module 3 - Lab 3 - Exercise 4 - Test the Default eDiscovery Alert
+# Module 3 - Lab 3 - Exercise 6 - Test the Default eDiscovery Alert
 
 
 In this exercise you will test a default Microsoft 365 alert policy that will notify all tenant admins, such as Holly Dickson, when an eDiscovery case has been created or exported.
