@@ -55,5 +55,5 @@ Holly Dickson is concerned that some users in her organization may require educa
 
 5. The report lists the current results of the campaign including number of users compromised.  Notice against since we entered Lynne's actual password it lists her as account as being compromised by the password spray.
 
- # Proceed to Exercise 3
+ # End of Lab for this Lesson
  
