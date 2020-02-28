@@ -1,4 +1,4 @@
-# Module 3 - Lab 4 - Exercise 1 - Conduct a Spear phishing attack
+# Module 3 - Lab 3 - Exercise 1 - Conduct a Spear phishing attack
 
 
 Holly Dickson is concerned that some users in her organization may require education about phishing attacks.  In this lab you will use the Microsoft 365 Attack simulator to determine your users' susceptibility to phishing attacks.
