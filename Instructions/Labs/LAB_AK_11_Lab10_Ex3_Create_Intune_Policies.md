@@ -224,4 +224,4 @@ The purpose of this task is to show you how to recover a file that has been encr
 5. **Do not configure any option.** Close the **Create profile** pane.
 
 
-# Proceed to Exercise 4
+# End of Lab for this Lesson
