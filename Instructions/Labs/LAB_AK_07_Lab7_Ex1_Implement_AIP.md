@@ -229,4 +229,4 @@ In the prior task, you created a Word document and protected it with Azure Infor
 22. Remain signed into the Client 2 VM signed in as Joni. Do not close your browser.
 
 
-# Proceed to Exercise 2
+# End of Lab for this Lesson
