@@ -22,7 +22,7 @@ In this task, you will turn on ATP for SharePoint, OneDrive, and Microsoft Teams
 12. In the **NAME** dialog box, select the **M365xZZZZZZ.onmicrosoft** domain (where ZZZZZZ is your tenant ID provided by your lab hosting provider), select **add->**, and then select **OK**.
 13. On the **new safe attachments policy** window, select **Save**.
 14. Two warning messages will be displayed regarding the **Dynamic Delivery** and **Enable redirect** options that were selected. Select **OK** for each.
-15. It may take a minute or so to update the organization settings. Once the **Update complete** window appears, select **OK**.
+15. It may take a minute or so to update the organization settings. You may experience a UI issue where the list of policies that displays at the bottom of the screen can be hard to see, but it should display a message below the list indicating **1 selected of 1 total**.
 16. Leave the Client 1 VM and the Security &amp; Compliance Center tab open for the next lab.
 
 **NOTE:** Unfortunately, we are unable to create a training lab in which you can validate the ATP Safe Attachments policy that you just created. To do so, you must send an email that contains a malicious attachment. There are some common test viruses that are available, such as the EICAR test virus; however, with well-known test viruses such as EICAR, the messages in which they are attached get quarantined before they can be processed by Office 365 ATP. Since the ATP Safe Attachments functionality is meant to protect against unknown and zero-day viruses and malware, it is very difficult, and not recommended, to create such an attachment.
