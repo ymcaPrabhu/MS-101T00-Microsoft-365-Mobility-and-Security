@@ -103,21 +103,23 @@ Now that Holly has turned on MFA, she is ready to run the Attack Simulator and l
 
 7. In the **Configure Phishing Attack** page, the steps involved in the simulation are displayed in the left-hand pane. You will start by providing a name to the simulation for historical purposes. Enter **Spear Simulation** in the **Name** field and select **Next**.
 
-6. In the next step, you will select the users that will receive the phishing email. You can select users from the company address book (the Active Users), or for large-scale attacks, you can import users from a .csv file. For this simple simulation, you will only send the email to one user, so select **Address Book**. <br/>
+8. In the next step, you will select the users that will receive the phishing email. You can select users from the company address book (the Active Users), or for large-scale attacks, you can import users from a .csv file. For this simple simulation, you will only send the email to one user, so select **Address Book**. <br/>
 
 	Enter **Lynne** in the **Search for users or groups within your organization** field. In the list of users that appears, select **Lynne Robbins**. Lynne's user account record will display in the list of **Recipients**. Select **Next**. 
 
-7. In the next step, you will configure the email that you want to send to the Lynne. <br/>
+9. In the next step, you will configure the email that you want to send to the Lynne. <br/>
 
 	- **From (Name)** and **From (Email)** fields - enter any values you want. 
 	- **Phishing Login Server URL** - select any value from the drop-down menu.
 	- **Custom Landing Page URL** - Ordinarily you would include a URL link for the target to click into; this would be entered in the Custom Landing Page URL field. Since this is just an exercise, you will not do that here. The success rate of the spear phishing attack will be a function of how clever an email you contrive. 
 
-8. In the **Subject** field for the phishing email, enter**Free Gift Cards!!** and select **Next**.
+10. In the **Subject** field for the phishing email, enter**Free Gift Cards!!** and select **Next**.
 
-9. In the **Please edit email body** page, compose the message in the **Email body** field. Enter a creative, enticing email message intended to lure users and then select **Next**.
+11. In the **Please edit email body** page, compose the message in the **Email body** field. Enter a creative, enticing email message intended to lure users and then select **Next**.
 
-10. On the **Confirmation** page, select **Finish**.
+12. On the **Confirmation** page, select **Finish**. This will launch the phishing attack!
+
+
 
 
 ### Task 3: Confirm target received phishing email attack
