@@ -1,12 +1,13 @@
 # Module 3 - Lab 3 - Exercise 1 - Conduct a Spear Phishing attack using the Attack Simulator
 
-
-Holly Dickson is concerned that some users in her organization may require education about phishing attacks.  In this lab you will use the Microsoft 365 Attack simulator to determine your users' susceptibility to phishing attacks.
+Holly Dickson is concerned that some users at Adatum may require education about phishing attacks. As part of her pilot project, Holly has decided to use the Microsoft 365 Attack Simulator to determine her users' susceptibility to phishing attacks.
 
 
 ### Task 1: Enable Mulit-factor authentication for the Global Admin
 
-1.  Go to the Office 365 Security & Compliance center (https://protection.office.com) and login as Holly Dickson.
+1. Switch to the **LON-CL1** VM, where you should still be logged in as the **Admin** account. If necessary, log in as the **Admin** with a password of Pa55w.rd. 
+
+1. Open your **Edge** browser and navigate to the **Office 365 Security and Compliance center** by entering the following URL in the address bar: **https://protection.office.com**
 
 2.  Click **Threat management**, and then click **Attack simulator**.
 
