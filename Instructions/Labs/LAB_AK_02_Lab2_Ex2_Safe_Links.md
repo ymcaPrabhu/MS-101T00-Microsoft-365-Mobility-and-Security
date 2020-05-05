@@ -43,8 +43,10 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 2. In your **Microsoft Edge** browser, select the **Microsoft Office Home** tab and then select **Outlook.**
-3. In the top right corner of Outlook, verify that the user icon is **HD** (for Holly Dickson). If the user is anyone else (such as **MA** for the MOD Administrator), then select the circle, and in the **My account** pane that appears, select **Sign out**.
-4. After you are signed out of your account, close all other open tabs as a best practice, and then enter the following URL in the address bar: **https://outlook.office365.com**
+3. In the top right corner of Outlook, verify that the user icon is **HD** (for Holly Dickson). If the user icon is **HD**, then open a new tab in Edge and proceed to the next step. <br/>
+
+    If the user icon is not **HD** (for example, if it's **MA** for the MOD Administrator), then select the user icon circle, and in the **My account** pane that appears, select **Sign out**. After you are signed out of the account, a good best practice that you should follow when signing out as one user before signing in as another is to close all other open tabs in your browser so that you don't confuse those tabs (associated with the previous user) with the new tabs that you will open for the new user. Only the tab with the sign-out message should be open. 
+4. Enter the following URL in the address bar: **https://outlook.office365.com**
 5. In the **Pick an account** window, select **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant suffix ID provided by your lab hosting provider). In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
 6. On the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes.**
 7. On the Outlook sign in page, select your **Language** and **Time zone** and then select **Save**.
@@ -64,7 +66,7 @@ In this task, you will test the Safe Links Policy that you just created that blo
 14. Select **OK**.
 15. In the body of the email, the message should still be selected. Click anywhere in the body of the message to remove the highlighting. The color of the text should now be blue and it should be underlined, indicating that this message is hyperlinked to a URL.
 16. Select either **Send** button (top or bottom of the form).
-17. You now want to go the MOD Administrator&#39;s Inbox in Outlook and validate whether the ATP policy you created in the prior task worked on the email that you just sent from Holly.<br/>
+17. You now want to go the MOD Administrator&#39;s Inbox in Outlook and validate whether the ATP policy you created in the prior task worked on the email that you just sent from Holly to the MOD Administrator.<br/>
 
     To do this, you must first switch the Client 2 VM (**LON-CL2**). 
 18. Log into the LON-CL2 VM as the **Admin** account by entering **Pa55w.rd** in the **Password** field.
