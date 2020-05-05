@@ -5,7 +5,7 @@ In this first phase of your pilot project for Adatum, you want to create an ATP 
 
 ### Task 1 – Create a Safe Links Policy
 
-In this task, you will add the URL **tailspintoys.com** to the company-wide list of blocked URLs, and you will create an ATP safe links recipient policy that applies to all users in your tenant.
+In this task, you will add the **tailspintoys.com** URL to the company-wide list of blocked URLs, and you will create an ATP Safe Links policy that applies to all users in your tenant.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should still be logged into Microsoft 365 as **Holly Dickson**.
 2. After finishing the previous task, you should still be in the Microsoft 365 Security and Compliance center. If not, in your browser, enter **https://protection.office.com.**
