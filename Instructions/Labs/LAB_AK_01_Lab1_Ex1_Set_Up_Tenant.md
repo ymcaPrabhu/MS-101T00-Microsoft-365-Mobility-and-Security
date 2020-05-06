@@ -78,7 +78,7 @@ In your role as Holly Dickson, Adatum&#39;s Enterprise Administrator, you have b
 21. Select **Save changes**.
 22. Close the **Release preferences** pane. 
 23. Tn the list of organization settings, select **Custom themes**.
-24. In the **Custom themes** pane, scroll to the bottom of the pane and selec the **Show the user's display name** check box. <br/>
+24. In the **Custom themes** pane, scroll to the bottom of the pane and select the **Show the user's display name** check box. <br/>
 
 	As you scroll through the pane, review the various theme and branding options that are available for you to update. For the purpose of this lab, you can change any of the options or leave the default values as is. For example, you can add the logo of your company and set the background image as the default for all your users. Along with these options you can change the colors for your navigation pane, text color, icon color, and accent color. Go ahead and explore the different options for your tenant and make any changes that you wish. <br/>
 
