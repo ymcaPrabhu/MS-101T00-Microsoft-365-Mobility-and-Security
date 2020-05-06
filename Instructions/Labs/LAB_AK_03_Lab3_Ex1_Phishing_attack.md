@@ -101,21 +101,19 @@ Now that Holly has turned on MFA, she is ready to run the Attack Simulator and l
 
 6. In the **Launch attack** section for the **Spear Phishing (Credentials Harvest)** attack type, select **Launch attack**.
 
-7. In the **Configure Phishing Attack** page, the steps involved in the simulation are displayed in the left-hand pane. You will start by providing a name to the simulation for historical purposes. Enter **Spear Simulation** in the **Name** field and select **Next**.
+7. In the **Configure Phishing Attack** page, the steps involved in the simulation are displayed in the left-hand pane. While you can manually create a phishing campaign, it is recommended that you take advantage of the available templates that will prefill most of the information for you. The key to a succesful phishing attack is to create a very intriguing, real-world looking email, and the the templates provide very creative solutions. <br/>
 
-8. In the next step, you will select the users that will receive the phishing email. You can select users from the company address book (the Active Users), or for large-scale attacks, you can import users from a .csv file. For this simple simulation, you will only send the email to one user, so select **Address Book**. <br/>
+	On the **Provide a name to the campaign** page, select the **Use Template** button. 
+
+8. Select the **Please select a template in the list** field that appears, and in the drop-down menu, select the template of your choice. Select **Next**.
+
+9. In the next step, you will select the users that will receive the phishing email. You can select users from the company address book (the Active Users), or for large-scale attacks, you can import users from a .csv file. For this simple simulation, you will only send the email to one user, so select **Address Book**. <br/>
 
 	Enter **Lynne** in the **Search for users or groups within your organization** field. In the list of users that appears, select **Lynne Robbins**. Lynne's user account record will display in the list of **Recipients**. Select **Next**. 
 
-9. In the next step, you will configure the email that you want to send to the Lynne. <br/>
+10. In the next step, you will configure the email details. Because you chose to use a template, all of the fields are prefilled for you. Between this step and the next one, the templates provide a really nice touch to make the email appear legitimate. Select **Next**.
 
-	- **From (Name)** and **From (Email)** fields - enter any values you want. 
-	- **Phishing Login Server URL** - select any value from the drop-down menu.
-	- **Custom Landing Page URL** - Ordinarily you would include a URL link for the target to click into; this would be entered in the Custom Landing Page URL field. Since this is just an exercise, you will not do that here. The success rate of the spear phishing attack will be a function of how clever an email you contrive. 
-
-10. In the **Subject** field for the phishing email, enter**Free Gift Cards!!** and select **Next**.
-
-11. In the **Please edit email body** page, compose the message in the **Email body** field. Enter a creative, enticing email message intended to lure users and then select **Next**.
+11. In the final configuration step, you will configure the email details. Because you chose to use a template, the **Email body** is prefilled for you. Scroll down to see the full body of the text. Select **Next**
 
 12. On the **Confirmation** page, select **Finish**. This will launch the phishing attack!
 
