@@ -18,7 +18,7 @@ To use Microsoft's Attack Simulator to simulate a phishing attack, you must firs
 
 5. On the **Attack Simulator** page, scroll down to see the four types of attacks that you can simulate. Also note the warning message that indicates you must enable multi-factor authentication (MFA) to schedule or terminate attacks. This is required because the system wants to confirm your credentials before you conduct a simulated attack. In the upcoming steps, you will enable MFA for Holly and then perform a phishing attack.
 
-6. To enable MFA for Holly Dickson's user account, you must first access the Active Users list in the Microsoft 365 admin center. Open a new browser tab and enter the following URL in the address bar: **https://portal.office.com**
+6. To enable MFA for Holly Dickson's user account, you must first access the **Active users** list in the **Microsoft 365 admin center**. Open a new browser tab and enter the following URL in the address bar: **https://portal.office.com**
 
 7. On the **Office 365 home** page, select **Admin**. 
 
@@ -32,7 +32,7 @@ To use Microsoft's Attack Simulator to simulate a phishing attack, you must firs
 
 12. When the **Updates successful** dialog box appears, select **close**. In the **multi-factor authentication** window, verify Holly's MFA Status has changed to Enabled. 
 
-13. You now need to sign out of Microsoft 365 as Holly, close your browser session, open a new session, and then log back in as Holly using MFA. The first time you sign back in after having MFA enabled for your user account, you will be asked for the authentication information needed for MFA, such as your phone number and authentication options. You will then be texted a verification code to validate the authentication process works. You will perform these steps in the remaining portion of this task.<r/>
+13. You now need to sign out of Microsoft 365 as Holly, close your browser session (to clear cache), open a new session, and then log back in as Holly using MFA. The first time you sign back in after having MFA enabled for your user account, you will be asked for the authentication information needed for MFA, such as your phone number and authentication options. You will then be texted a verification code to validate the authentication process works. You will perform these steps in the remaining portion of this task.<r/>
 
 	You will begin by signing out as Holly, so select the **HD** user icon in the upper right corner of the browser and in the **My account** pane, select **Sign out**. 
 
