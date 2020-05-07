@@ -98,24 +98,34 @@ Now that Holly has turned on MFA, she is ready to run the Attack Simulator and l
 
 12. On the **Confirmation** page, select **Finish**. This will launch the phishing attack!
 
+13. Once the attack is complete, you will be returned to the **Attack simulator** page. 
 
-### Task 3: Confirm target received phishing email attack
+14. Leave your browser and the Security and Comnpliance Center open for the next task.
 
-2.  Open a new browser window in InPrivate or incognito mode and browse to **`https://office.com**.
+
+### Task 3: Review the attack simulation results
+
+In this task, you will verify whether Lynne Robbins received the email that you configured in the Attack Simulator, and then you will review the report associated with the Spear Phishing attack that you simulated.
+
+1. Switch to the **LON-CL2** VM and log in as the **Admin** with a password of **Pa55w.rd**.
+
+2. Select the Edge browser icon on taskbar, maximize the window, and then enter the following URL in the address bar: **https://outlook.office.com**.
  
-3.  Log in as the user Lynne Robbins **LynnR@M365xZZZZZZ.onmicrosoft.com** where ZZZZZZ is your specific Office 365 tenant.
+3. In the **Sign in** window, enter **LynnR@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant suffix ID provided by your lab hosting provider), and then in the **Enter password** window, enter **Pa55w.rd** and select **Sign in**. Select **Yes** on the **Stay signed in?** window.
 
-4.  Click the Outlook icon to open Microsoft Outlook for Lynne. You should see a spear phishing email that includes the details you just entered in the previous task.
+4. Close the **Welcome** window.
 
+5. In Lynne's Outlook Inbox, you should see the spear phishing email that was sent by the Attack Simulator. Select the email to open it and review the details in the body of the message. 
 
-### Task 4: Review the results
+6. Select the link that is included in the email. Even though you know this is a spear phishing attack, this will enable you to see the affect of doing so in the Attack Simulator report that tracks the results of the spear phishing campaign.
 
-3. In your browser session where you are logged in as Holly Dickson go back to the Attack simulator.
+7. Switch back to LON-CL1.
 
-4. In the Spear Phishing (Credentials Harvest) area click **View Report**.
+8. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulator** page. In the **Spear Phishing (Credential Harvest)** section, it should display **Attack Completed**. Select **View Report*.
 
-5. The report lists the current results of the spear phishing campaign including number of users targeted and success rate.  
+9. On the **Attack details** page, view the report for the phishing campaign that you completed. Note the date and time of the report. If you had run a previous simulation, it sometimes takes a few minutes to update this report information with the details from the current simulation that you just ran. If this occurs, refresh the page after a few minutes. Review the information on the page, and note the results after having clicked on the spear phishing URL in the email that was sent to Lynne Robbins earlier in this task.
+
+10. Leave your browser open in LON-CL1 and do not close any of the tabs.
     
-		**Note**: Since you can run multiple spear phishing simulation campaigns simultaneously you could create different emails for different users.
 
 # Proceed to Exercise 2
