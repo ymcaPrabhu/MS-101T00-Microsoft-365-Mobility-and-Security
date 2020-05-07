@@ -4,7 +4,7 @@ Holly Dickson is concerned that some users at Adatum may require education about
 
 
 ### Task 1: Enable Mulit-factor authentication for the Global Admin
-To use Microsoft's Attack Simulator to simulate a phishing attack, you must first enable Multi-Factor Authentication (MFA) for your organization. For her pilot project, Holly does not want to set up MFA for the Adatum users at this point in time; however, to use the Attack Simulator, she must enable MFA. So in this task, she will enable MFA for her user account, and then after she finishes running the Attack Simulator, she will turn MFA back off. 
+To use Microsoft's Attack Simulator to simulate a phishing attack, you must first enable Multi-Factor Authentication (MFA) for either your entire organization or for just the Global admin who will run the simulator. For her pilot project, Holly does not want to set up MFA for all the Adatum users at this point in time; therefore, she will enable MFA for her user account only, and then after she finishes running the Attack Simulator, she will turn MFA back off. 
 
 **Important:** To implement MFA, you will need to use your mobile phone to receive a verification code so that you can enter it into your tenant as a second form of authentication. If you do not have a phone, you will have to skip this lab. If this is the case, notify your instructor, who can potentially partner you with another student to follow along through this lab.
 
