@@ -1,59 +1,117 @@
 # Module 3 - Lab 3 - Exercise 2 - Conduct Password attacks using the Attack Simulator
 
-Holly Dickson is concerned that some users in her organization may require education about secure password strategies.  In this lab you will use the Microsoft 365 Attack simulator to determine your users' susceptibility to password attacks.
+Holly Dickson is concerned that some users at Adatum may require education about secure password strategies. In this lab she will use the Microsoft 365 Attack Simulator to determine her users' susceptibility to password attacks.
+
+**Note:** At the end of this exercise, you will disable MFA for Holly's account. This will save you from having to enter the second form of authentication when signing in as Holly in any of the remaining labs in this course.
 
 ### Task 1: Configure and launch a Brute Force attack 
 
-1.  Go to the Office 365 Security & Compliance center (https://protection.office.com) and login as Holly Dickson.
+Password cracking techniques are used to guess a user's password by trying many variations with a computer. Once an attacker has the user name and password for a user, the attacker will generally be able to sign in to Office 365 and gain access to additional information, such as other user accounts and sensitive information. Brute-force attacks work by calculating every possible combination that could make up a password and testing to see if it is the correct password.
 
-2.  Click **Threat management**, and then click **Attack simulator**.
+Two types of brute-force password attacks exist: a dictionary attack using a well-known list of passwords, and an exhaustive attack, where combinations are tried sequentially. The Attack Simulator uses a dictionary list attack, allowing modifications of frequency between attacks and the number of attempts. If a password is discovered, the password itself is not shown; only an indication that a password was discovered will be shown.
 
-3.  In the Brute Force Password (Dictionary Attack) area select the **Launch Attack** button.
+For this lab, you will not include a file of passwords; you will instead enter a short list of passwords. For the purpose of her pilot project, Holly is once again going to use Lynne Robbins as her test case. 
 
-4.  Name the campaign *Brute Force Test* and select **Next**.
+1. You should still be in LON-CL1 and signed in as the **Admin** with a password of **Pa55w.rd**; if not, then sign in now.  
 
-5.  In the Target users tab click the **Address Book** button and select Lynne Robbins and then select **Next**.
+2. After the pevious lab exercise, you should still be in the **Office 365 Security and Compliance center** (https://protection.office.com), and you should still be logged in as Holly Dickson; if not, then do so now.
 
-6.  In the Choose attack settings area enter Pa55w.rd in The password(s) to use in the attack field and press the enter key. You can enter more than one password here if you like. We are entering Lynne's actual password on purpose. Once you have added the password select **Next**.
+3. After the pevious lab exercise, you should also be in the **Attack Simulator**. In the list of 4 attacks, scroll down to the **Brute Force Password (Dictionary Attack)** section and select the **Launch Attack** button.
+
+4. In the **Provide a name for the password attack** page, enter **Brute Force Test** in the **Name** field and select **Next**.
+
+5. In the **Select user accounts which to attempt the password attack** page, select the **Address Book** button, enter **Lynne* in the **Search** field, select **Lynne Robbins** from the drop-down list of users, and then select **Next**.
+
+6. In the **Choose attack settings** page, enter the following list of passwords. You MUST hit Enter after entering each password:
+
+	- P@ssw0rd
+	- Pa$$w0rd
+	- PA$$WORD
+	- P@55w0rd
+	- Pa55w.rd
+	
+	**Note:** You will enter Lynne's actual password on purpose to check the results when a password match occurs. Once you have added all the passwords, select **Next**.
 
 		**Note**: Ordinarily you would have a file that contains a list of commonly used passwords for your organization.  You would upload that file using the Upload button. 
 
-7.  In the Confirm area select **Finish**.
-    
+7. In the **Confirmation** page, select **Finish** to run the simulation.
 
-### Task 2: Review the results
+8. Once the attack is complete, you will be returned to the **Attack simulator** page. 
 
-3. Go back to the Attack Simulator area of the Office 365 Security and Compliance portal.
+9. Leave your browser and the Security and Comnpliance Center open for the next task.   
 
-4. In the Brute Force Password (Dictionary Attack) area click **Attack Details**.
 
-5. The report lists the current results of the campaign including number of users targeted and success rate.  Since we entered Lynne's password the report shows "1 of 1 users compromised".
+### Task 2: Review the Brute Force results
+
+You will now review the results of the Brute Force Password attack.
+
+1. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulator** page. In the **Brute Force Password Dictionary Attack)** section, it should display **Attack Completed**. Select **View Report*.
+
+2. On the **Attack details** page, view the report for the **Brute force test** that you completed. Review the information on the page, and note the results after having entered Lynne's actuall password among the list of passwords that were entered for the simulation. 
+
+3. In the **Attack details** page, select **Attack simulator* in the navigation thread at the top of the page (**Home > Attack simulator > Report**).
+
+4 Leave your browser open in LON-CL1 and do not close any of the tabs.
    
 
 ### Task 3: Configure and launch a Password Spray attack 
 
-1.  Go to the Office 365 Security & Compliance center (https://protection.office.com).
+A password spray attack against an organization is typically done by running a list of commonly used passwords against a list of valid Office 365 user accounts. Typically, the attacker crafts one password to try against all of the known user accounts. If the attack is not successful, the attacker will try again using another carefully crafted password, usually with a waiting period between attempts to avoid policy-based account lockout triggers. For the purpose of her pilot project, Holly is once again going to use Lynne Robbins as her test case. 
 
-2.  Select **Threat management**, and then select **Attack simulator**.
+1. You should still be in LON-CL1 and signed in as the **Admin** with a password of **Pa55w.rd**; if not, then sign in now.  
 
-3.  In the Password Spray Attack area select the **Launch Attack** button. 
+2. In your browser session where you are logged in as Holly Dickson, you should be on the **Attack simulator** page. 
 
-4.  Name the campaign *Password Spray Test* and select **Next**.
+3. In the list of 4 attacks, scroll down to the **Password Spray Attack** section and select the **Launch Attack** button.
 
-5.  In the Target users tab click the **Address Book** button and select Lynne Robbins and select **Next**.
+4. In the **Provide a name for the password attack** page, enter **Password Spray Test** in the **Name** field and select **Next**.
 
-6.  In the Choose attack settings area type Pa55w.rd in The password(s) to use in the attack and then select **Next**.
+5. In the **Select user accounts which to attempt the password attack** page, select the **Address Book** button, enter **Lynne* in the **Search** field, select **Lynne Robbins** from the drop-down list of users, and then select **Next**.
 
-7.  In the Confirm area select **Finish**.
+6. In the **Choose attack settings** page, enter the following list of passwords. Unlike the Brute Force password test, this Spray test allows you to enter all passwords in the field at one time; simply include a space in between each one. Enter the following passwords in the **Password** field: **P@ssw0rd Pa$$w0rd Pa55w.rd**
+	
+	**Note:** You will enter Lynne's actual password on purpose to check the results when a password match occurs. Once you have added all the passwords, select **Next**.
+
+7. In the **Confirmation** page, select **Finish** to run the simulation.
+
+8. Once the attack is complete, you will be returned to the **Attack simulator** page. 
+
+9. Leave your browser and the Security and Comnpliance Center open for the next task.   
 
 
-### Task 4: Review the results
 
-3. Go back to the Attack Simulator area of the Office 365 Security and Compliance portal.
+### Task 4: Review the Password Spray results
 
-4. In the Password Spray Attack area click **Attack Details**.
+You will now review the results of the Password Spray attack.
 
-5. The report lists the current results of the campaign including number of users compromised.  Notice against since we entered Lynne's actual password it lists her as account as being compromised by the password spray.
+1. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulator** page. In the **Password Spray Attack** section, it should display **Attack Completed**. Select **View Report*.
 
- # End of Lab for this Lesson
+2. On the **Attack details** page, view the report for the **Password spray test** that you completed. Review the information on the page, and note the results after having entered Lynne's actuall password among the list of passwords that were entered for the simulation. 
+
+3. In the **Attack details** page, select **Attack simulator* in the navigation thread at the top of the page (**Home > Attack simulator > Report**).
+
+4. Leave your browser open in LON-CL1 and do not close any of the tabs.
+
+
+### Task 5: Disable Mulit-factor authentication for the Global Admin
+
+To use Microsoft's Attack Simulator to simulate phishing and password attacks, Holly enabled Multi-Factor Authentication (MFA) for her user account. Now that she has completed the Attack Simulator tests, she wants to disable MFA for her account for the remainder of the pilot project.
+
+1. Switch to the **LON-CL1** VM, where you should still be logged in as the **Admin** account. If necessary, log in as the **Admin** with a password of **Pa55w.rd**. 
+
+2. To diable MFA for Holly Dickson's user account, you must first access the **Active users** list in the Microsoft 365 admin center. If you have the **Microsoft 365 admin center** opened in a browser tab, then select that now; otherwise, open a new browser tab, enter **https://portal.office.com** in the address bar, and then on the **Office 365 home** page, select **Admin**. 
+
+8. On the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users** and then select **Active users**.
+
+9. In the **Active users** window, on the menu bar at the top of the user list, select **Multi-factor authentication**.
+
+10. In the **multi-factor authentication** window, the **users** tab is displayed by default. Note the MFA status for all existing user accounts, which is **Disabled**. Select the check box for **Holly Dickson**, and in Holly's propeties pane on the right, select **Disable**.
+
+11. On the **Disable multi-factor authentication?** dialog box, select **yes**. 
+
+12. When the **Updates successful** dialog box appears, select **close**. In the **multi-factor authentication** window, verify Holly's MFA Status has changed to Disabled. 
+
+13. You now need to sign out of Microsoft 365 as Holly, close your browser session (to clear your cache), open a new session, and then log back into the **Office 365 home** page as Holly. Then navigate to the **Microsoft 365 admin center**. 
+
+# End of Lab for this Lesson
  
