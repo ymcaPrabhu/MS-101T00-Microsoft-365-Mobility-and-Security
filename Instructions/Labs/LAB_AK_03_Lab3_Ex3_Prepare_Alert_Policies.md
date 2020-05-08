@@ -18,7 +18,6 @@ For Adatum’s pilot project, Lynne Robbins has been selected to test the alert 
 
 The three alerts that you will create in this lab are assigned to two Alert categories: **Permissions** and **Data Loss Prevention**. The Compliance Data Administrator role group, which includes the Compliance Administrator role, provides permissions for these two alert categories; therefore, assigning Lynne Robbins to this role group will enable her to view the alerts that are created in this lab.
 
-Performing the following steps to assign Lynne Robbins to this role group will enable her to view the alerts that are created in this lab.
 
 |                               | **Data governance** | **Data loss prevention** | **Mail flow** | **Permissions** | **Threat Management** | **Others** |
 |:-------------------------------:|:---------------------:|:--------------------------:|:---------------:|:-----------------:|:-----------------------:|:------------:|
