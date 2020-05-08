@@ -73,7 +73,11 @@ In the prior task, you configured an alert that will notify Lynne Robbins when a
 
 	Scroll down through the alert and review all the information. When you are done, select **Close** to close the alert, then close the **View alerts** tab in your browser.
 
-9. Leave your Client 1 and Client 2 VMs open for the remaining tasks in this lab.
+9. Switch back to the LON-CL1.
+
+10. In the **Microsoft 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Alerts,** and then under it, select **View Alerts**. The notification that was just created based on the **Site collection admin permissions** alert should appear in the list.
+
+11. Leave your Client 1 and Client 2 VMs open for the remaining tasks in this lab.
 
 You have now successfully tested the SharePoint alert to monitor site collection admin permissions on SharePoint sites. 
 
