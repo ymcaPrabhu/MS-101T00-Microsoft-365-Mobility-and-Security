@@ -5,15 +5,13 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 
 ### Task 1 – Create a SharePoint Permissions Alert
 
-1. At the end of the prior task, you were logged into the LON-CL2 client. Switch back to the LON-CL1 VM.
+1. You should still be logged into the Client 1 VM (LON-CL1) as the **Admin,** and you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. You should still be logged into the Client 1 VM (LON-CL1) as the **Admin,** and you should still be logged into Microsoft 365 as **Holly Dickson**. 
-
-3. In the **Microsoft 365 Security &amp; Compliance center**, the **Alert policies** window should still be open from the prior task; if not, select **Alerts** and then **Alert Policies** from the left-hand navigation bar. <br/>
+2. In the **Microsoft 365 Security &amp; Compliance center**, the **Alert policies** window should still be open from the prior task; if not, select **Alerts** and then **Alert Policies** from the left-hand navigation bar. <br/>
 
 	In the **Alert policies** window, select the **+New alert policy** button.
 
-4. In the **New alert policy** window, enter the following information:
+3. In the **New alert policy** window, enter the following information:
 
 	- Name: **Site collection admin permissions**
 
@@ -23,27 +21,27 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 
 	- Category: **Permissions**
 
-5. Select **Next.**
+4. Select **Next.**
 
-6. On the **Choose an activity, conditions and when to trigger the alert** window, enter the following information:
+5. On the **Choose an activity, conditions and when to trigger the alert** window, enter the following information:
 
 	- Activity is: select the drop-down arrow in the field, enter **site collection** in the search box, and select **Added site collection admin**
 
 	- How do you want the alert to be triggered? **Every time an activity matches the rule**
 
-7. Select **Next.**
+6. Select **Next.**
 
-8. On the **Decide if you want to notify people when this alert is triggered** window, enter the following information:
+7. On the **Decide if you want to notify people when this alert is triggered** window, enter the following information:
 
 	- Email recipients: Remove **Holly Dickson** and add **Lynne Robbins**
 
 	- Daily notification limit: **No limit**
 
-9. Select **Next.**
+8. Select **Next.**
 
-10. Review your settings. When everything is correct, verify the **Yes, turn it on right away** option is selected and then select **Finish**.
+9. Review your settings. When everything is correct, verify the **Yes, turn it on right away** option is selected and then select **Finish**.
 
-11. Leave the Client 1 VM and the Microsoft 365 admin center and Security and Compliance Center tabs open for the next task.
+10. Leave the Client 1 VM and the Microsoft 365 admin center and Security and Compliance Center tabs open for the next task.
 
 You have now configured an additional alert policy that monitors when a site collection administrator is added to SharePoint Online site collections.
 
