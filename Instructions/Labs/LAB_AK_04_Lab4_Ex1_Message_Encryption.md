@@ -3,7 +3,7 @@
 
 In this lab, you will take on the persona of Holly Dickson, Adatum’s Enterprise Administrator. You have been tasked with piloting the use of Office 365 message encryption in Adatum’s Microsoft 365 deployment. Since message encryption rules can be created using both Exchange Online and Windows PowerShell, you have decided to test each method to determine which you prefer to use once you go live.
 
-In this exercise you will set up Azure Rights Management for your tenant. You will also learn how to create a mail flow encryption rule using both the Exchange Admin Center and Windows PowerShell.
+In this exercise you will set up Azure Rights Management Services (RMS) for your tenant. You will also learn how to create a mail flow encryption rule using both the Exchange Admin Center and Windows PowerShell.
 
 ### Task 1 – Enable Azure Rights Management for Exchange Online
 
@@ -11,11 +11,11 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 
 1. You should still be logged into LON-CL1 as **Admin**, and you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. To open Windows PowerShell, select the magnifying glass (Search Windows) icon on the taskbar at the bottom of the screen and type **powershell** in the Search box that appears. 
+2. To open Windows PowerShell, enter **powershell** in the **Search** box on the taskbar. 
 
 3. In the menu that appears, right-click on **Windows PowerShell** and select **Run as administrator** in the drop-down menu. 
 
-4. You must then initiate a connection to Azure Active Directory by running the following command: <br/>
+4. In **Windows PowerShell**, you must run the following command to initiate a connection to Azure Active Directory: <br/>
 	
 	**Connect-MsolService**  ‎
 
