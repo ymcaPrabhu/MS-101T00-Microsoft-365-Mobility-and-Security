@@ -1,25 +1,22 @@
 # Module 3 - Lab 3 - Exercise 6 - Test the Default eDiscovery Alert
 
+In this exercise you will test a default Microsoft 365 alert policy that notifies all tenant admins, such as Holly Dickson, whenever an eDiscovery case has been created or exported.
 
-In this exercise you will test a default Microsoft 365 alert policy that will notify all tenant admins, such as Holly Dickson, when an eDiscovery case has been created or exported.
-
-**Note:** An eDiscovery alert of this nature is important because an eDiscovery search, when left unregulated, can pull sensitive content that can be exported to an unauthorized source.
+**Note:** Creating an eDiscovery alert of this nature is important because an eDiscovery search, when left unregulated, can pull sensitive content that can be exported to an unauthorized source.
 
 ### Task 1 – Review the default eDiscovery Alert
 
-In this task, you will verify whether a default Microsoft 365 alert is triggered when somebody in your tenant creates an eDiscovery case or exports data from an existing case. Holly Dickson is a part of the Tenant Admins in your tenant and will be one of the recipients of this alert. 
+In this task, you will verify whether a default Microsoft 365 alert is triggered when somebody in your tenant creates an eDiscovery case or exports data from an existing case. Since Holly Dickson is assigned the Global Admin role, she is automatically a member of the Tenant Admins and will be one of the recipients of this alert. 
 
-1. At the end of the prior task, you were logged into the LON-CL2 client. Switch back to the LON-CL1 VM.
+1. You should still be logged into the Client 1 VM (LON-CL1) as the **Admin,** and you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. You should still be logged into the Client 1 VM (LON-CL1) as the **Admin,** and you should still be logged into Microsoft 365 as **Holly Dickson**. 
+2. In your **Microsoft Edge** browser, select the **Microsoft 365 Security &amp; Compliance Center** tab.
 
-3. In your **Microsoft Edge** browser, select the **Microsoft 365 Security &amp; Compliance Center** tab.
+3. In the **Microsoft 365 Security &amp; Compliance center**, the **Alert policies** window should still be open from the prior task; if not, select **Alerts** and then **Alert Policies** from the left-hand navigation bar. <br/>
 
-4. In the **Microsoft 365 Security &amp; Compliance Center**, in the left-hand navigation pane, select **Alerts** and then select **Alert policies**.
+4. You want to search through the default system policies for a policy named **eDiscovery search started or exported**. In the **Search** field at the top of the screen, enter **eDiscovery**. In the list of policies, you should see **eDiscovery search started or exported**. Select the check box next to this policy.
 
-5. Search for the Alert policy with the name **eDiscovery search started or exported** and then select it.
-
-6. In the right-side pane you can now see the settings of this default alert. You should then verify the settings are configured as following:
+5. An **eDiscovery search started or exported** pane should appear. Scroll down through this pane and verify the settings are configured as follows:
 
 	- Conditions: **Activity is eDiscoverySearchStartedOrExported**
 
@@ -29,7 +26,11 @@ In this task, you will verify whether a default Microsoft 365 alert is triggered
 
 	- Email recipients: **TenantAdmins**
 
-7. If all settings are correct, select the **Close** button to close the Window.
+6. If all settings are correct, select the **Close** button to close the **eDiscovery search started or exported** pane.
+
+7. In the **Alert policies** list, select the **ellipsis** icon that appears on the far right side of **eDiscovery search started or exported** row, and then in the menu that appears, select **Edit**.
+
+8. An **Edit recipients** pane appears. This window enables you to edit the email recipients who are notified when this policy is triggered. You will not change the value here, instead, the purpose of this step is to show you how to change the recipient list in your real-world implementations for any of the default system policies. Select **Close**.
 
 You have now reviewed the default Microsoft 365 eDiscovery alert that notifies tenant admins when an eDiscovery case is created or exported.
 
@@ -43,7 +44,7 @@ To test this default alert, Holly Dickson will create an eDiscovery case. This a
 
 3. In the **Microsoft 365 Security &amp; Compliance Center**, in the left-hand navigation pane, select **eDiscovery**, and then under it, select **eDiscovery**.
 
-4. On the **eDiscovery** window, select **+Create a case**.
+4. On the **eDiscovery** window, select the **+Create a case** button.
 
 5. In the **New case** window, enter the following information:
 
@@ -51,17 +52,23 @@ To test this default alert, Holly Dickson will create an eDiscovery case. This a
 
 	- Case description: **This case will be used for testing the default Microsoft 365 eDiscovery alert.**
 
-6. Select **Save**.
+6. Select **Save**. 
 
-7. When an eDiscovery case is created, an alert should automatically be sent to the Inbox of all users with tenant admin permissions. 
+7. By creating this alert, an email notiification should automatically be sent to the Inbox of all users with tenant admin permissions whenever an eDiscovery case is opened or exported. To test this alert, open a new tab in your browser and go to **Outlook on the web** by entering the following URL in the address pane: **https://outlook.office365.com**
 
-8. Open a new tab in your browser and go to **Outlook on the web** by entering the following URL in the address pane: **https://outlook.office365.com**
+8. When Outlook opens, if the language and time zone window appears, select your Language and Time zone and select **Save**. 
 
-9. After a few minutes, an email from the Alerts notification system will be sent to Holly’s **Inbox** to inform her that an eDiscovery case was created. Open the email and review the contents, then close the message.
+9. Monitor Holly's Inbox for the email that was automatically sent by the Alerts notification system to inform her that an eDiscovery case was created. <br/>
 
-10. In your **Edge** browser, switch back to the **Microsoft 365 Security &amp; Compliance Center** tab and select **Audit Log Search** in the left-side navigation pane. 
+	**Note:** Based on lab testing, the time for an email to be generated and received in Holly's Inbox can range from a couple of minutes to an hour. <br/>
+	
+	Open the email and review the contents, then close the message.
 
-11. At the bottom of the page, select the **Search** button to display all recent activity. This will display the activity that created this alert. 
+10. In your **Edge** browser, switch back to the **Microsoft 365 Security &amp; Compliance Center** tab and under the **Search** group in the left-hand navigation pane, select **Audit Log Search**. 
+
+11. At the bottom of the page, select the **Search** button to display all recent activity. This will display the activity that created this alert. <br/>
+
+	**Note:** It may take a minute or so for the **Search** button at the bottom of the page to become enabled.
 
 12. Leave your Client VMs open for the remaining labs in this course.  
 
