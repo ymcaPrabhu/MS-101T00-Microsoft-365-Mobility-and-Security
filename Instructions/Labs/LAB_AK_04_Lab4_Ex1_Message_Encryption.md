@@ -53,17 +53,17 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 	
 	‎**Note:** You can ignore the warning message that is displayed regarding unapproved verbs.  
 	
-13. You must then run the following command to view the Information Rights configuration for Exchange Online:  <br/>
+15. You must then run the following command to view the Information Rights configuration for Exchange Online:  <br/>
 
 	‎**Get-IRMConfiguration**  
 	
-14 To validate whether Azure Rights Management Services is enabled, scroll through the list of parameters that’s displayed and locate the **AzureRMSLicensingEnabled** parameter. If this value is set to **$true**, then Azure RMS is turned On and you can proceed to the next step.  <br/>
+16. To validate whether Azure Rights Management Services is enabled, scroll through the list of parameters that’s displayed and locate the **AzureRMSLicensingEnabled** parameter. If this value is set to **$true**, then Azure RMS is turned On and you can proceed to the next step.  <br/>
 
 	**Important:** If **AzureRMSLicensingEnabled** is set to **$false**, then you must run the following command to turn on Azure RMS before you can proceed to the next step: <br/>
 
 	**Set-IRMconfiguration -azureRMSLIcensingEnabled $true**
 
-15. Now that Azure RMS is enabled, you should run the **Test-IRMConfiguration** cmdlet to test Information Rights Management (IRM) configuration and functionality, including availability of an Active Directory RMS server, pre-licensing, and journal report decryption. To perform this test, run the following command to test the IRM configuration for messages sent from Holly Dickson:<br/>
+17. Now that Azure RMS is enabled, you should run the **Test-IRMConfiguration** cmdlet to test Information Rights Management (IRM) configuration and functionality, including availability of an Active Directory RMS server, pre-licensing, and journal report decryption. To perform this test, run the following command to test the IRM configuration for messages sent from Holly Dickson:<br/>
 
 	**Test-IRMConfiguration -Sender Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) 
 
@@ -88,7 +88,7 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 
 	OVERALL RESULT: PASS  
 	‎
-16. Leave your PowerShell window open as you will return to it in a later task; simply minimize the PowerShell window for now.
+18. Leave your PowerShell window open as you will return to it in a later task; simply minimize the PowerShell window for now.
   
 
 ### Task 2 – Create a Mail Flow Encryption Rule using the Exchange admin center
@@ -97,33 +97,33 @@ In this task, you will create an encryption rule for messages inside your Exchan
 
 1. On the LON-CL1 VM, you should still be logged into the Microsoft 365 admin center as Holly Dickson. If you closed your Edge browser or the Microsoft 365 admin center tab, then in your Edge browser navigate to **https://portal.office.com**, sign in as **Holly@M365xZZZZZZ.onmicrosoft.com**, and select **Admin**. 
 
-3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then under **Admin centers**, select **Exchange**. This will open the Exchange admin center.
+2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then under **Admin centers**, select **Exchange**. This will open the Exchange admin center.
 
-4 In the **Exchange admin center**, in the left-hand navigation pane select **mail flow.**
+3. In the **Exchange admin center**, in the left-hand navigation pane select **mail flow.**
 
-5. At the top of the **mail flow** page, the **Rules** tab is displayed by default. In the **Rules** tab, select the **plus sign** (**+**) icon to create a new rule. This displays a drop-down menu of actions. Select **Create a new rule.**
+4. At the top of the **mail flow** page, the **Rules** tab is displayed by default. In the **Rules** tab, select the **plus sign** (**+**) icon to create a new rule. This displays a drop-down menu of actions. Select **Create a new rule.**
 
-6. In the **new rule** window, in the **Name** box, enter **Encrypt mail for guest@adatum.com** as the name of this rule.
+5. In the **new rule** window, in the **Name** box, enter **Encrypt mail for guest@adatum.com** as the name of this rule.
 
-7. Select the drop-down arrow in the **Apply this rule if**… condition box. In the drop-down menu, select **the recipient is**. 
+6. Select the drop-down arrow in the **Apply this rule if**… condition box. In the drop-down menu, select **the recipient is**. 
 
-8. For this condition, you must either select an existing name from the user list or type a new email address in the **check names** box. In this case, enter **guest@adatum.com** in the **Check names** box and then select **OK**.
+7. For this condition, you must either select an existing name from the user list or type a new email address in the **check names** box. In this case, enter **guest@adatum.com** in the **Check names** box and then select **OK**.
 
-9. You need to add more conditions, so scroll down (if necessary) and select **More options**.
+8. You need to add more conditions, so scroll down (if necessary) and select **More options**.
 
-10. Select **add condition**. 
+9. Select **add condition**. 
 
-11. Note how a second condition box appears below **The recipient is…** condition box. In this second condition box, select the drop-down arrow and select **The recipient**. Then in the drop-down menu select **is external/internal.**
+10. Note how a second condition box appears below **The recipient is…** condition box. In this second condition box, select the drop-down arrow and select **The recipient**. Then in the drop-down menu select **is external/internal.**
 
-12. In the **select recipient location** dialog box, select the drop-down arrow. In the drop-down menu, select **Outside the organization** and then select **OK.** 
+11. In the **select recipient location** dialog box, select the drop-down arrow. In the drop-down menu, select **Outside the organization** and then select **OK.** 
 
-13. You now need to define an action to perform when this rule is applied. In the **Do the following…** box, select the drop-down arrow. In the drop-down menu, hover your mouse over **Modify the message security…** and in the menu that appears, select **Apply Office 365 Message Encryption and rights protection.**
+12. You now need to define an action to perform when this rule is applied. In the **Do the following…** box, select the drop-down arrow. In the drop-down menu, hover your mouse over **Modify the message security…** and in the menu that appears, select **Apply Office 365 Message Encryption and rights protection.**
 
-14. In the **select RMS template** dialog box, select the drop-down arrow, select **Encrypt**, and then select **OK.**
+13. In the **select RMS template** dialog box, select the drop-down arrow, select **Encrypt**, and then select **OK.**
 
-15. Select **Save.** Once the rule is saved, it should appear in the list of rules in the Exchange admin center.
+14. Select **Save.** Once the rule is saved, it should appear in the list of rules in the Exchange admin center.
 
-16. Leave your browser tabs open and proceed to the next task. 
+15. Leave your browser tabs open and proceed to the next task. 
  
 
 ### Task 3 – Create a Mail Flow Encryption Rule using Windows PowerShell
