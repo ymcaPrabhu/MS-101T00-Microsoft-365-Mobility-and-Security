@@ -82,7 +82,9 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 14. If a **Welcome** window appears, select the **X** to close it.
 
-15. In **Outlook on the web**, in Lynne Robbins’ **Inbox**, an email should be received from the Alerts notification system (**Office365Alerts@microsoft.com**) to let her know that Holly Dickson has made a Mailbox permission change. Open the email and review the contents, then close the message.
+15. In **Outlook on the web**, in Lynne Robbins’ **Inbox**, an email should be received from the Alerts notification system (**Office365Alerts@microsoft.com**) to let her know that Holly Dickson has made a Mailbox permission change. Open the email and review the contents, then close the message. <br/>
+
+	**Note:** In can take up to 15 minutes or so for the email to be received in Lynne's Inbox.
 
 16. Leave your Client 1 and Client 2 VMs open for the remaining tasks in this lab.
 
