@@ -82,11 +82,15 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 14. If a **Welcome** window appears, select the **X** to close it.
 
-15. In **Outlook on the web**, in Lynne Robbins’ **Inbox**, an email should be received from the Alerts notification system (**Office365Alerts@microsoft.com**) to let her know that Holly Dickson has made a Mailbox permission change. Open the email and review the contents, then close the message. <br/>
+15. In **Outlook on the web**, in Lynne Robbins’ **Inbox**, an email should be received from the Alerts notification system (**Office365Alerts@microsoft.com**) to let her know that Holly Dickson has made a Mailbox permission change. <br/>
 
 	**Note:** In can take up to 15 minutes or so for the email to be received in Lynne's Inbox.
 
-16. Leave your Client 1 and Client 2 VMs open for the remaining tasks in this lab.
+16. Open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Security and Compliance Center**, displays the **View alters** window, and opens the **Mailbox permission change** alert. <br/>
+
+	Scroll down through the **Mailbox permission change** alert and review all the information. When you are done, select **Close** to close the **Mailbox permission change** alert, then close the **View alerts** tab in your browser.
+
+17. Leave your Client 1 and Client 2 VMs open for the remaining tasks in this lab.
 
 You have just successfully tested a mailbox permission alert that sent an alarm message on granting FullAccess to a user mailbox.
 
