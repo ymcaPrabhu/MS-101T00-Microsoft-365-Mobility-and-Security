@@ -186,14 +186,14 @@ In the prior task, you noticed that your Microsoft 365 trial tenant came equippe
 12. In the **Edit settings** pane, enter **salesgroup** in the **Group email address** field (leave the domain as M365xZZZZZZ.onmicrosoft.com). Under the **Privacy** section, select the **Public – Anyone can see group content** option (even if this option is selected by default, select it again to enable the **Next** button), and leave the **Create a team for this group** check box selected. 
 13. In the **Review and finish adding group** pane, review your selections. If anything needs to be corrected, select the corresponding **Edit** option. Select **Create group**.
 14. Select the **Close** button on the **New group created** window.
-15. This will return you to the **Groups** window. You may need to select the **Refresh** option on the menu bar the page to see the **Sales Group** appear in the list of groups.
-12. In the list of groups, select the **Sales Group**.
+15. This will return you to the **Groups** window. You may need to select the **Refresh** option on the menu bar the page to see the **Sales Group** appear in the list of groups. In fact, you may have to wait a few minutes for the Sales Group to appear, so you may need to select the **Refresh** option on the menu bar once or twice.
+12. Once the **Sales Group** appears in the list of groups, select it.
 13. In the **Sales Group** pane, select the **Members** tab.
 14. Under the **Members** section, select **View all and manage members**.
-15. In the **View members** window, select **+Add members**.
+15. In the **View members** window for the Sales Group, select the **+Add members** button.
 16. In the list of users that appears, select **Alex Wilber, Joni Sherman**, and **Lynne Robbins**, select the **Save** button, and then select the **Close** button to finish the add process. 
 17. The **Sales Group** window now displays the three members of the group. Select **Close**.
-18. In the **Sales Group** pane, scroll down and verify the three members. Select the **X** in the upper right-hand corner to close the window.
+18. In the **Sales Group** pane, scroll down and verify the three members appear. Select the **X** in the upper right-hand corner to close the window.
 19. Leave the **Microsoft 365 admin center** tab open in your browser and proceed to the next task.
 
 ### ‎Task 5 - Enable IRM for SharePoint Online 
@@ -204,21 +204,19 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 1. You should still be logged into your Client 1 VM as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In the **Microsoft 365 admin center**, if necessary select **Show all** in the left-hand navigation pane  to see all the navigation options. Under **Admin centers,** select **SharePoint**. This will open the SharePoint admin center.
+2. In the **Microsoft 365 admin center**, if necessary select **Show all** in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **SharePoint**. This will open the SharePoint admin center.
 
-3. If a **One place for SharePoint administration** pop-up window appears, select **Got it** to close the window.
+3. In the **SharePoint admin center**, in the left-hand navigation pane, select **Settings**. 
 
-4. In the **SharePoint admin center**, in the left-hand navigation pane, select **Settings**. 
+4. At the bottom of the page is a sentence that says **Can’t find the setting you’re looking for? Go to the classic settings page.** In this sentence, select the hyperlinked text: **classic settings page**.
 
-5. At the bottom of the page is a sentence that says **Can’t find the setting you’re looking for? Go to the classic settings page.** In this sentence, select the hyperlinked text: **classic settings page**.
+5. On the **Settings** page, scroll down to the **Information Rights Management (IRM)** section, select the **Use the IRM service specified in your configuration** option, and then select the **Refresh IRM Settings** button.
 
-6. On the **Settings** page, scroll down to the **Information Rights Management (IRM)** section, select the **Use the IRM service specified in your configuration** option,  and then select the **Refresh IRM Settings** button.
+6. This will return you to the top of the **Settings** page. You must scroll to the bottom of the page to select the **OK** button. In doing so, when you get to the **Information Rights Management (IRM)** section, verify the **Use the IRM service specified in your configuration** option is selected and a **We successfully refreshed your settings** message appears below the **Refresh IRM Settings** button. Continue scrolling to the bottom of the page and select **OK**. 
 
-7. This will return you to the top of the **Settings** page. You must scroll to the bottom of the page to select the **OK** button. In doing so, when you get to the **Information Rights Management (IRM)** section, verify the **Use the IRM service specified in your configuration** option is selected and a **We successfully refreshed your settings** message appears below the **Refresh IRM Settings** button. Continue scrolling to the bottom of the page and select **OK**. 
+7. This will return you to the top of the **Settings** page. In your browser, close the current tab (the **m365xZZZZZZ-admin.sharepoint.com** tab).
 
-8. This will return you to the top of the **Settings** page. In your browser, close the current tab (the **m365xZZZZZZ-admin.sharepoint.com** tab).
-
-7. Do **NOT** close the **SharePoint admin center** tab in your Edge browser. Leave your browser open for the next task.
+8. Do **NOT** close the **SharePoint admin center** tab in your Edge browser. Leave your browser open for the next task.
 
 ### Task 6 – Turn on Audit Logging to enable Alert Policies
 
@@ -227,9 +225,9 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 1. You should still be logged into your Client 1 VM as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 2. In your **Edge** browser, open a new tab and enter the following URL in the address bar: **https://protection.office.com.**
 3. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Search**, and then under it, select **Audit log search**.
-4. In the **Audit log search** window, a warning message is displayed at the top of the page. Select the **Turn on auditing** button that appears in this message, and then in the **Security &amp; Compliance** dialog box that appears, select **Yes** to confirm that your organization settings need to be updated. <br/>
+4. In the **Audit log search** window, a warning message is eventually displayed at the top of the page. Select the **Turn on auditing** button that appears on the right-side of this message, and then in the **Security &amp; Compliance** dialog box that appears, select **Yes** to confirm that your organization settings need to be updated. <br/>
 
-	**Note:** It may take a few minutes for the setting to be updated, at which time the **Security &amp; Compliance** dialog box will disappear.
+	**Note:** It may take a couple of minutes for the setting to be updated, at which time the **Security &amp; Compliance** dialog box will disappear.
 5. Leave the Client 1 VM and the Security and Compliance Center open and proceed to the next lab.
 
 
