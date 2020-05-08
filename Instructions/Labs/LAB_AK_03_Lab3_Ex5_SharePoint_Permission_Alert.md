@@ -9,7 +9,9 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 
 2. You should still be logged into the Client 1 VM (LON-CL1) as the **Admin,** and you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-3. In the **Microsoft 365 Security &amp; Compliance center**, the **Alert policies** window should still be open from the prior task; if not, select **Alerts** and then **Alert Policies** from the left-hand navigation bar. In the **Alert policies** window, select the **+New alert policy** button.
+3. In the **Microsoft 365 Security &amp; Compliance center**, the **Alert policies** window should still be open from the prior task; if not, select **Alerts** and then **Alert Policies** from the left-hand navigation bar. <br/>
+
+	In the **Alert policies** window, select the **+New alert policy** button.
 
 4. In the **New alert policy** window, enter the following information:
 
