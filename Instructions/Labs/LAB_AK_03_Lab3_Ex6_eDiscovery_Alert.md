@@ -72,7 +72,7 @@ To test this default alert, Holly Dickson will create an eDiscovery case. This a
 
 	**Note:** It may take a minute or so for the **Search** button at the bottom of the page to become enabled.
 
-12. In your browser, close the Outlook tab (**Mail-Holly Dickson - Outlook**), but leave the other browser tabs open.
+12. In your browser, leave the Outlook tab (**Mail-Holly Dickson - Outlook**) open as you will use it shortly in another lab exercise. Leave all your other browser tabs open as well.
 
 13. Leave your Client VMs open for the remaining labs in this course.  
 
