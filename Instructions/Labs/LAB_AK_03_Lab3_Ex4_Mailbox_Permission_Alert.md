@@ -70,7 +70,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 9. Since **Holly Dickson** has changed the mailbox permissions for Alex Wilbur by giving Joni Sherman FullAccess permissions to his mailbox, an alert email should automatically be sent to Lynne Robbins’ Inbox that notifies her of this event.
 
-	‎Switch to the Client 2 VM (LON-CL2) ang log in as the **Admin** account with a password of **Pa55w.rd**. 
+	‎Switch to the Client 2 VM (LON-CL2) and log in as the **Admin** account with a password of **Pa55w.rd**. 
 
 10. In Lab 1, you had signed into the Client 2 VM as the **Admin** account, and you logged into Outlook as the MOD Administrator. You should sign out of the MOD Administrator account by selecting the **MA** user icon in the upper-right corner of the screen, and then in the **My Account** pane, select **Sign out**. 
 
