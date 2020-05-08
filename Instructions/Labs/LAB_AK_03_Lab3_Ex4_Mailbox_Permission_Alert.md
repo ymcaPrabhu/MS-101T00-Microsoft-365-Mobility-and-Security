@@ -94,7 +94,9 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 18. In the **Microsoft 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Alerts,** and then under it, select **View Alerts**. The notification that was just created based on the **Mailbox permission change** alert should appear in the list.
 
-19. Leave your Client 1 and Client 2 VMs open for the remaining tasks in this lab.
+19. In your browser, close the Exhange admin center tab (**mailboxes - Microsoft Exchange**), but leave the other browser tabs open.
+
+20. Leave your Client 1 and Client 2 VMs open for the remaining tasks in this lab.
 
 You have just successfully tested a mailbox permission alert that sent an alarm message on granting FullAccess to a user mailbox.
 
