@@ -70,7 +70,9 @@ To test this default alert, Holly Dickson will create an eDiscovery case. This a
 
 	**Note:** It may take a minute or so for the **Search** button at the bottom of the page to become enabled.
 
-12. Leave your Client VMs open for the remaining labs in this course.  
+12. In your browser, close the Outlook tab (**Mail-Holly Dickson - Outlook**), but leave the other browser tabs open.
+
+13. Leave your Client VMs open for the remaining labs in this course.  
 
 You have now successfully tested the default Microsoft 365 eDiscovery alert that monitors the creation of an eDiscovery case or data export from an existing case.
 
