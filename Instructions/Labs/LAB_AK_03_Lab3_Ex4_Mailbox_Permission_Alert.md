@@ -90,7 +90,11 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 	Scroll down through the **Mailbox permission change** alert and review all the information. When you are done, select **Close** to close the **Mailbox permission change** alert, then close the **View alerts** tab in your browser.
 
-17. Leave your Client 1 and Client 2 VMs open for the remaining tasks in this lab.
+17. Switch back to the LON-CL1.
+
+18. In the **Microsoft 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Alerts,** and then under it, select **View Alerts**. The notification that was just created based on the **Mailbox permission change** alert should appear in the list.
+
+19. Leave your Client 1 and Client 2 VMs open for the remaining tasks in this lab.
 
 You have just successfully tested a mailbox permission alert that sent an alarm message on granting FullAccess to a user mailbox.
 
