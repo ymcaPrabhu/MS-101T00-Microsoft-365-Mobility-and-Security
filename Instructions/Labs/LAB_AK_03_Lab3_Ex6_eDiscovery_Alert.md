@@ -16,8 +16,10 @@ In this task, you will verify whether a default Microsoft 365 alert is triggered
 
 4. You want to search through the default system policies for a policy named **eDiscovery search started or exported**. In the **Search** field at the top of the screen, enter **eDiscovery**. In the list of policies, you should see **eDiscovery search started or exported**. Select the check box next to this policy.
 
-5. An **eDiscovery search started or exported** pane should appear. Scroll down through this pane and verify the settings are configured as follows:
+5. An **eDiscovery search started or exported** pane should appear. Scroll down through **eDiscovery search started or exported** pane and verify the settings are configured as follows:
 
+	- Status: **On**
+	
 	- Conditions: **Activity is eDiscoverySearchStartedOrExported**
 
 	- Aggregation: **Single event**
@@ -62,7 +64,7 @@ To test this default alert, Holly Dickson will create an eDiscovery case. This a
 
 	**Note:** Based on lab testing, the time for an email to be generated and received in Holly's Inbox can range from a couple of minutes to an hour. <br/>
 	
-	Open the email and review the contents, then close the message.
+	Once the email is received, open it and review the contents, then close the message.
 
 10. In your **Edge** browser, switch back to the **Microsoft 365 Security &amp; Compliance Center** tab and under the **Search** group in the left-hand navigation pane, select **Audit Log Search**. 
 
