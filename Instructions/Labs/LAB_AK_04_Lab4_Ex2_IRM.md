@@ -111,7 +111,7 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 22. When **Microsoft Word** opens, select **Blank document**.  
 
-23. Enter some text in the document, then save the file to the **Desktop** as whatever file name you wish.
+23. Enter some text in the document, then save the file to the **Desktop** as whatever file name you wish (make sure you save it to the Desktop as you will upload it from there in the next few steps).
 
 24. Close Word.
 
@@ -127,7 +127,9 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 29. On the **Documents** page, in the menu bar, select **Upload**, and then in the drop-down menu select **Files**. 
 
-30. In the **File Explorer** window, select **Desktop** under the **Quick access** section, select **TestDocument.docx**, and then select **Open**. This will upload the file to the **Documents** page in the **Marketing** site collection.
+30. In the **File Explorer** window, select the address bar at the top of the form and enter the following: \\LON-CL1\C$\Users\Admin\Desktop\<file name.docx>  <br/>
+
+	This will upload the file to the **Documents** page in the **Marketing** site collection.
 
 31. In the list of Documents, right-click on **TestDocument.docx**, select **Open**, and then select **Open in browser**. 
 
