@@ -28,7 +28,7 @@ In the prior exercise, you set up Information Rights Management in Exchange Onli
 
 11. If you need to log in as the **Admin** account, then do so with a password of **Pa55w.rd**.
 
-12. In an earlier lab exercise, you opened **Outlook on the Web** for Lynne Robbins. You must log out as Lynne so that you can sign back in as Alex. <br/>
+12. In an earlier lab exercise, you opened **Outlook on the Web** on LON-CL2 for Lynne Robbins. You must log out as Lynne so that you can sign back in as Alex. <br/>
 
 	Select Lynne's user icon in the upper right corner, and in her **My account** window, select **Sign out**. Once you are signed out, close any other tabs in your browser. 
 
@@ -61,9 +61,9 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 4. In the **More features** window, scroll down to **Classic site collections page** and select **Open**.
 
-4. On the **Site Collections** window, in the ribbon at the top, select **New** and then select **Private Site Collection**
+5. On the **Site Collections** window, in the ribbon at the top, select **New** and then select **Private Site Collection**
 
-5. On the **new site collection** window, enter the following information:
+6. On the **new site collection** window, enter the following information:
 
 	- Title: **Marketing**  
 
@@ -79,9 +79,9 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 	- Server Resource Quota: leave the default value of **300**
 
-6. Select **OK.** 
+7. Select **OK.** 
 
-7. If the new **Marketing** site collection does not appear in the **Site Collections** list after a couple of minutes, select the **Refresh** icon to the left of the address bar. If it still doesn't appear, wait another minute or two and refresh the list again. Continue until the new site collection apears. 
+8. If the new **Marketing** site collection does not appear in the **Site Collections** list after a couple of minutes, select the **Refresh** icon to the left of the address bar. If it still doesn't appear, wait another minute or two and refresh the list again. Continue until the new site collection apears. 
 
 9. In your web browser, open a new tab and enter the following URL in the address bar: **https://M365xZZZZZZ.sharepoint.com/sites/marketing** (where ZZZZZZ is your tenant ID provided by your lab hosting provider)
 
@@ -111,33 +111,41 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 22. When **Microsoft Word** opens, select **Blank document**.  
 
-23. Enter some text in the document, then save the file to the **Desktop** as whatever file name you wish (make sure you save it to the Desktop as you will upload it from there in the next few steps).
+23. Enter some text in the document, then save the file to the **Desktop** as whatever file name you wish.
 
 24. Close Word.
 
-25. Now that Holly has created this new SharePoint site and used IRM to restrict permissions on the site, she has asked Alex Wilber to test this site to validate whether IRM is working for SharePoint Online. Alex will perform this test on the Client 2 (LON-CL2) VM.<br/>
+25. Since Holly has her Outlook mailbox open, she is simply going to email the file that she just created to Alex. Select the **Outlook pon the Web** tab in your browser that contains Holly's mailbox that you just used in the prior task when you emailed Alex.
+
+26. Send an email to Alex Wilber and attach the file that you just created and stored on the Desktop. 
+
+27. Now that Holly has created this new SharePoint site and used IRM to restrict permissions on the site, she has asked Alex Wilber to test this site to validate whether IRM is working for SharePoint Online. Alex will perform this test on the Client 2 (LON-CL2) VM.<br/>
 
 	‎Switch to the **LON-CL2** VM, where you should still have **Outlook on the Web** open in your **Microsoft Edge** browser from the prior task. You should still be logged in as **Alex Wilber**.
 
-26. ‎In the browser, open a new tab and enter the following URL in the address bar to navigate directly to the Marketing site: **https://M365xZZZZZZ.sharepoint.com/sites/marketing** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider)
+28. In the **Outlook on the Web** tab, open the email that you just received from Holly that contains the file Holly created eaarlier. Save the file to the **Documents** folder on your **C** drive.
 
-27. If a **We've got a new look** window appears, select **NOT NOW**.
+29. ‎In the browser, open a new tab and enter the following URL in the address bar to navigate directly to the Marketing site: **https://M365xZZZZZZ.sharepoint.com/sites/marketing** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider)
 
-28. On the **Marketing** site, select **Documents** on the left-hand pane.  
+30. If a **We've got a new look** window appears, select **NOT NOW**.
 
-29. On the **Documents** page, in the menu bar, select **Upload**, and then in the drop-down menu select **Files**. 
+31. On the **Marketing** site, select **Documents** on the left-hand pane.  
 
-30. In the **File Explorer** window, select the address bar at the top of the form and enter the following: \\LON-CL1\C$\Users\Admin\Desktop\<file name.docx>  <br/>
+32. On the **Documents** page, in the menu bar, select **Upload**, and then in the drop-down menu select **Files**. 
+
+33. In the **File Explorer** window, navigate to the **Documents** folder, which is where you saved the file that Holly emailed to Alex a few steps ago. Select the file and then select **Open**.
 
 	This will upload the file to the **Documents** page in the **Marketing** site collection.
 
-31. In the list of Documents, right-click on **TestDocument.docx**, select **Open**, and then select **Open in browser**. 
+34. In the list of Documents, right-click on the file that you just uploaded*, select **Open** in the menu that appers, and then select **Open in browser**. 
 
-32. Verify that the **Marketing Policy** displays in a warning message at the top of the page. 
+35. In Word Online, if a **Your privacy option** window appears, then close it. Verify that a warning message appears at the top of the page indicating a **Marketing policy for downloads** applies to the file. 
 
-33. Try to enter some text in the document. Verify that Alex cannot edit the document in Word Online because it’s protected in this site collection. A Read-only information line will display at the top of the page indicating the document is read-only.
+36. Try to enter some text in the document. Verify that Alex cannot edit the document in Word Online because it’s protected in this site collection. A **Read-only** information line will display at the top of the page indicating the document is read-only. <br/>
 
-34. Leave your browser open for the next lab. 
+	You have just verified that the Marketing site collection is protected by SharePoint Information Rights Management. The document that Alex just uploaded to the SharePoint Online site is flagged as read-only and cannot be updated.
+
+37. Leave your browser open for the next lab; do not close any of the tabs. 
 
 
 # End of Lab 4
