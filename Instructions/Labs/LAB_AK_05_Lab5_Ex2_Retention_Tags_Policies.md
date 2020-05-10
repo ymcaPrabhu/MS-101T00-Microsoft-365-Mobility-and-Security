@@ -6,17 +6,19 @@ In this exercise, you will configure retention tags and policies, and you will i
 
 In this next phase of your Adatum pilot project, you will access the Security & Compliance Center to activate Holly Dickson’s archive mailbox.   
 
-1. In **Microsoft Edge**, select a new tab and enter the following URL in the address bar: **https://protection.office.com**. This opens the Office 365 Security & Compliance Center.
+1. You should still be logged into LON-CL1 as the **Admin** and into **Microsoft 365** as Holly Dickson.
 
-2. In the **Security &amp; Compliance Center**, in the left-hand navigation pane, select **Data Governance** and then under it, select **Archive**.
+2. In Microsoft Edge, select the **Microsoft 365 admin center** tab; if you closed this tab earlier, then open a new tab and go to https://admin.microsoft.com.
 
-3. On the **Archive** window, note that the archive mailboxes for all users other than Holly Dickson are enabled. These archive mailboxes were enabled when the VMs were built for this training course and these users were preconfigured in the tenant. However, since Holly was added in Lab 1, her archive mailbox is disabled by default.
+3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Information governance**, and then under it select **Archive**.
 
-4. To enable Holly’s archive mailbox, select **Holly Dickson** in the user list. 
+4 On the **Archive** window, note that the archive mailboxes for all users other than Holly Dickson are **enabled**. These archive mailboxes were enabled when the VM lab environment was built for this training course and these users were preconfigured in the tenant. However, since Holly's user account was added in Lab 1, her archive mailbox is **disabled** by default.
 
-5. In the details pane on the right, Holly’s archive mailbox is currently listed as disabled. Select **Enable**, and then in the **Warning** message that appears, select **Yes** to confirm this action.
+5. To enable Holly’s archive mailbox, select **Holly Dickson** in the user list. 
 
-6. In your Microsoft Edge browser, leave the Office 365 Security & Compliance Center tab open as you will use it in a later task in this lab. 
+6. In the details pane on the right, Holly’s archive mailbox is currently listed as **disabled**. Select **Enable**, and then in the **Warning** dialog box that appears, select **Yes** to confirm this action.
+
+7. In your Microsoft Edge browser, leave the Office 365 Security & Compliance Center tab open as you will use it in a later task in this lab. 
  
 
 ### Task 2 – Create an MRM retention tag and policy in the Exchange Admin Center
@@ -25,39 +27,37 @@ As part of your pilot project for Adatum, you will configure MRM retention by cr
 
 1. In **Microsoft Edge**, select the **Microsoft 365 admin center** tab.
 
-2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **… Show all.**
+2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** group, select **Exchange**. This will open the Exchange admin center.
 
-3. In the left-hand navigation pane, under **Admin centers,** select **Exchange**. This will open the Exchange admin center.
+3. In the **Exchange admin center**, in the left-hand navigation pane, select **compliance management**.
 
-4. In the **Exchange admin center**, in the left-hand navigation pane, select **compliance management**.
+4. In the **compliance management** window, select the **retention tags** tab that appears at the top of the page.
 
-5. In the **compliance management** window, select the **retention tags** tab that appears at the top of the page.
+5. You want to create a retention tag, so select the **plus (+)** **sign** in the toolbar that appears across the list of existing retention tags. In the drop-down menu that appears, select **applied by users to items and folders (personal)**.
 
-6. You want to create a retention tag, so select the **plus (+)** **sign** in the toolbar that appears across the list of existing retention tags. In the drop-down menu that appears, select **applied by users to items and folders (personal)**.
+6. In **new tag applied by users to items and folders (personal)** window, under **Name**, enter **3 Years Move – Archive after three years**.
 
-7. In **new tag applied by users to items and folders (personal)** window, under **Name**, type **3 Years Move – Archive after three years**.
+7. Under **Retention Action**, select the **Move to Archive** option.
 
-8. Under **Retention Action**, select the **Move to Archive** option.
+8. Under **Retention period**, select the **When the item reaches the following age (in days)** option and enter **1095** in the retention period field that appears below this option (1095 days = 3 years).
 
-9. Under **Retention period**, select the **When the item reaches the following age (in days)** option, and type **1095** in the retention period field.
+9. In the **Comment** field, enter **Personal tag to archive email three years after being received**.
 
-10. Under **Comment**, enter **Personal tag to archive email three years after being received**.
+10. Select **Save**.
 
-11. Select **Save**.
+11. On the menu bar on the top of the page, select the **retention policies** tab.
 
-12. On the menu bar on the top of the page, select the **retention policies** tab.
+12. You want to create a retention policy, so select the **plus (+)** **sign** in the toolbar that appears across the list of existing retention policies. 
 
-13. You want to create a retention policy, so select the **plus (+)** **sign** in the toolbar that appears across the list of existing retention policies. 
+13. In **new retention** **policy** window, under **Name**, type **Office Retention Policy**.
 
-14. In **new retention** **policy** window, under **Name**, type **Office Retention Policy**.
+14. Below **Retention tags**, select the **(+)** sign.
 
-15. Below **Retention tags**, select the **(+)** sign.
+15. In the **select retention tags** window, select the tag that you just created, whose name starts with **3 Years Move** (the column width will truncate the displayed name).
 
-16. In the **select retention tags** window, select the tag that you just created, whose name starts with **3 Years Move** (the column width will truncate the displayed name).
+16. Select **add -&gt;** and then select **OK**.
 
-17. Select **add -&gt;** and then select **OK**.
-
-18. In addition to the personal retention tag that you just added to the retention policy, you also want to add the following default tags as well:
+17. In addition to the personal retention tag that you just added to the retention policy, you also want to add the following default tags as well:
 
 	- Default 2 year move to archive
 
@@ -69,23 +69,23 @@ As part of your pilot project for Adatum, you will configure MRM retention by cr
 
 To add these tags, repeat steps 15-17. Hold down the **Ctrl** key as you select each tag in the list; this will enable you to select all four default tags at one time before selecting **add-&gt;.**
 
-19. On the **new retention policy** window, select **Save**.
+18. On the **new retention policy** window, select **Save**.
 
-20. In the **Exchange Admin Center**, in the left-hand navigation pane, select **recipients**.
+19. In the **Exchange Admin Center**, in the left-hand navigation pane, select **recipients**.
 
-21. You are now going to apply this retention policy to the mailboxes for your two test users, Joni and Lynne. In the list of recipient mailboxes, select **Joni Sherman** and then select the **pencil (edit) icon** in the toolbar to edit the properties of Joni’s mailbox.
+20. You are now going to apply this retention policy to the mailboxes for your two test users, Joni and Lynne. In the list of recipient mailboxes, select **Joni Sherman** and then select the **pencil (edit) icon** in the toolbar to edit the properties of Joni’s mailbox.
 
-22. In the **Joni Sherman** properties window, select **mailbox features**.
+21. In the **Joni Sherman** properties window, select **mailbox features**.
 
-23. On the **Warning** dialog box, select **OK**.
+22. On the **Warning** dialog box, select **OK**.
 
-24. Select the drop-down arrow in the **Retention policy** field and select **Office Retention Policy**.
+23. Select the drop-down arrow in the **Retention policy** field and select **Office Retention Policy**.
 
-25. Select **Save.**
+24. Select **Save.**
 
-26. Repeat steps 21-25 for **Lynne Robbins**.
+25. Repeat steps 21-25 for **Lynne Robbins**.
 
-27. Leave your web browser open and proceed to the next task.
+26. Leave your web browser open and proceed to the next task.
 
 You have now created a new retention policy with several retention tags, including a custom personal retention tag. Then you have assigned the retention tags via a retention policy to Lynne and Joni’s mailboxes.
 
