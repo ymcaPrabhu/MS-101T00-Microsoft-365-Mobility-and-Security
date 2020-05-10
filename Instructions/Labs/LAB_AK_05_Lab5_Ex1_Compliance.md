@@ -6,86 +6,84 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 To test archiving and retention in your Adatum pilot project, you will create a new mail-enabled security group and assign two users to the group – Joni Sherman and Lynne Robbins. These will be your two test users involved in the Windows Information Protection (WIP) pilot program. This group will then be used in the next task when you configure MDM auto-enrollment for new devices in your tenant. 
 
-1. At the end of the prior lab, you were using the LON-CL2 VM. Switch to the LON-CL1 VM. You should still be logged into LON-CL1 as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. At the end of the prior lab, you were using the LON-CL2 VM. Switch to the LON-CL1 VM. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In **Microsoft Edge**, select the **Microsoft 365 admin center tab** or open a new tab and go to **https://admin.microsoft.com.** 
+2. In **Microsoft Edge**, select the **Microsoft 365 admin center tab**; if you closed this tab earlier, then open a new tab and go to **https://admin.microsoft.com.** <br/>
 
-3. the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Groups** and then select **Groups** below it.
+	At this point, you probably have quite a few tabs open in your browser. If you wish, you can take this opportunity to close every tab except for the Office 365 home page and the Microsoft 365 admin center.
+
+3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Groups** and then select **Groups** below it.
 
 4. Select **Add a group** to create a new group for compliance testing. 
 
 5. In the **Add a group** window, enter the following information:
 
-6. Fill all the fields to create the **WIP Users** group:
+6. In the **Add a group** window, adding a group is a four step process, as depicted in the flow diagram on the left-hand side of the window. As you progress through the steps, enter the following information to create a new group:
 
 	- Type: **Mail-enabled security**
 
-	- Name **WIP Users**
+	- Name: **WIP Users** (tab into the **Description** field to enable the **Next** button)
 
-	- Group email address: tab into this field and **wipusers** is automatically pre-filled for you as the alias of the group email address
+	- Group email address: **wipusers**
 
-	- Group email address domain: to the right of the group email address alias is the email address domain. **M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) should be displayed here.
+	- Group email address domain: to the right of the group email address alias is the email address domain. **M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) should be displayed here. Select this field so enable the **Next** button but do not change its value.
 
-7. Select **Add**, and then select **Close**.
+7. Select **create group** and then select **Close**. Note the warning on the **New group created** page that indicates it can take up to an hour for the group to appear in the Groups list. Our testing experience has shown that the group normally appears within a few minutes.
 
-8. In the **Microsoft 365 admin center** tab, refresh the page to display the WIP users group in the list of Groups. You may have to wait a minute or two before you see the WIP users group.
+8. This will return you to the **Groups** list in the **Microsoft 365 admin center**. Select the **Refresh** icon on the menu bar to refresh the list of groups. You cannot proceed until the WIP Users group appears in the list; therefore, keep refreshing the list every minute or so.
 
-9. Once **WIP Users** appears In the **Groups** window, select it.
+9. Once **WIP Users** appears In the **Groups** list, select it.
 
-10. In the **WIP Users** window, select the **Members** tab. 
+10. In the **WIP Users** pane that appears, select the **Members** tab. 
 
-11. In the **Members** tab, under the **Members** section, select **View and manage members**.
+11. In the **Members** tab, in the **Members** section select **View all and manage members**.
 
-12. In the **View members** window, select **+Add members**. This displays the list of users.
+12. In the **View members** window, select the **+Add members** button; this displays the list of users.
 
-13. In the list of users, select **Joni Sherman** and **Lynne Robbins**, then scroll to the bottom of the list and select **Save**, and then select **Close**.  <br/>
+13. In the list of users, select **Joni Sherman** and **Lynne Robbins**, select **Save**, and then select **Close**.  <br/>
 
 	‎**Note:** It may take a few minutes for both Joni and Lynne to display in the list of users. Simply refresh the list until both users appear.
 
-14. Close the **WIP users** window.
+14. In the **WIP users** window, select **Close**.
 
 15. Leave your browser open to the Microsoft 365 admin center and proceed to the next task.
 
 
-### Task 2 – Configure Mobile Device Management Auto-enrollment
+### Task 2 – Configure Mobile Device Management (MDM) Auto-enrollment
 
-In this task you will activate MDM auto-enrollment for new devices in your Adatum Corporation tenant. The devices will belong to members of the WIP Users group that you created in Azure AD in the prior task. You will also configure Intune as your mobile device management authority. Activating MDM auto-enrollment is required so that you can implement Windows Information Protection in a later lab.
+In this task you will activate MDM auto-enrollment for new devices in your Adatum Corporation tenant. The devices will belong to members of the WIP Users group that you created in Azure AD in the prior task. Activating MDM auto-enrollment is required so that you can implement Windows Information Protection in a later lab. You will also verify that Intune is set by default as your mobile device management authority. 
 
-1. In **Microsoft Edge**, select a new tab and enter the following URL in the address bar: **https://portal.azure.com**.
+1. You should still be in LON-CL1 and logged into Microsoft 365 as Holly Dickson. 
 
-2. On the **Welcome to Azure** page, select **Continue to Azure Portal website.**
+2. In the **Microsoft 365 admin center** tab in your browser, in the left-hand navigation pane, select **Show all** (if necessary), and then in the **Admin centers** section, select **Azure Active Directory**.
 
-3. If a **Welcome to Microsoft Azure** dialog box appears, select **Maybe later.**
+3. In the **Azure Active Directory admin center**, select **Azure Active Directory** in the left-hand navigation pane.
 
-4. In the **Microsoft Azure** portal, in the left-hand navigation pane, select **All Services**.
+4. This returns the **Adatum Corporation | Overview** page. Under the **Manage** section in the middle of the page, scroll down and select **Mobility (MDM and MAM)**.
 
-5. In the **All services** window, type **Azure Active Directory** in the search box, and then select **Azure Active Directory**, which will appear in the right-hand pane.
+5. In the right-hand pane, select **Microsoft Intune**.
 
-6. This returns the **Adatum Corporation – Overview** page. Under the **Manage** section in the middle of the page, scroll down and select **Mobility (MDM and MAM)**.
+6. This returns the **Configure** window, from which you can configure MDM and MAM settings for Microsoft Intune. For the **MDM User scope** option, select **Some.** This will display a **Groups** option below the **MDM user scope** option. 
 
-7. In the right-hand pane, select **Microsoft Intune**.
+7. To the right of the **Groups** option, select **No groups selected**. 
 
-8. This returns the **Configure** window. For the **MDM User scope** option, select **Some.** This will display a **Groups** section. 
+8. In the **Select groups** pane that appears, scroll down through the list of groups, select **WIP Users**, and then at the bottom of the pane select the **Select** button. <br/>
 
-9. Select the **Groups** section and then select the arrow on the right-hand side of the section. 
+	**Note:** You configured the **MDM user scope** to automatically enroll devices that belong to members of the **WIP Users** group into MDM management with Microsoft Intune. Once Holly tests this feature in Adatum's pilot project, and assuming she is satified with the results, she will then set the **MDM user scope** to **All**.
+	
+9. This returns the **Configure** window. Select **Restore default MDM URLs** to ensure the correct URLs are set. This simply displays a dashed rectangle around **Restore default MDM URLs**.
 
-10. In the **Select groups** pane, scroll down through the list of groups, select **WIP Users**, and then at the bottom of the pane select **Select**.
+10. Select **Save** on the menu bar at the top of the page.
 
-11. This returns the **Configure** window. Select **Restore default MDM URLs** to ensure the correct URLs are set.
+11. Select the **Microsoft 365 admin center** tab in your browser. In the left-hand navigation pane, under the **Admin centers** section, select **Endpoint Manager**.
 
-12. Select **Save** on the menu bar at the top of the page.
+12. In the **Microsoft Endpoint Manager admin center** window, select **Tenant administration** in the left-hand navigation pane.
 
-13. In the left-hand navigation pane in the Azure portal, select **All Services.**
+13. In the **Tenant admin | Tenant status** page, verify the **MDM authority** is set to **Microsoft Intune**.
 
-14. In the **All services** window, type **Intune** in the search box, and then select **Intune**, which will appear in the right-hand pane.
+14. In your Microsoft Edge browser, you can close the Enpoint Manager admin center tab and the Azure Active Directory admin center tab. Leave the Office 365 home page and Microsoft 365 admin center tabs open.
 
-15. This returns the **Microsoft Intune – Overview** page. Under the **Manage** section in the middle of the page, select **Device enrollment.**
-
-16. In the **Choose MDM Authority** pane in the middle of the screen, you are requested to choose whether Intune or Configuration Manager is your mobile device management authority. Scroll to the bottom of the pane, select **Intune MDM Authority,** and then select **Choose**.
-
-17. In your Microsoft Edge browser, you can close the Azure portal tab, which should return you to the Microsoft 365 admin center tab.
-
-You have configured automatic enrollment in Intune for devices of users in the WIP Users security group.
+You have configured automatic enrollment in Intune for devices of users in the WIP Users group, and you have verified the MDM authority for Adatum's tenant is set to Microsoft Intune.
 
 
 # Proceed to Exercise 2
