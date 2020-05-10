@@ -8,7 +8,7 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 
 1. At the end of the prior lab, you were using the LON-CL2 VM. Switch to the LON-CL1 VM. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In **Microsoft Edge**, select the **Microsoft 365 admin center tab**; if you closed this tab earlier, then open a new tab and go to **https://admin.microsoft.com.** <br/>
+2. In **Microsoft Edge**, select the **Microsoft 365 admin center** tab; if you closed this tab earlier, then open a new tab and go to **https://admin.microsoft.com.** <br/>
 
 	At this point, you probably have quite a few tabs open in your browser. If you wish, you can take this opportunity to close every tab except for the Office 365 home page and the Microsoft 365 admin center.
 
