@@ -9,23 +9,28 @@ To implement Azure Information Protection as part of your pilot project at Adatu
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson** with a password of **Pa55w.rd**. 
 
-2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://aka.ms/aipclient**
+2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://portal.azurerms.com**
 
-3. On the **Download Center** page, scroll down to the **Microsoft Azure Information Protection** section and select **Download**.
+3. On the **Microsoft Azure Information Protection** page, scroll to the bottom of the page to view the 3 boxes. In box #1, select **Install the Azure Information Protection application**.
 
-4. In the **Choose the download you want** window, select **AzInfoProtection.exe** and then select **Next.**
+4. On the **Microsoft Azure Information Protection** page, under the **Azure Information Protection client** section, select the **Windows icon** to download the client to a Windows computer.
 
-5. In the taskbar that appears at the bottom of the page, select **Save**.
+5. On the **Download Center** page, scroll down to the **Microsoft Azure Information Protection** section and select **Download**.
 
-6. Once the download has successfully completed, in the taskbar that appears at the bottom of the page, select **Run.**
+6. In the **Choose the download you want** window, select **AzInfoProtection.exe** and then select **Next.**
 
-7. If the first page of the **Microsoft Azure Information Protection installation wizard** does not display, select the icon for it on the taskbar to display the wizard.
+7. In the taskbar that appears at the bottom of the page, select **Save**.
 
-8. On the license and terms page, uncheck the **Help improve Azure Information Protection by sending usage statistics to Microsoft** option, and then select **I agree**.
+8. Once the download has successfully completed, in the taskbar that appears at the bottom of the page, select **Run.**
 
-9. On the **Completed Successfully** window, select **Close**. 
+9. If the first page of the **Microsoft Azure Information Protection installation wizard** does not display, select the icon for it on the taskbar to display the wizard.
 
-10. Leave your VM and browser open and proceed to the next task.
+10. On the license and terms page, uncheck the **Help improve Azure Information Protection by sending usage statistics to Microsoft** option and then select **I agree**.
+
+11. On the **Completed Successfully** window, select **Close**. 
+
+12. Leave your VM and browser open and proceed to the next task.
+
 
 You have successfully installed the AIP client on Client 1 VM.
 
