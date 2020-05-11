@@ -68,6 +68,10 @@ In this exercise, you will send an email from Holly Dickson to one of your test 
 
 In the previous exercise, you created a custom DLP policy that searches emails for sensitive information related to IP addresses in your Adatum tenant. In this exercise, you will send two emails from Holly Dickson to Lynne Robbins; the first will include one IP address, and the second email will include two IP addresses. You will verify how each email is handled due to the DLP policy.
 
+If you will recall, in the IP address policy that you created, if one IP address is discovered in an email, a mail tip is displayed to the sender and an email notification is sent to the sender as well. However, the email is still sent to the recipient.
+
+Howeve, if two or more IP addresses are discoved in an email, the email will be blocked. In the mail tip that is displayed, the sender can opt to override the policy and send the email. 
+
 1. Switch to LON-CL1, where you should still be logged into Microsoft 365 as Holly Dickson (**holly@M365xZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
 2. You will now send an email from Holly to Lynne, and you will include an IP address in the body of the email. In **Microsoft Edge**, the **Outlook on the web** tab should still be open for Holly. If necessary, select the **Outlook on the web** tab.
@@ -84,7 +88,7 @@ In the previous exercise, you created a custom DLP policy that searches emails f
 
 5. Select **Send.**
 
-6. Immediately after sending the email, Holly should receive an email in her Inbox from **Microsoft Outlook** with the subject **Notification: <policy name>** (in this case, <policy name> should be the name of the policy you created that tested for IP addresses in emails, which was **DLP policy test**. Review the content of this email. 
+6. Immediately after sending the email, Holly should receive an policy tip indicating the email violated a retention policy. She should also receive an email in her Inbox from **Microsoft Outlook** with the subject **Notification: <policy name>** (in this case, <policy name> should be the name of the policy you created that tested for IP addresses in emails, which was **DLP policy test**. Review the content of this email. 
 
 7. You will now send a second message from Holly to Lynne that contains multiple IP addresses. Repeat the process as before for creating an email to Lynne Robbins with the following information: 
 
@@ -98,15 +102,15 @@ In the previous exercise, you created a custom DLP policy that searches emails f
 	
 	- The second email should be a **Message Blocked** notiification for the email that you just sent. Select this email to review its contents. 
 
-11. Switch to LON-CL2. 
+9. Switch to LON-CL2. 
 
-12. If you need to sign into the VM, the **Admin** account should appear by default, so enter **Pa55w.rd** in the **Password** field to log in. 
+10. If you need to sign into the VM, the **Admin** account should appear by default, so enter **Pa55w.rd** in the **Password** field to log in. 
 
-13. You should still be logged into **Outlook on the Web** in the LON-CL2 VM as **Lynne Robbins**. In your **Edge** browser, Lynne’s mailbox should still be open in **Outlook on the web** from when you last used it in the previous task.
+11. You should still be logged into **Outlook on the Web** in the LON-CL2 VM as **Lynne Robbins**. In your **Edge** browser, Lynne’s mailbox should still be open in **Outlook on the web** from when you last used it in the previous task.
 
-14. In Lynne’s **Inbox**, you should see the first message that you sent, but not the second. Remember, when Holly sent the second email, she received a notification that it had been blocked. 
+12. In Lynne’s **Inbox**, you should see the first message that you sent, but not the second. Remember, when Holly sent the second email, she received a notification that it had been blocked. 
 
-15. Leave both client VMs open for the next lab. Do not close any of the browser tabs.
+13. Leave both client VMs open for the next lab. Do not close any of the browser tabs.
 
 
 # End of Lab 6
