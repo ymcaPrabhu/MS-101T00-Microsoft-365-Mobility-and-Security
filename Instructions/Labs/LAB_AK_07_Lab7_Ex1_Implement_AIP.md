@@ -232,4 +232,4 @@ In the prior task, you created a Word document and protected it with Azure Infor
 22. Remain signed into LON-CL2 and signed into Outlook on the Web as Joni. Do not close your browser.
 
 
-# End of Lab 7
+# Proceed to Lab 7 - Exercise 2
