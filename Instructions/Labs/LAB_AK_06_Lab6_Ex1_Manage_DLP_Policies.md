@@ -49,7 +49,13 @@ In this lesson you will create a Data Loss Prevention policy in the Security & C
 
 19. Select **Next**.
 
-20. On **What do you want to do if we detect sensitive info?** page, under the **Detect when a specific amount of sensitive info is being shared at one time** section, verify the **Detect when content that's being shared contains** option is selected. In the field below this, **10** is entered. Change this to **2** and then select **Next.**
+20. On **What do you want to do if we detect sensitive info?** page, there are two groups of settings that you must configure: <br/>
+
+    - Under the **Notify users when content matches the policy settings** section, verify the **Show policy tips to users and send them an email notification** check box is selected. Select **Customize the tip and email**. <br/>
+    
+    In the **Customize policy tips and email notifications** window, the email notification option is selected by default. However, sending policy tips is not selected by default, so select the **Customize the policy tip text** check box (otherwise, a policy tip will not be displayed). In the policy tip field that appears, enter **Warning: The email message contains an IP Address!** Select **OK**.
+
+    - Under the **Detect when a specific amount of sensitive info is being shared at one time** section, verify the **Detect when content that's being shared contains** option is selected. In the field below this, **10** is entered. Change this to **2** and then select **Next.**
 
 21. On the **Customize access and override permissions** page, the **Let people who see the tip override the policy** option is turned On by default. Leave this option **On**, but also select the **Require a business justification to override** check box, and then select **Next**.
 
