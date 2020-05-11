@@ -7,7 +7,7 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 To implement Azure Information Protection as part of your pilot project at Adatum, you must first install the AIP client from the Microsoft Download Center.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson** with a password of **Pa55w.rd**. 
+1. You should still be logged into LON-CL1 as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson** with a password of **Pa55w.rd**. 
 
 2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://portal.azurerms.com**
 
@@ -39,7 +39,7 @@ You have successfully installed the AIP client on Client 1 VM.
 
 In this exercise you will create an AIP label and add it to the default policy so that it’s valid for all users of the Adatum tenant.
 
-1. You should still be logged into your Client 1 VM as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://portal.azure.com/**
 
@@ -79,7 +79,7 @@ In this exercise you will create an AIP label and add it to the default policy s
 
 			- Watermark font name: **Custom**, and then enter **Segoe UI** in the font name field
 
-			- Watermark color: **Custom**, and then enter **#B22222** in the color field
+			- Watermark color: **Custom**, and then enter **#B22222** in the color field (Fire Brick red)
 
 			- Watermark layout: **Diagonal**
 
@@ -112,15 +112,13 @@ You have now configured a new custom AIP label named PII and added it to the def
 
 ### Task 3 – Assign an AIP label to a document
 
-In this exercise you will use the AIP label that you created in the previous task to classify a document.
+In this exercise you will use the AIP label that you created in the previous task to classify a document. For this task, you will sign into Microsoft Azure Information Protection as Alex Wilber, who is a regular user without any elevated privileges.
 
-‎For this task, you will sign into Microsoft Azure Information Protection as Alex Wilber, who is a regular user without any elevated privileges.
-
-1. You should still be logged into your Client 1 VM as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In the **Search** box on the taskbar at the bottom of the window, type **Word**. In the menu that appears, select **Word.** 
 
-3. After **Microsoft Word** opens, a **Microsoft Azure Information Protection Sign-in** page appears. Enter **AlexW@M365xZZZZZZ.onmicrosoft** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) and then select **Next**.
+3. After **Microsoft Word** opens, a **Microsoft Azure Information Protection Sign-in** window appears. In the **Pick an account** window, select **Use another account**, then sign in as **AlexW@M365xZZZZZZ.onmicrosoft** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) and then select **Next**.
 
 4. On the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
 
@@ -128,39 +126,43 @@ In this exercise you will use the AIP label that you created in the previous tas
 
 6. If the **What’s New** pane appears on the right, close it.
 
-7. In the **Home** ribbon, locate the **Protection** group. This group appears as a result of having installed AIP at the start of this exercise.
+7. In the **Word** document, type **Testing personally identifiable information (PII).**
 
-8. In the **Word** document, type **Testing personally identifiable information (PII).**
+8. There are two new additions to Word that appear as a result of having installed AIP at the start of this exercise: <br/>
 
-9. The **Azure Information Protection** bar should appear by default below the ribbon, and since you created a label titled **PII** in the prior task, **PII** will appear in the middle of the AIP bar. Select **PII**.
+	- In the **Home** ribbon, locate the **Protection** group. 
+	
+	- Below the **Home** ribbon, locate the **Azure Information Protection** bar. Since you created a label titled **PII** in the prior task, **PII** will appear in the middle of the AIP bar. 
+	
+	Select the **PII** button on the **Azure Information Protection** bar.
 
-10. In the **Microsoft Azure Information Protection** window that appears, select the following options:
+9. In the **Microsoft Azure Information Protection** window that appears, select the following options:
 
 	- Select permissions: **Viewer – View Only**
 
-	- Select users, groups, or organizations: If Outlook is running, select the **address book** icon and then select **Joni Sherman** as the **To** address. If Outlook is not running, enter **JoniS@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider)
+	- Select users, groups, or organizations: Since Outlook is not running on the client, enter **JoniS@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Note: If Outlook was running, you couldl select the **address book** icon and then select **Joni Sherman**. <br/>
 
-	- Expire access: Select the **Calendar** icon and then select the next day
+	- Expire access: Select the **Calendar** icon and then select tomorrow's date
 
-11. Select **Apply** to finish the protection process.
+10. Select **Apply** to finish the protection process.
 
-12. Scroll down through the document and note the watermark that was applied. This is based on the PII label that you created in the prior task that you then applied to this document.
+11. Scroll down through the document and note the watermark that was applied. This is based on the PII label that you created in the prior task that you then applied to this document. The watermark should appear in Fire Brick red, and it should appear diagonally across the page.
 
-13. Select **File** from the top menu bar.
+12. Select **File** from the top menu bar.
 
-14. Select **Save As** on the left menu.
+13. Select **Save As** on the left menu.
 
-15. Under the **Save As** pane, select **Browse**. 
+14. Under the **Save As** pane, select **Browse**. 
 
-16. In the **File Explorer** window, you should see the **Documents** folder by default; if not, navigate to **Documents** folder. Enter **ProtectedDocument** as the name of the file and then select **Save**.
+15. In the **File Explorer** window, you should see the **Documents** folder by default; if not, navigate to **Documents** folder. Enter **ProtectedDocument** as the name of the file and then select **Save**.
 
-17. In the **Word** doc, note how the **RESTRICTED ACCESS bar** displays below the ribbon at the top of the page. This is a result of the **Protect** option you set for the **Permissions** parameter in the **PII label** that you created earlier. In this bar, select **Change Permission…**
+16. In the **Word** doc, note how the **RESTRICTED ACCESS bar** now displays below the ribbon at the top of the page. This is a result of the **Protect** option you set for the **Permissions** parameter in the **PII label** that you created earlier. In this bar, select **Change Permission…**
 
-18. In the **Permissions** window that appears, note how Joni Sherman (**JoniS@M365xZZZZZZ.onmicrosoft.com**) has been assigned **Read-only** permissions, but no one has been assigned the ability to change the document. In the next task, you will test out this policy. Select **OK** to close the Permissions window. 
+17. In the **Permissions** window that appears, note how Joni Sherman (**JoniS@M365xZZZZZZ.onmicrosoft.com**) has been assigned **Read-only** permissions, but no one has been assigned the ability to change the document. In the next task, you will test out this policy. Select **OK** to close the Permissions window. 
 
-19. Close Word.
+18. Close Word.
 
-20. Leave the Client 1 VM and your browser open and proceed to the next task.
+19. Leave the Client 1 VM and your browser open and proceed to the next task.
 
 You have just successfully created an AIP protected Word document that expires the next day, is read-only protected, and is accessible only by its creator, Alex Wilber, and Joni Sherman (with Read-only permission).
 
@@ -169,7 +171,7 @@ You have just successfully created an AIP protected Word document that expires t
 
 In the prior task, you created a Word document and protected it with Azure Information Protection by inserting a watermark and restricted permissions. To verify whether the protection that you assigned to the document works, you will send the document to Joni Sherman and to your personal email address and then test what functionality is possible for each user in the document.
 
-1. You should still be logged into your Client 1 VM as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. If you have **Outlook on the web** open in a tab in your **Edge** browser, then select it now and proceed to the next step; otherwise, if you have a tab with the **Microsoft Office Home** page, then select the tab, select **Outlook**, and then proceed to the next step**.** If you have neither tab open, then in a new tab enter **https://outlook.office365.com** and sign in as **holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
