@@ -7,31 +7,35 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 In this lesson you will create a Data Loss Prevention policy in the Security & Compliance Center to protect sensitive data from being shared by users. The DLP Policy that you create will inform your users if they want to share content that contains IP addresses.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In **Microsoft Edge**, the Office 365 Security & Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://protection.office.com**.
+2. In **Microsoft Edge**, the Office 365 Security & Compliance Center tab should still be open; if not, then open a new tab and navigate to **https://protection.office.com**.
 
 3. In the **Security &amp; Compliance Center**, in the left-hand navigation pane, select **Data loss prevention** and then select **Policy**.
 
 4. In the **Policy** window, select **+Create a policy** to start the wizard for creating a new data loss prevention policy.
 
-5. On the **Start with a template or create a custom policy** page, you want to select **Custom** in the left-hand pane and **Custom policy** in the middle pane; however, by default, both these options should already be selected (if not, then select them now), so simply select **Next**.
+5. On the **Start with a template or create a custom policy** page, there are four types of policies listed in the left-hand pane - Financial, Medical and health, Privacy, and Custom. The first three (Financial, Medical and health, and Privacy) provide templates that can be used to create a policy. The **Custom** type is not based on a template. The column in the left-hand pane displays the policy type, while the middle pane displays the available templates to choose from for that policy type. When you select a template in the middle pane, the right-hand pane displays the type of information that is protected in that tempate. <br/>
 
-6. In the **Name your policy** page, type **IP Address DLP Policy** in the **Name** field and **Protect IP addresses from being shared** in the **Description** field. Select **Next**.
+  Select **Financial** in the left-hand pane and note the various templates that you can choose from in the middle pane. Select one or two of the templates to see what type of information it protects. Do the samem for the **Medical and health** and **Privacy** policy types.  <br/>
+  
+  Select **Custom** in the left-hand pane, which automatically selects **Custom policy** in the middle pane (since there are no templates to choose from for this policy type). Select **Next**.
 
-7. On the **Choose locations** page, select the **Protect content in Exchange email, Teams chats, and channel messages and OneDrive and SharePoint documents** option and then select **Next**.
+6. In the **Name your policy** page, enter **IP Address DLP Policy** in the **Name** field and **Protect IP addresses from being shared** in the **Description** field. Select **Next**.
 
-8. On the **Customize the type of content you want to protect** page, the option **Find content that contains:** needs to be selected, which it should be by default.
+7. On the **Choose locations** page, select the **Protect content in Exchange email, Teams chats, and channel messages and OneDrive and SharePoint documents** option (if it isn't already selected by default) and then select **Next**.
+
+8. On the **Customize the type of content you want to protect** page, select the **Find content that contains:** option (if it isn't already selected by default). 
 
 9. Under **You must select at least one classification type**, select **Edit.**
 
 10. In the **Choose the types of content to protect** page, select the **Add** drop-down field, and in the drop-down menu, select **Sensitive info types**.
 
-11. In the Sensitive info types window, select **(+) Add**.
+11. In the **Sensitive info types** window, select **(+) Add**.
 
-12. In the search field type **Address** and wait till the search results are displayed.
+12. In the search field type **Address** and wait until the search results are displayed.
 
-13. In the list of search results, select the **IP Address** check box, and then select **Add.**
+13. In the list of search results, select the **IP Address** check box and then select **Add.**
 
 14. Once you receive the message indicating **1 sensitive info type added,** select **Done**.
 
@@ -41,15 +45,17 @@ In this lesson you will create a Data Loss Prevention policy in the Security & C
 
 17. Verify that the **Detect when this content is shared:** check box is selected.
 
-18. In the field below this, select the drop-down arrow and select **only** **with people inside my organization**.
+18. In the field below this, select the drop-down arrow and select **only with people inside my organization**.
 
 19. Select **Next**.
 
-20. On **What do you want to do if we detect sensitive info?** page, check that **Detect when content that's being shared contains** is selected. In the field below this, **10** is entered. Change this to **2** and then select **Next.**
+20. On **What do you want to do if we detect sensitive info?** page, under the **Detect when a specific amount of sensitive info is being shared at one time** section, verify the **Detect when content that's being shared contains** option is selected. In the field below this, **10** is entered. Change this to **2** and then select **Next.**
 
-21. On the **Do you want to turn on the policy or test things out first?** page, select **Yes, turn it on right away** and then select **Next**.
+21. On the **Customize access and override permissions** page, the **Let people who see the tip override the policy** option is turned On by default. Leave this option **On**, but also select the **Require a business justification to override** check box, and then select **Next**.
 
-22. Check the configuration on the **Review your settings** page, select **Back** if you need to correct any settings, and then select **Create** once you’re satisfied with the settings.
+22. On the **Do you want to turn on the policy or test things out first?** page, select **Yes, turn it on right away** and then select **Next**.
+
+23. Check the configuration on the **Review your settings** page, select **Back** if you need to correct any settings, and then select **Create** once you’re satisfied with the settings.
 
 You have now created a DLP policy that scans for IP addresses in emails and documents that are sent or shared in your organization.
 
