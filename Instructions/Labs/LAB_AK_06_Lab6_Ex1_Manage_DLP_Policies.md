@@ -63,9 +63,9 @@ In this lesson you will create a Data Loss Prevention policy in the Security & C
 
 23. Check the configuration on the **Review your settings** page. Two policy settings should be displayed (these are dependent on the number of IP addresses in the message): <br/>
 
-        - If the content contains an IP address, then notify people with a policy tip and email the message.
+    - If the content contains an IP address, then notify people with a policy tip and email the message.
 
-        - If there are at least 2 instances IP addresses, then block access to the content and send an incident report with a high sensitivity level but allow people to override it if they provide a business justification. <br/>
+    - If there are at least 2 instances IP addresses, then block access to the content and send an incident report with a high sensitivity level but allow people to override it if they provide a business justification. 
         
     Select **Back** if you need to correct any settings, and then select **Create** once you’re satisfied with the settings.
 
