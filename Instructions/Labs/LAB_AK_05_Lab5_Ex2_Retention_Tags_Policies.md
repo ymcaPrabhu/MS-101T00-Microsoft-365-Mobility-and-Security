@@ -92,7 +92,7 @@ You have created a new retention policy through the Exchange Admin Center. You a
 
 ### Task 3 – Create a Retention Policy in the Security and Compliance Center
 
-As part of your pilot project for Adatum, you will create a retention policy in the Security & Compliance Center to preserve the content of all Exchange Online mailboxes from deletion for 7 years after the last modification. 
+Now that Holly has created a retention policy through the Exchange Admin Center, she wants to do the same in the Security & Compliance Center. For this policy, Holly wants to preserve the content of all Exchange Online mailboxes from deletion for 7 years after the last modification. 
 
 1. In **Microsoft Edge**, select the **Security &amp; Compliance Center** tab if it's still open; otherwise, open a new browser tab and enter the following URL in the address bar: **https://protection.office.com**
 
@@ -100,17 +100,19 @@ As part of your pilot project for Adatum, you will create a retention policy in 
 
 3. In the **Retention** window, select the **+Create** button to start the wizard that’s used to create a new retention policy.
 
-4. On the **Name your policy** page, type **Exchange Preservation** in the **Name** field and select **Next**.
+4. On the **Name your policy** page, enter **Exchange preservation** in the **Name** field and select **Next**.
 
 5. On the **Decide if you want to retain content, delete it, or both** page, leave the **Yes, I want to retain it** option selected, as well as the **For this long** and **7 years**. Do not change these fields.<br/>
 
-	However, in the **Retain the content based on** field, it currently indicates **when it was created**. Select the drop-down arrow for this field and select **when it was last modified**. 
+	However, in the **Retain the content based on** field, it currently indicates **when it was created**. Select the drop-down arrow for this field and select **when it was last modified**. <br/>
+	
+	In the **Do you want us to delete it after this time?** option, select **Yes**.
 
 6. Select **Next**.
 
 7. In the **Choose locations** page, select **Let me choose specific locations.** 
 
-8. Scroll down the page and deselect all sliders except for **Exchange email.**
+8. As you scroll down the page, note that the **Status** of the **Exchange email** location is turned on. Leave this set to On. However, for all the other locations that are turned on, select their toggle switches to turn them off. As you scroll through the locations, **Exchange email** should be the only location turned on.
 
 9. Select **Next**.
 
@@ -118,7 +120,7 @@ As part of your pilot project for Adatum, you will create a retention policy in 
 
 11. Do not close your Client 1 VM or Microsoft Edge. Leave your web browser open as well as all tabs for the next lab.
 
-You have now created a new retention policy in the Security & Compliance Center that retains all Exchange emails from all mailboxes for 7 years after last modification.
+You have now created a new retention policy in the Security & Compliance Center that retains all Exchange emails from all mailboxes for 7 years after the last modification.
 
  # End of Lab 5
  
