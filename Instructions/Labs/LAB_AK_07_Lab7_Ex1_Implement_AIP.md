@@ -39,21 +39,17 @@ You have successfully installed the AIP client on Client 1 VM.
 
 In this exercise you will create an AIP label and add it to the default policy so that it’s valid for all users of the Adatum tenant.
 
-1. You should still be logged into your Client 1 VM as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into your Client 1 VM as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://portal.azure.com/**
 
-3. If a **Welcome to Microsoft Azure** dialog box appears asking whether you want a tour before you get started, select **Maybe later.**
+3. On the **Welcome to Azure** window, scroll down to the **Azure services** section and select **More services**.
 
-4. In the **Azure portal**, if a window displays indicating **You have free Azure Advisor recommendations**, then close the window now.
+6. In the **All services** window, in the **Search** box at the top of the page, enter **Azure Information**, and then in the list of services, select **Azure Information Protection**. 
 
-5. In the **Azure portal**, in the left-hand navigation bar, select **All services.**
+7. In the **Azure Information Protection | Quick start** window (which may take a minute or so to load), in the navigation pane on the left, under the **Classifications** section select **Labels**.
 
-6. In the **All services** window, in the **Search** box at the top of the page, enter **Azure Information**, and in the right-hand pane, select **Azure Information Protection**. 
-
-7. In the **Azure Information Protection – Quick start** window (which may take a minute or so to load), in the middle pane under **Classifications**, select **Labels**.
-
-8. In the **Labels** window, select **Add a new label.**
+8. In the **Azure Information Protection | Labels** window, select **Add a new label**.
 
 9. In the **Label** window, enter the following information:
 
@@ -61,13 +57,13 @@ In this exercise you will create an AIP label and add it to the default policy s
 
 	- Label display name: **PII**
 
-	- Description **Documents, Files and emails with PII**
+	- Description **Documents, files, and emails with PII**
 
-	- Color: **Black** is selected by default, so leave it as is
+	- Color: **Black** is selected by default; you can use black or select **Custom** and then enter the Hex code for the color of your choice (you can locate a color and its corresponding Hex code [from this website](https://www.w3schools.com/colors/colors_names.asp).
 
-	- Set permissions for documents and emails containing this label: select **Protect**
+	- Set permissions for documents and emails containing this label: select **Protect** (Note: If you selected a Custom color option in the prior setting, the color of the options for this setting will reflect the code code that you entered). 
 
-		- In the Protection page that appears on the right, select **Set user-defined permissions (Preview)**. Note the options that are selected be default (leave them as is), and then select **OK**.
+		- In the Protection pane that appears on the right, under **Select the protection action type** option, select **Set user-defined permissions (Preview)**. Note the options that are selected be default; do NOT change them. Select **OK**.
 
 	- Set visual marking (such as header or footer):
 
@@ -91,13 +87,13 @@ In this exercise you will create an AIP label and add it to the default policy s
 
 11. In the **Save settings** pop-up window that appears asking if you’re sure about saving and publishing the changes, select **OK.**
 
-12. In the **Azure Information Protection - Labels** window, under **Classifications** in the middle pane, select **Policies**.
+12. In the **Azure Information Protection | Labels** window, under **Classifications** in the left-hand navigation pane, select **Policies**.
 
-13. In the list of policies, select the **Global** policy to edit it.
+13. In the **Azure Information Protection | Policies** window, in the list of policies, select the **Global** policy to edit it.
 
 14. In the **Policy: Global** window, below the list of labels, select **Add or remove labels**.
 
-15. In the **Policy: Add or remove labels** pane that appears on the right, under **LABEL DISPLAY NAME**, select the check box to the left of **PII** and then select **OK**. 
+15. In the **Policy: Add or remove labels** pane that appears on the right, under **Label display name**, select the check box to the left of **PII** and then select **OK**. 
 
 16. In the **Policy: Global** window, scroll down towards the bottom of the pane and in the **Users must provide justification to set a lower classification label, remove a label, or remove protection** option, select **On**.
 
@@ -109,7 +105,7 @@ In this exercise you will create an AIP label and add it to the default policy s
 
 20. Close the **Azure Information Protection - Policies** window by selecting the **X** in the upper right corner (you may have to scroll to the right to see the **X**).
 
-21. This takes you back to the **Azure services** window. Leave this Azure portal tab open as you will use it in the next exercise when you configure Windows Information Protection. 
+21. This takes you back to the **All services** window. Leave this Azure portal tab open as you will use it in the next exercise when you configure Windows Information Protection. 
 
 You have now configured a new custom AIP label named PII and added it to the default AIP policy.
 
