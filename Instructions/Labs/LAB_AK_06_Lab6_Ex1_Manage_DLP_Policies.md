@@ -15,11 +15,11 @@ In this lesson you will create a Data Loss Prevention policy in the Security & C
 
 4. In the **Policy** window, select **+Create a policy** to start the wizard for creating a new data loss prevention policy.
 
-5. On the **Start with a template or create a custom policy** page, there are four types of policies listed in the left-hand pane - Financial, Medical and health, Privacy, and Custom. The first three (Financial, Medical and health, and Privacy) provide templates that can be used to create a policy. The **Custom** type is not based on a template. The column in the left-hand pane displays the policy type, while the middle pane displays the available templates to choose from for that policy type. When you select a template in the middle pane, the right-hand pane displays the type of information that is protected in that tempate. <br/>
+5. On the **Start with a template or create a custom policy** page, there are four types of policies listed in the left-hand pane - Financial, Medical and health, Privacy, and Custom. The first three (Financial, Medical and health, and Privacy) provide templates that can be used to create a policy. The **Custom** type is not based on a template. The column in the left-hand pane displays the policy type, while the middle pane displays the available templates to choose from for that policy type. When you select a template in the middle pane, the right-hand pane displays the type of information that is protected in that tempate. <br/> 
 
-  Select **Financial** in the left-hand pane and note the various templates that you can choose from in the middle pane. Select one or two of the templates to see what type of information it protects. Do the samem for the **Medical and health** and **Privacy** policy types.  <br/>
+    Select **Financial** in the left-hand pane and note the various templates that you can choose from in the middle pane. Select one or two of the templates to see what type of information it protects. Do the same for the **Medical and health** and **Privacy** policy types.  <br/>
   
-  Select **Custom** in the left-hand pane, which automatically selects **Custom policy** in the middle pane (since there are no templates to choose from for this policy type). Select **Next**.
+    Select **Custom** in the left-hand pane, which automatically selects **Custom policy** in the middle pane (since there are no templates to choose from for this policy type). Select **Next**.
 
 6. In the **Name your policy** page, enter **IP Address DLP Policy** in the **Name** field and **Protect IP addresses from being shared** in the **Description** field. Select **Next**.
 
