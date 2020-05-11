@@ -53,7 +53,7 @@ In this lesson you will create a Data Loss Prevention policy in the Security & C
 
     - Under the **Notify users when content matches the policy settings** section, verify the **Show policy tips to users and send them an email notification** check box is selected. Select **Customize the tip and email**. <br/>
     
-        In the **Customize policy tips and email notifications** window, the email notification option is selected by default. However, sending policy tips is not selected by default, so select the **Customize the policy tip text** check box (otherwise, a policy tip will not be displayed). In the policy tip field that appears, enter **Warning: The email message contains an IP Address!** Select **OK**.
+        In the **Customize policy tips and email notifications** window, the email notification option is selected by default. However, sending policy tips is not selected by default, so select the **Customize the policy tip text** check box (otherwise, a policy tip will not be displayed). In the policy tip field that appears, enter **Warning: The email contains sensitive info (IP Address).** Select **OK**.
 
     - Under the **Detect when a specific amount of sensitive info is being shared at one time** section, verify the **Detect when content that's being shared contains** option is selected. In the field below this, **10** is entered. Change this to **2** and then select **Next.**
 
@@ -61,7 +61,13 @@ In this lesson you will create a Data Loss Prevention policy in the Security & C
 
 22. On the **Do you want to turn on the policy or test things out first?** page, select **Yes, turn it on right away** and then select **Next**.
 
-23. Check the configuration on the **Review your settings** page, select **Back** if you need to correct any settings, and then select **Create** once you’re satisfied with the settings.
+23. Check the configuration on the **Review your settings** page. Two policy settings should be displayed (these are dependent on the number of IP addresses in the message): <br/>
+
+        - If the content contains an IP address, then notify people with a policy tip and email the message.
+
+        - If there are at least 2 instances IP addresses, then block access to the content and send an incident report with a high sensitivity level but allow people to override it if they provide a business justification.
+        
+        Select **Back** if you need to correct any settings, and then select **Create** once you’re satisfied with the settings.
 
 You have now created a DLP policy that scans for IP addresses in emails and documents that are sent or shared in your organization.
 
