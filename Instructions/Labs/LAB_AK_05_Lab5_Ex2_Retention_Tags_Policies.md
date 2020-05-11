@@ -12,7 +12,7 @@ In this next phase of your Adatum pilot project, you will access the Security & 
 
 3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Information governance**, and then under it select **Archive**.
 
-4 On the **Archive** window, note that the archive mailboxes for all users other than Holly Dickson are **enabled**. These archive mailboxes were enabled when the VM lab environment was built for this training course and these users were preconfigured in the tenant. However, since Holly's user account was added in Lab 1, her archive mailbox is **disabled** by default.
+4. On the **Archive** window, note that the archive mailboxes for all users other than Holly Dickson are **enabled**. These archive mailboxes were enabled when the VM lab environment was built for this training course and these users were preconfigured in the tenant. However, since Holly's user account was added in Lab 1, her archive mailbox is **disabled** by default.
 
 5. To enable Holly’s archive mailbox, select **Holly Dickson** in the user list. 
 
