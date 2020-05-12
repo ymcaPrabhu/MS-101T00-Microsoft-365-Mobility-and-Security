@@ -1,7 +1,6 @@
 # Module 6 - Lab 6 - Exercise 2 - Test MRM and DLP Policies
 
-
-You are now at the point in your pilot project where you want to test policies. You have decided to test an MRM policy that affects how email messages are archived, and then you want to test a DLP policy related to emails that contain sensitive information. 
+You are now at the point in your pilot project where you want to test the MRM and DLP policies that you created in previous lab exercises. You have decided to test the MRM policy that affects how email messages are archived, and then you want to test the DLP policy related to emails that contain sensitive information. 
 
 ### Task 1 – Test an MRM Policy to Archive Email Messages
 
@@ -68,9 +67,15 @@ In this exercise, you will send an email from Holly Dickson to one of your test 
 
 In the previous exercise, you created a custom DLP policy that searches emails for sensitive information related to IP addresses in your Adatum tenant. In this exercise, you will send two emails from Holly Dickson to Lynne Robbins; the first will include one IP address, and the second email will include two IP addresses. You will verify how each email is handled due to the DLP policy.
 
-If you will recall, in the IP address policy that you created, if one IP address is discovered in an email, a mail tip is displayed to the sender and an email notification is sent to the sender as well. However, the email is still sent to the recipient.
+If you will recall, in the DLP policy that you created, if one IP address is discovered in an email, a mail tip is displayed to the sender and an email notification is sent to the sender as well. However, the email is still sent to the recipient.
 
 Howeve, if two or more IP addresses are discoved in an email, the email will be blocked. In the mail tip that is displayed, the sender can opt to override the policy and send the email. 
+
+**Important:** Unfortunately, you will be unable to test the policy tips in this task. As was mentioned in the prior exercise, when you use the Security and Compliance Center to create a DLP policy that contains a policy tip, the policy tip will NOT be displayed if you also created mail flow rules in the Exchange admin center. If you will recall, back in Module 4, Lab 4, Exercise 1, you created two mail flow transport rules in Exchange, one using the Exchange admin center and the other using PowerShell. 
+
+Because you created mail transport rules in the Exchange admin center in the prior lab, policy tips that you configure for DLP policies in the Security and Compliance Center will NOT work. The DLP policy will work, but the policy tip action will not. Even if you delete the mail transport rules, the policy tips will still not function. 
+
+Therefore, when you send an email with two IP addresses, all you can do is verify that the email message is blocked. The policy tip will not display; therefore, you will be unable to override the blockage and send the email. Because we wanted you to experience creating mail transport rules in the earlier lab, we knew this would affect being able to see policy tips in this lab. But it was felt that learning how to create mail transport rules in the earlier lab was worth this minor inconvenience in this lab. 
 
 1. Switch to LON-CL1, where you should still be logged into Microsoft 365 as Holly Dickson (**holly@M365xZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
