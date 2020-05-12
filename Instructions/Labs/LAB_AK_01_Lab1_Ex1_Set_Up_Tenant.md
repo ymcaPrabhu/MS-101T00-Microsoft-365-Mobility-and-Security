@@ -234,7 +234,7 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 
 ### Task 7 – Prepare Users for Content Searches
 
-In this exercise, you will add Joni Sherman and Holly Dickson as members of the eDiscovery Manger role. The reason you are doing this in this setup lab is that it takes several some time for permissions to successfully propagate. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would have received error messages involving parameter fields because their permissions would not have completed propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to Module 8. 
+In this exercise, you will add Joni Sherman and Holly Dickson as members of the eDiscovery Manger role. The reason you are doing this now is that it can take a while for newly-assigned permissions to successfully propagate. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would have received error messages involving parameter fields because their permissions would not have finished propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to the Module 8 lab. 
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
@@ -250,9 +250,12 @@ In this exercise, you will add Joni Sherman and Holly Dickson as members of the 
 
 7. In the **Choose eDiscovery Manager window**, select **(+) Add**.
 
-8. In the list of users that’s displayed, select **Joni Sherman** and **Holly Dickson**, and then select **Add**.  <br/>
+8. In the list of users that’s displayed, select **Joni Sherman** and **Holly Dickson**, select **Add**, and then select **Done**. 
 
-    ‎**Note:** You are adding Joni to the eDiscovery Manager role group for later use in this exercise, and you assigning Holly to the role group for use in the next exercise.
+9. In the **Editing Choose eDiscovery Manager** window, select **Save**.
 
+10. In the **eDiscovery Manager** window, select **Close**.
+
+11. Leave your browser open and do not close any of the tabs.
 
 # End of Lab 1
