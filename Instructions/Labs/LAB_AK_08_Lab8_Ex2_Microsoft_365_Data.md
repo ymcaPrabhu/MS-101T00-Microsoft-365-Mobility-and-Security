@@ -5,57 +5,37 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 ### Task 1 – Perform a content search for deleted emails
 
-In this exercise, you will add Joni Sherman and Holly Dickson as members of the eDiscovery Manger role, and then you’ll log into the Client VM as Joni and perform a content search that looks for emails with the keyword IP address.
+In this exercise, you will log into the Client VM as Joni Sherman, and you will perform a content search that looks for emails with the keyword **IP address**.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. Switch to LON-CL2, where you should still be logged in as the **Admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** from the prior lab. 
 
-2. In your **Microsoft Edge** browser, if you have the **Security and Compliance Center** open in a tab, then select it; otherwise, open a new tab and enter the following URL in the address bar: **https://protection.office.com**.
+2. If you have a tab open in your **Edge** browser for the **Microsoft 365 Security and Compliance Center**, then select it now. Otherwise, select a new tab and enter the following URL in the address bar: **https://protection.office.com**.
 
-3. In the **Office 365 Security and Compliance Center**, in the left-hand navigation pane, select **Permissions.**
-
-4. In the **Home &gt; Permissions** page, select the **eDiscovery Manager** check box.
-
-5. In the **eDiscovery Manager** role group window, scroll down to the **eDiscovery Manager** section and select **Edit**.
-
-6. The **Editing Choose eDiscovery Manager** wizard opens. The list should be empty. Select **Choose eDiscovery Manager**.
-
-7. In the **Choose eDiscovery Manager window**, select **(+) Add**.
-
-8. In the list of users that’s displayed, select **Joni Sherman** and **Holly Dickson**, and then select **Add**.  <br/>
-
-    ‎**Note:** You are adding Joni to the eDiscovery Manager role group for later use in this exercise, and you assigning Holly to the role group for use in the next exercise.
-
-9. You should see a banner with the message **2 members added**. Select **Done** and then **Save**.
-
-10. Switch to the Client 2 VM (LON-CL2). You should still be logged into LON-CL2 as the **lon-cl2\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** from the prior lab. 
-
-11. If you have a tab open in your **Edge** browser for the **Microsoft 365 Security and Compliance Center**, then select it now. Otherwise, select a new tab and enter the following URL in the address bar: **https://protection.office.com**.
-
-12. In the **Security and Compliance Center**, in the left-hand navigation pane, select **Search**, and then under it select **Content search**.  <br/>
+3. In the **Security and Compliance Center**, in the left-hand navigation pane, select **Search**, and then under it select **Content search**.  <br/>
 
     ‎**Note**: If you cannot see **Search** in the navigation pane yet, you need to reload the browser tab with the **Security and Compliance Center.**
 
-13. On the **Content search** window, in the **Searches** tab, select **(+) Guided search** on the top menu. This will initiate the **New search** wizard.
+4. On the **Content search** window, in the **Searches** tab, select **(+) Guided search** on the top menu. This will initiate the **New search** wizard.
 
-14. On the Name your search page, enter **Content Search Test** into the **Name** field and then select **Next**.
+5. On the Name your search page, enter **Content Search Test** into the **Name** field and then select **Next**.
 
-15. On the Locations page, select **All locations** and then select **Next**.
+6. On the Locations page, select **All locations** and then select **Next**.
 
-16. On the Condition card page, enter **IP address** into the Keywords box and then select **Finish**.
+7. On the Condition card page, enter **IP address** into the Keywords box and then select **Finish**.
 
-17. Back on the Searches tab, the Search query will run. The Status field in the bottom-left corner of the screen will indicate when the query is complete. It may take a couple of minutes for the query to run and the data to be displayed in the right-hand pane. When the content search finishes, you will see all mailbox items that you have created for the sensitive information test of your custom DLP policy. 
+8. Back on the Searches tab, the Search query will run. The Status field in the bottom-left corner of the screen will indicate when the query is complete. It may take a couple of minutes for the query to run and the data to be displayed in the right-hand pane. When the content search finishes, you will see all mailbox items that you have created for the sensitive information test of your custom DLP policy. 
 
-18. Leave the Client 2 VM open as well as all browser tabs and continue with the next task.
+9. Leave LON-CL2 open as well as all browser tabs and continue with the next task.
 
-You have successfully assigned an eDiscovery role to Joni and performed a content search for a specific key word across all locations of your tenant.
+You have successfully performed a content search for a specific key word across all locations of your tenant.
 
  
 
 ### Task 2 – Create an eDiscovery case
 
-In this task, you will create an eDiscovery case with a configured hold and content search for any violations regarding IP addresses. You will continue using Joni Sherman’s user account. Having been assigned the eDiscovery Managers role in the prior task, Joni has the permissions necessary to create an eDiscovery case.
+In this task, you will create an eDiscovery case with a configured hold and content search for any violations regarding IP addresses. You will continue using Joni Sherman’s user account. Having been assigned the eDiscovery Managers role back in Lab 1, Joni has the permissions necessary to create an eDiscovery case.
 
-1. You should still be logged into your Client 2 VM (LON-CL2) as the **lon-cl2\admin** account and signed into Microsoft 365 as Joni Sherman. However, if you have been signed out of Microsoft 365, then on the Microsoft 365 sign-in page, sign into Joni’s **JoniS@M365xZZZZZZ.onmicrosoft.com** account using a password of **Pa55w.rd**.
+1. You should still be logged into LON-CL2 as the **Admin** account and signed into Microsoft 365 as Joni Sherman. However, if you have been signed out of Microsoft 365, then on the Microsoft 365 sign-in page, sign into Joni’s **JoniS@M365xZZZZZZ.onmicrosoft.com** account using a password of **Pa55w.rd**.
 
 2. The **Security and Compliance Center** should still be open in a tab in Microsoft Edge. If so, select that tab now. If not, then enter the following URL in the address bar: **https://protection.office.com.** 
 
