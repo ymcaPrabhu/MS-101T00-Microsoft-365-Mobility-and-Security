@@ -218,6 +218,7 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 8. Do **NOT** close the **SharePoint admin center** tab in your Edge browser. Leave your browser open for the next task.
 
+
 ### Task 6 – Turn on Audit Logging to enable Alert Policies
 
 In Lab 3, you will create Alert Policies using the Security and Compliance Center. However, before you can implement alerts, an admin must first turn on Audit Logging for the organization. Since it can take a couple of hours for audit logging to become fully enabled once you turn it on, you will turn it on in this lab so that it&#39;s fully enabled by the time you get to Lab 3.
@@ -229,6 +230,29 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 
 	**Note:** It may take a couple of minutes for the setting to be updated, at which time the **Security &amp; Compliance** dialog box will disappear.
 5. Leave the Client 1 VM and the Security and Compliance Center open and proceed to the next lab.
+
+
+### Task 7 – Prepare Users for Content Searches
+
+In this exercise, you will add Joni Sherman and Holly Dickson as members of the eDiscovery Manger role. The reason you are doing this in this setup lab is that it takes several some time for permissions to successfully propagate. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would have received error messages involving parameter fields because their permissions would not have completed propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to Module 8. 
+
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+
+2. In your **Microsoft Edge** browser, if you have the **Security and Compliance Center** open in a tab, then select it; otherwise, open a new tab and enter the following URL in the address bar: **https://protection.office.com**.
+
+3. In the **Office 365 Security and Compliance Center**, in the left-hand navigation pane, select **Permissions.**
+
+4. In the **Home &gt; Permissions** page, select the **eDiscovery Manager** check box.
+
+5. In the **eDiscovery Manager** role group window, scroll down to the **eDiscovery Manager** section and select **Edit**.
+
+6. The **Editing Choose eDiscovery Manager** wizard opens. The list should be empty. Select **Choose eDiscovery Manager**.
+
+7. In the **Choose eDiscovery Manager window**, select **(+) Add**.
+
+8. In the list of users that’s displayed, select **Joni Sherman** and **Holly Dickson**, and then select **Add**.  <br/>
+
+    ‎**Note:** You are adding Joni to the eDiscovery Manager role group for later use in this exercise, and you assigning Holly to the role group for use in the next exercise.
 
 
 # End of Lab 1
