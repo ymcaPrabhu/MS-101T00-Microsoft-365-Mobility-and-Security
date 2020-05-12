@@ -79,43 +79,27 @@ In this exercise you will enroll your LON-CL2 device to Azure AD. You will then 
 
 6. At this point, the system will register your device with Adatum. On the **You're all set!** window, select **Done**.
 
-A **More information required** window appears. Select **Next**.
+7. Open **Microsoft Word**. 
 
-7. Leave the first dropdown on **Authentication phone** and select your country from the dropdown below.
+8. Select **Blank document**.
 
-8. Enter your mobile phone number to the text field right to your country and select **Next**.  <br/>
+9. If a **What’s New** window opens, close it.
 
-	‎**Note**: To continue enrolling the LON-CL2 VM and to test WIP in this lab, you need to enter your real mobile phone number and confirm the authentication SMS code.
+10. In the document, type **Protected business content**.
 
-9. When you receive the code for Microsoft verification on your mobile phone, enter it in the **Additional security verification** window. If the verification is successful, select **Done**.
+11. Select **File** from the menu bar above the ribbon, select **Save As** on the left menu, and then select **Browse** from the **Save As** menu.
 
-10. If a **Sorry, your sign-in timed out. Please sign in again.** message appears, enter **Pa55w.rd** and select **Sign in**. If an additional SMS verification window appears, retry the SMS verification.
+12. In the **File Explorer** window, you should see a **lock symbol** that appears to the left of the **File name** field. Next to this lock symbol is a drop-down arrow. Select this arrow, and in the menu that appears, select **Work (m365xZZZZZZ.onmicrosoft.com).**
 
-11. In the **Enter PIN** window select the **X** to close it.
+13. Accept the default file name **Protected business content.docx**, change the file path to your **Documents** folder and select **Save**.
 
-12. Open **Microsoft Word**. 
+14. In the Word document, select the sentence that you typed in the document, then right-click on the selected text and select **Copy**.
 
-13. Select **Blank document**.
+15. Select the **Edge** icon on the taskbar. In your browser, open a new tab, click in the Search box and press **Ctrl-V** on your keyboard to paste in the copied text. Instead of seeing the copied text, a pop-up window should appear with the following message: **Can’t use work content here. Your organization doesn't allow you to use work content here.** Select **OK**.
 
-14. If a **What’s New** window opens, close it.
+	You have just verified that WIP protection prevents copy and pasting between a protected Word document and an untrusted website in your Edge browser.
 
-15. In the document, type **Protected business content**.
-
-16. Select **File** from the menu bar above the ribbon, select **Save As** on the left menu, and then select **Browse** from the **Save As** menu.
-
-17. In the **File Explorer** window, you should see a **lock symbol** that appears to the left of the **File name** field. Next to this lock symbol is a drop-down arrow. Select this arrow, and in the menu that appears, select **Work (m365xZZZZZZ.onmicrosoft.com).**
-
-18. Accept the default file name **Protected business content.docx**, change the file path to your **Documents** folder and select **Save**.
-
-19. In the Word document, select the sentence that you typed in the document, then right-click on the selected text and select **Copy**.
-
-20. Select the **Edge** icon on the taskbar. In your browser, open a new tab and enter the following URL in the address bar: **https://www.bing.com**.
-
-21. On the **Bing** page, right-click into the search field and select **Paste**.
-
-22. A pop-up window should appear with the following message: **Can’t use work content here.** Select **OK**.
-
-23. Leave your Client 2 VM and browser open for the next lab.
+16. Leave your LON-CL2 VM and browser open for the next lab.
 
 You have just enrolled the Client 2 VM to your tenant, so the Client app protection policy **WIP Client Protection** that you configured in the last task could be applied to protect the content of a Word document.
 
