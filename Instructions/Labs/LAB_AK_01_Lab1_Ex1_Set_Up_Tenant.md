@@ -18,7 +18,7 @@ Once you launch the lab, a free trial tenant will be automatically created for y
 
 In your role as Holly Dickson, Adatum&#39;s Enterprise Administrator, you have been tasked with setting up the company&#39;s profile for its Microsoft 365 trial tenant. In this task, you will configure the required options for Adatum&#39;s tenant. Since Holly has yet to create a personal Microsoft 365 user account (you will do this in Task 3), Holly will initially sign into Microsoft 365 as the default Microsoft 365 MOD Administrator account using the Tenant email address and password that was assigned by your lab hosting provider.
 
-1. When the Virtual Machine opens, it opens with the Client 1 VM (LON-CL1). You should sign into the VM as the **Admin** with a password of **Pa55w.rd**. <br/>
+1. When the Virtual Machine opens, it opens with the LON-CL1 VM. You should sign into the VM as the **Admin** with a password of **Pa55w.rd**. <br/>
 
 	**Note:** At some point in this task, a blue **Networks** pane may appear on the right side of your screen asking if you want your PC to be discoverable by other PCs and devices on this network. If this pane appears, select **Yes**. During testing, this pane has appeared at various points in the task; sometimes after logging in, other times after logging into Office 365, and even after Office 365 has been used for some time. So please make note that whenever this pane appears, simply select **Yes**.
 2. On the taskbar at the bottom of the page, select the **Microsoft Edge** icon. Maximize your browser window when it opens.
@@ -94,7 +94,7 @@ Holly Dickson is Adatum's Enterprise Administrator. Since she doesn't have a per
 
 **Important:** As a best practice in your real-world deployments, you should always write down the first Global admin account's credentials (in this lab, the MOD Administrator) and store it away for security reasons. This account is a non-personalized identity that owns the highest privileges possible in a tenant. It is **not** MFA activated (because it is not personalized) and the password for this account is typically shared among several users. Therefore, this first Global admin is a perfect target for attacks, so it's always recommended to create personalized service admins and keep as few Global admins as possible. For those Gobal admins that you do create, they should each be mapped to a single identity, and they should each have MFA enforced.
 
-1. In your Client 1 VM (LON-CL1), in the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users**, and then under it select **Active users**.<br/>
+1. In LON-CL1, in the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users**, and then under it select **Active users**.<br/>
 
     **Note:** In the **Active users** list, you will see that a list of predefined users has already been created in Microsoft 365. Since you&#39;re taking on the role of Holly Dickson in this lab scenario, you will create a user account for yourself, and you will assign yourself the Microsoft 365 role of Global Administrator.
 
@@ -169,7 +169,7 @@ Holly Dickson is Adatum's Enterprise Administrator. Since she doesn't have a per
 
 In the prior task, you noticed that your Microsoft 365 trial tenant came equipped with a list of active users. As Holly Dickson, Adatum&#39;s Enterprise Admin, you have selected the following users to help you with your pilot project: Alex Wilber, Joni Sherman, Lynne Robbins, as well as the system admin, whose user account is the MOD Administrator. Each user is an administrator at Adatum, and they are key members of your pilot project team. While their user accounts are already present in Microsoft 365, you need to configure their passwords so that they can more easily sign into Microsoft 365 when needed in the upcoming lab exercises. You also need to add an Office 365 group that will be used in a later lab exercise.
 
-1. You should still be logged into your Client 1 VM as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users**, and then under it, select **Active users**.
 3. In the **Active Users** window, when you hover your mouse over a user's **Display name** (or you select the check mark field to the left of the **Display name**), a **key icon** appears to the right of the user&#39;s name. By selecting the key icon, you can reset a user&#39;s password. You need to reset Alex, Joni, and Lynne&#39;s passwords to Pa55w.rd.<br/>
 
@@ -202,7 +202,7 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 **Note:** While you will validate IRM for Exchange and SharePoint in Lab 4, you must enable IRM for SharePoint Online now because it can take up to 60 minutes or more for IRM to show up in SharePoint Online. By the time you get to the validation exercise in Lab 4, IRM should have finished its internal configuration and you won’t have to wait for it to be present in SharePoint Online.
 
-1. You should still be logged into your Client 1 VM as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In the **Microsoft 365 admin center**, if necessary select **Show all** in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **SharePoint**. This will open the SharePoint admin center.
 
@@ -223,7 +223,7 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 In Lab 3, you will create Alert Policies using the Security and Compliance Center. However, before you can implement alerts, an admin must first turn on Audit Logging for the organization. Since it can take a couple of hours for audit logging to become fully enabled once you turn it on, you will turn it on in this lab so that it&#39;s fully enabled by the time you get to Lab 3.
 
-1. You should still be logged into your Client 1 VM as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 2. In your **Edge** browser, open a new tab and enter the following URL in the address bar: **https://protection.office.com.**
 3. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Search**, and then under it, select **Audit log search**.
 4. In the **Audit log search** window, a warning message is eventually displayed at the top of the page. Select the **Turn on auditing** button that appears on the right-side of this message, and then in the **Security &amp; Compliance** dialog box that appears, select **Yes** to confirm that your organization settings need to be updated. <br/>
@@ -236,7 +236,7 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 
 In this exercise, you will add Joni Sherman and Holly Dickson as members of the eDiscovery Manger role. The reason you are doing this in this setup lab is that it takes several some time for permissions to successfully propagate. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would have received error messages involving parameter fields because their permissions would not have completed propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to Module 8. 
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In your **Microsoft Edge** browser, if you have the **Security and Compliance Center** open in a tab, then select it; otherwise, open a new tab and enter the following URL in the address bar: **https://protection.office.com**.
 
