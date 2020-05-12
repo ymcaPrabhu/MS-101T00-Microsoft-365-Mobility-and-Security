@@ -67,15 +67,15 @@ In this exercise, you will send an email from Holly Dickson to one of your test 
 
 In the previous exercise, you created a custom DLP policy that searches emails for sensitive information related to IP addresses in your Adatum tenant. In this exercise, you will send two emails from Holly Dickson to Lynne Robbins; the first will include one IP address, and the second email will include two IP addresses. You will verify how each email is handled due to the DLP policy.
 
-If you will recall, in the DLP policy that you created, if one IP address is discovered in an email, a mail tip is displayed to the sender and an email notification is sent to the sender as well. However, the email is still sent to the recipient.
+If you will recall, in the DLP policy that you created, if one IP address is discovered in an email, an email policy tip is displayed in Outlook for the sender that informs him or her that the email contained sensitive data. The sender will also receive an email notification, and the email with the sensitive data (in this case, the IP address) will still be sent to the recipient.
 
-Howeve, if two or more IP addresses are discoved in an email, the email will be blocked. In the mail tip that is displayed, the sender can opt to override the policy and send the email. 
+However, if two or more IP addresses are discovered in an email, the email will be blocked. An email policy tip is displayed in Outlook for the sender just as before, but in this case, the DLP policy was set up to allow the sender to override the blockage and allow the email to be sent.  
 
 **Important:** Unfortunately, you will be unable to test the policy tips in this task. As was mentioned in the prior exercise, when you use the Security and Compliance Center to create a DLP policy that contains a policy tip, the policy tip will NOT be displayed if you also created mail flow rules in the Exchange admin center. If you will recall, back in Module 4, Lab 4, Exercise 1, you created two mail flow transport rules in Exchange, one using the Exchange admin center and the other using PowerShell. 
 
-Because you created mail transport rules in the Exchange admin center in the prior lab, policy tips that you configure for DLP policies in the Security and Compliance Center will NOT work. The DLP policy will work, but the policy tip action will not. Even if you delete the mail transport rules, the policy tips will still not function. 
+Because you created mail transport rules in Exchange in the prior lab, policy tips that you configured for DLP policies in the Security and Compliance Center will NOT work. The DLP policy will work, but the policy tip action will not. Even if you delete the mail transport rules, the policy tips will still not function. 
 
-Therefore, when you send an email with two IP addresses, all you can do is verify that the email message is blocked. The policy tip will not display; therefore, you will be unable to override the blockage and send the email. Because we wanted you to experience creating mail transport rules in the earlier lab, we knew this would affect being able to see policy tips in this lab. But it was felt that learning how to create mail transport rules in the earlier lab was worth this minor inconvenience in this lab. 
+Therefore, when you send an email with two IP addresses in this task, all you can do is verify that the email message is blocked. The policy tip will not display; therefore, you will be unable to override the blockage and send the email. Because we wanted you to experience creating mail transport rules in the earlier lab, we knew this would affect being able to see policy tips in this lab. But it was felt that learning how to create mail transport rules in the earlier lab was worth this minor inconvenience in this lab. 
 
 1. Switch to LON-CL1, where you should still be logged into Microsoft 365 as Holly Dickson (**holly@M365xZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
@@ -93,7 +93,7 @@ Therefore, when you send an email with two IP addresses, all you can do is verif
 
 5. Select **Send.**
 
-6. Immediately after sending the email, Holly should receive an policy tip indicating the email violated a retention policy. She should also receive an email in her Inbox from **Microsoft Outlook** with the subject **Notification: <policy name>** (in this case, <policy name> should be the name of the policy you created that tested for IP addresses in emails, which was **DLP policy test**. Review the content of this email. 
+6. Immediately after sending the email, Holly should receive an policy tip indicating the email violated a retention policy (even though you will not see it, as previously mentioned). She should also receive an email in her Inbox from **Microsoft Outlook** with the subject **Notification: <policy name>** (in this case, <policy name> should be the name of the policy you created that tested for IP addresses in emails, which was **DLP policy test**. Review the content of this email. 
 
 7. You will now send a second message from Holly to Lynne that contains multiple IP addresses. Repeat the process as before for creating an email to Lynne Robbins with the following information: 
 
@@ -105,7 +105,9 @@ Therefore, when you send an email with two IP addresses, all you can do is verif
 
 	- The first email should have the subject **Rule detected - High volume of content detected IP address DLP policy**. Select this email and review its contents.  <br/>
 	
-	- The second email should be a **Message Blocked** notiification for the email that you just sent. Select this email to review its contents. 
+	- The second email should be a **Message Blocked** notiification for the email that you just sent. Select this email to review its contents.  <br/>
+	
+	**Note:** Holly should have also received a policy tip notifying her that the email was blocked, and it should have allowed her to override the blockage if she provided a business justification. However, as previously discussed, policy tips are not functioning because of the mail transport rules you created in an earlier lab, so you will not see the policy tip here. The net effect is that the message is blocked and the blockage cannot be overridden.
 
 9. Switch to LON-CL2. 
 
