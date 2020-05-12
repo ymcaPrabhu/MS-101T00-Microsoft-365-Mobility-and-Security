@@ -6,13 +6,13 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 In this lesson you will create a Data Loss Prevention policy in the Security & Compliance Center to protect sensitive data from being shared by users. The DLP Policy that you create will inform your users if they want to share content that contains IP addresses. 
 
-The policy will contain two actions, each of which are dependent on the number of IP addresses in the message. If the content contains one IP address, then notify people with a policy tip and email the message. If the content contains at least 2 IP addresses, then block access to the content, send an incident report with a high sensitivity level, and display a policy tip that allow peoples to override it if they provide a business justification within the policy tip.
+The policy will contain two actions, each of which is dependent on the number of IP addresses in the message. If the message contains one IP address, the policy will notify people with a policy tip and still email the message. However, if the content contains at least 2 IP addresses, then the message will be blocked, an incident email with a high sensitivity level will be sent to the sender, and a policy tip will be displayed that allow the sender to override the email blockage if the sender provides a business justification within the policy tip.
 
 **Important:** Unfortunately, you will be unable to test the policy tips in this DLP Policy. When you use the Security and Compliance Center to create a DLP policy that contains a policy tip, the policy tip will NOT be displayed if you also created mail flow rules in the Exchange admin center. If you will recall, back in Module 4, Lab 4, Exercise 1, you created two mail flow transport rules in Exchange, one using the Exchange admin center and the other using PowerShell. 
 
 Because you created mail transport rules in the Exchange admin center in the prior lab, policy tips that you configure for DLP policies in the Security and Compliance Center will NOT work. The DLP policy will work, but the policy tip action will not. Even if you delete the mail transport rules, the policy tips will still not function. 
 
-Given that, you will still configure a policy tip for the DLP policy that you create in this task; this will provide you with experience in doing so. However, in the next exercise when you test this policy, everything will work except for the policy tip being displayed. 
+Given that, you will still configure a policy tip for the DLP policy that you create in this task; doing so will provide you with experience in configuring policy tips. However, in the next exercise when you test this policy, everything will work except for the policy tip, which will not be displayed. 
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
