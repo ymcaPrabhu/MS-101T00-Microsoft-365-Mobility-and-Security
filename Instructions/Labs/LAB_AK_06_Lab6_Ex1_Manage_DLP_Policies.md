@@ -5,7 +5,7 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 ### Task 1 – Create a DLP policy with custom settings
 
-In this lesson you will create a Data Loss Prevention policy in the Security & Compliance Center to protect sensitive data from being shared by users. The DLP Policy that you create will inform your users if they want to share content that contains IP addresses. The policy will contain two actions, which are dependent on the number of IP addresses in the message: <br/>
+In this lesson you will create a Data Loss Prevention policy in the Security & Compliance Center to protect sensitive data from being shared by users. The DLP Policy that you create will inform your users if they want to share content that contains IP addresses. The policy will contain two actions, which are dependent on the number of IP addresses in the message: 
 
     - If the content contains one IP address, then notify people with a policy tip and email the message.
 
