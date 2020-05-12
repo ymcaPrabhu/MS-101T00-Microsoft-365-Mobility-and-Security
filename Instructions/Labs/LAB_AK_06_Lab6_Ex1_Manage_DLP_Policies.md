@@ -8,7 +8,7 @@ In this lesson you will create a Data Loss Prevention policy in the Security & C
 
     - If the content contains one IP address, then notify people with a policy tip and email the message. 
     
-    - If the content contains at least 2 instances IP addresses, then block access to the content and send an incident report with a high sensitivity level but allow people to override it if they provide a business justification.
+    - If the content contains at least 2 IP addresses, then block access to the content and send an incident report with a high sensitivity level but allow people to override it if they provide a business justification.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
