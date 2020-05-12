@@ -7,9 +7,9 @@ Data subject requests (DSRs) are used to search for and extract all known inform
 
 ### Task 1 – Create a GDPR Data Subject Request
 
-Holly Dickson is Adatum’s Enterprise Administrator. In her role as the company’s Microsoft 365 Global Administrator, she is responsible for implementing Adatum’s Microsoft 365 pilot project. Since Adatum has several European subsidiaries, properly managing GDPR data subject requests is a key task that must be tested so that the company can successfully implement this feature. In this task, Holly will create a DSR for herself on behalf of a request made by the Human Resource department.
+Holly Dickson is Adatum’s Enterprise Administrator. In her role as the company’s Microsoft 365 Global Administrator, she is responsible for implementing Adatum’s Microsoft 365 pilot project. Since Adatum has several European subsidiaries, properly managing GDPR data subject requests is a key task that must be tested so the company can successfully implement this feature. In this task, Holly will create a DSR for herself on behalf of a request made by the Human Resource department.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson** (**holly@M365xZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
+1. Switch to LON-CL1, where you should still be logged in as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson** (**holly@M365xZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
 2. In your **Microsoft Edge** browser, if you have the **Security and Compliance Center** open in a tab, then select it; otherwise, open a new tab and enter the following URL in the address bar: **https://protection.office.com**.
 
