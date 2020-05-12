@@ -1,6 +1,5 @@
 # Module 8 - Lab 8 - Exercise 1 - Implement a Data Subject Request 
 
-
 Data subject requests (DSRs) are used to search for and extract all known information on a person of interest. A DSR can come from the person in question or from an authorized source. In this exercise you will configure and export a DSR from the Microsoft 365 Security and Compliance center.
 
 **NOTE:** You should only run a DSR if the request is made by a Data Privacy officer or a Human Resources manager. Due to data privacy legal concerns, you should NEVER run a DSR unless instructed to do so.
@@ -15,7 +14,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. In her role as the company
 
 3. In the **Security and Compliance center**, in the left-hand navigation pane select **Data privacy**, and then under it select **Data subject requests**.  <br/>
 
-	‎**Note:** To perform this task, Holly needs to be assigned to the eDiscovery Manager role group so that she has the necessary permissions. You added Holly to this role group in the prior exercise at the same time that you added Joni Sherman to the role group. The reason we did this is explained below following the search query. 
+	‎**Note:** To perform this task, Holly must be assigned to the eDiscovery Manager role group so that she has the necessary permissions. You added Holly to this role group in Lab 1 at the same time that you added Joni Sherman to the role group. The reason you added them in Lab 1 is explained below following the search query. 
 
 4. In the **Data subject requests** window, select **+New DSR case**. This initiates the New DSR case wizard.
 
@@ -33,7 +32,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. In her role as the company
 
 9. A new **Search query** window will appear and begin the query. In the bottom left corner of the screen, the status of the query is displayed. Wait for the status to show **Completed**.  <br/>
 
-	‎**Note:** The reason why you were instructed to add Holly to the eDiscovery Manager role group in the prior exercise rather than at the start of this one is that it takes several minutes for permissions to successfully propagate. If you had assigned Holly to this role group just prior to this query, you would have received error messages involving parameter fields because her permissions would not have completed propagating. By adding Holly to this role group in the prior exercise, enough time should have elapsed between then and now for the propagation to complete. If you still receive any error messages, click **OK** to resume the query. If this occurs, the query will not display any data.   <br/>
+	‎**Note:** The reason why you were instructed to add Holly to the eDiscovery Manager role group in Lab 1 rather than at the start of this lab is that it takes several minutes for permissions to successfully propagate. If you had assigned Holly to this role group just prior to this query, you would have received error messages involving parameter fields because her permissions would not have completed propagating. By adding Holly to this role group at the start of this course, enough time will have elapsed between then and now for the propagation to complete. If you still receive any error messages, click **OK** to resume the query. If this occurs, the query will not display any data.   <br/>
 	
 	‎**Note:** Depending on how much data is accrued, a query can take some time to complete. For Adatum’s pilot project, they have not accrued much in the way of data, so Holly Dickson’s query should only take a minute or so to complete.
 
