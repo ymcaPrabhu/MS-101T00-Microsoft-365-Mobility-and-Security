@@ -6,7 +6,7 @@ In this exercise you will activate the automatic client enrollment to Intune for
 
 1. You should still be logged into LON-CL1 as the **Admin** and in Microsoft 365 as **Holly Dickson**.
 2. In your browser, select the **Microsoft 365 admin center** tab, which should still be open; if not, navigate to **https://admin.microsoft.com.** 
-3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then under **Admin centers**, select **Azure Active Directory**.
+3. In the previous exercise, you accessed the Azure portal, which is still open in your browser. In this exercise, you will use the Azure Active Directory admin center (these are separate sites). In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then under **Admin centers**, select **Azure Active Directory**.
 4. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory**.
 5. On the **Adatum Corporation | Overview** window, in the middle pane under **Manage,** select **Mobility (MDM and MAM),** and then in the details pane on the right, select **Microsoft Intune**.<br/>
 
@@ -18,7 +18,7 @@ In this exercise you will activate the automatic client enrollment to Intune for
 
 7. Below the list of MDM-related fields, select **Restore default MDM URLs** to ensure the correct URLs for client enrollment are configured.
 8. In the menu bar at the top of the **Configure** window, select **Save**.
-9. Leave the Azure portal open for the next task.
+9. Leave the Azure portal and the Azure Active Directory admin center tabs open in your browser for the next task.
 
 You have now configured your tenant so that all users can enroll their Windows 10 clients into Intune as soon they log into their devices with their Azure AD account credentials.
 
@@ -27,7 +27,7 @@ You have now configured your tenant so that all users can enroll their Windows 1
 
 In this task, you will change the default settings for users to join their devices to Adatum's Azure AD tenant.
 
-1. In the **Azure portal**, in the left-hand navigation pane, select **Azure Active Directory.**
+1. In your browser, in the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory.**
 2. In the **Adatum Corporation | Overview** window, in the middle section under **Manage**, select **Devices**.
 3. In the **Devices | All devices** window, in the details pane on the right, verify that **LON-CL2** is displayed in the list of devices. Back in Lab 5, you performed a task that configured Mobile Device Management (MDM) auto-enrollment; this was a prerequisite to performing a later Windows Information Protection lab. When you performed this MDM configuration lab, it automatically enrolled the devices belonging to members of the WIP Users group. At the time, Joni Sherman was logged into Microsoft 365 on LON-CL2, and since she was a member of the WIP Users group, LON-CL2 was automatically enrolled into Intune as its MDM authority.
 4. In the **Devices | All devices** window, in the middle pane under **Manage** , select **Device settings**.
@@ -38,7 +38,7 @@ In this task, you will change the default settings for users to join their devic
 9. In the **Add members** pane on the right, select **Alex Wilber** , select the **Select** buton at the bottom of the screen, and then select **OK**.
 10. Back in the **Devices | Device settings** detail pane, scroll down and verify that **Require Multi-Factor Auth to join devices** is set to **No**. The **Maximum number of devices per user** is currently set to **50.** Select this field and in the menu that appears, select **10.**
 11. Scroll back to the top of the page, and in the menu bar, select **Save**.
-12. Leave the Azure portal open for the next task.
+12. Leave the Azure portal and the Azure Active Directory admin center tabs open in your browser for the next task.
 
 You have changed the default settings for users to join their devices to your Azure AD tenant.
 
@@ -48,7 +48,7 @@ In Azure Active Directory, you can use rules to determine group membership based
 
 In this task, Holly wants to create a new Security group for enrolled devices within Adatum. This group will support dynamic membership when a device's management type is set to MDM.
 
-1. In the **Azure portal**, in the left-hand navigation pane, select **Azure Active Directory.**
+1. In your browser, in the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory.**
 2. In the **Adatum Corporation | Overview** window, in the middle pane under **Manage,** select **Groups**.
 3. In the **Groups | All groups** window, in the details pane on the right, select **+New group** on the menu bar.
 4. In the **New Group** window, enter the following information:
@@ -72,7 +72,7 @@ In this task, Holly wants to create a new Security group for enrolled devices wi
 8. Select **Save** in the menu bar at the top of the window.
 9. In the **New Group** window, scroll to the bottom of the window and select the **Create** button.
 10. In the **Groups | All groups** window, the **Enrolled Devices** group should now appear in the list of groups.
-11. Leave the **Azure Active Directory admin center** tab open in your browser for the next task.
+11. Leave the Azure portal and the Azure Active Directory admin center tabs open in your browser for the next task.
 
 
 # Proceed to Lab 10 -Exercise 3
