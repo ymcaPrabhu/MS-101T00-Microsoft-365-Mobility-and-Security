@@ -72,7 +72,7 @@ In this task, Holly wants to create a new Security group for enrolled devices wi
 8. Select **Save** in the menu bar at the top of the window.
 9. In the **New Group** window, scroll to the bottom of the window and select the **Create** button.
 10. In the **Groups | All groups** window, the **Enrolled Devices** group should now appear in the list of groups.
-11. Leave the Azure portal open for the next task.
+11. Leave the **Azure Active Directory admin center** tab open in your browser for the next task.
 
 
 # Proceed to Lab 10 -Exercise 3
