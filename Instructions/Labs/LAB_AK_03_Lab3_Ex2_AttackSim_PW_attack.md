@@ -113,5 +113,5 @@ To use Microsoft's Attack Simulator to simulate phishing and password attacks, H
 
 13. You now need to sign out of Microsoft 365 as Holly, close your browser session (to clear your cache), open a new session, and then log back into the **Office 365 home** page as Holly. Then navigate to the **Microsoft 365 admin center**. 
 
-# End of Lab for this Lesson
+# Proceed to Lab 3 - Exercise 3
  
