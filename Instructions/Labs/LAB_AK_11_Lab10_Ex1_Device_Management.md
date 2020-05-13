@@ -39,7 +39,7 @@ Devices must be managed before you can give users access to company resources or
 2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://portal.azure.com**.
 3. In the **Microsoft Azure portal**, scroll down to the **Azure services** section and select **More services**.
 4. In the **All services** window, enter **Intune** in the **Search** box, and then in the list of search results, select **Intune**.
-5. In the **Microsoft Intune | Overview** page, in the left-hand navigatin pane, select **Device enrollment**.
+5. In the **Microsoft Intune | Overview** page, in the left-hand navigation pane, select **Device enrollment**.
 6. In the **Device enrollment** page, note the information at the top of the detail pane. By default, Intune has been set as Adatum's MDM authority.
 7. In the navigation thread at the top of the page (**Home > Microsoft Intune > Device enrollment**), select **Microsoft Intune**.
 8. In the **Microsoft Intune | Overview** page, in the left-hand navigation pane, select **Device compliance**. Even though no data is currently available, review the information that will be presented for this option regarding device management.
@@ -47,8 +47,8 @@ Devices must be managed before you can give users access to company resources or
 10. In the **Microsoft Intune | Overview** page, in the left-hand navigation pane, select **Device configuration**. Even though no data is currently available, review the information that will be presented for this option regarding device management.
 11. In the navigation thread at the top of the page (**Home > Microsoft Intune > Device enrollment**), select **Microsoft Intune**.
 12. In the **Microsoft Intune | Overview** page, in the left-hand navigation pane, select **Device security**. Even though no data is currently available, review the information that will be presented for this option regarding device management.
-
-13. Leave LON-CL1 and the Azure portal tab open and proceed to the next exercise.
+13. In the navigation thread at the top of the page (**Home > Microsoft Intune > Device enrollment**), select **Microsoft Intune**.
+14. Leave LON-CL1 and the Azure portal tab open and proceed to the next exercise.
 
 You have now verified that Intune is the default MDM solution for your tenant.
 
