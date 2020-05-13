@@ -100,4 +100,4 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 You have just successfully tested a mailbox permission alert that sent an alarm message on granting FullAccess to a user mailbox.
 
-# Proceed to Exercise 5
+# Proceed to Lab 3 - Exercise 5
