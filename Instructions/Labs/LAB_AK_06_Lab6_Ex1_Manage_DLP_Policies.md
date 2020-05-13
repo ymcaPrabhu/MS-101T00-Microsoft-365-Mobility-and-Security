@@ -79,4 +79,4 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 You have now created a DLP policy that scans for IP addresses in emails and documents that are sent or shared in your organization.
 
 
-# Proceed to Exercise 2 
+# Proceed to Lab 6 - Exercise 2 
