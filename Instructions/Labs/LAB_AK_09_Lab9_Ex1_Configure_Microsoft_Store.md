@@ -1,17 +1,16 @@
 # Module 9 - Lab 9 - Exercise 1 - Configure the Microsoft Store for Business
 
+In your role as Holly Dickson, Adatum's Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment as you deploy your pilot project. In this lab, you will work with the Microsoft Store for Business. 
 
-You are the system administrator for Adatum Corporation, and you have Microsoft 365 deployed in a virtualized lab environment. In this lab, you will work with Microsoft Store for Business. 
-
-**Note:** Company employees can use the Microsoft Store app for accessing Microsoft Store for Business. However, because it can take up to 36 hours for newly added apps to propagate to the private store and be visible in the Microsoft Store app, this lab used a web browser to access the Microsoft Store for Business and configure Adatum’s private store. 
+**Important:** Company employees can use the Microsoft Store app for accessing the Microsoft Store for Business. However, because it can take up to 36 hours for newly added apps to propagate to the private store and be visible in the Microsoft Store app, this lab uses a web browser to access the Microsoft Store for Business and configure Adatum’s private store. 
 
 ### Task 1: Sign up for Microsoft Store for Business and perform initial configuration 
 
-In this task, you will install the Microsoft Store for Business and then you’ll configure it so that apps from the Microsoft Store for Business will be allowed to run on devices that Windows Defender Device Guard is protecting.
+In this task, you will begin by installing the Microsoft Store for Business on your LON-CL1 PC. You will then configure it so that apps from the Microsoft Store for Business will be allowed to run on devices that Windows Defender Device Guard is protecting.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **Adatum administrator** and into Microsoft 365 as Holly Dickson (**holly@M365xZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
+1. Switch to LON-CL1, where you should still be logged in as the **Admin** and into Microsoft 365 as Holly Dickson (**holly@M365xZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
-2. In your Edge browser, enter the following URL in the address bar: **https://www.microsoft.com/business-store** 
+2. In your Edge browser, open a new tab and enter the following URL in the address bar: **https://www.microsoft.com/business-store** 
 
 3. This opens the **Microsoft Store for Business**. In the top-right corner, select **Sign in**. 
 
@@ -19,13 +18,13 @@ In this task, you will install the Microsoft Store for Business and then you’l
 
 5. On the **Microsoft Store for Business** page, in the menu bar at the top of the page, select **Shop for my group**. 
 
-6. Scroll down to the **Made by Microsoft** section and select **Show all.**
+6. Scroll down to the **Made by Microsoft** section and select **Show all** (which appears on the far right side of the **Made by Microsoft** section).
 
 7. In the **Made by Microsoft** page, select **Microsoft Remote Desktop.**
 
 8. On the **Microsoft Remote Desktop** page, select **Get the app**. 
 
-9. On the **Microsoft Store for Business and Education Services Agreement** page, scroll to the bottom of the page, select the **I accept this agreement and certify that I have the authority to bind myself (and my organization, if applicable) to its terms** check box, and then select **Accept.** 
+9. On the **Microsoft Store for Business and Education Services Agreement** page, scroll to the bottom of the page, select the check box in which you accept the license agreement, and then select **Accept.** 
 
 10. In the **Thanks for your order** window, select **Close**. 
 
@@ -33,15 +32,17 @@ In this task, you will install the Microsoft Store for Business and then you’l
 
 12. In the left-hand navigation pane, select **Products &amp; services**. 
 
-13. In the **Products and Services** detail pane, scroll down and verify that the **Excel Mobile**, **Microsoft Remote Desktop**, **OneNote**, **PowerPoint Mobile**, **Sway**, and **Word Mobile** apps are listed. 
+13. In the **Products &amp; Services** detail pane, scroll down and verify the **Excel Mobile**, **Microsoft Remote Desktop**, **OneNote**, **PowerPoint Mobile**, **Sway**, and **Word Mobile** apps are listed. <br/>
+
+    **Note:** It may take a minute before all the apps appear on the page.
 
 14. In the left-hand navigation pane, select **Settings**. 
 
-15. In the **Settings** pane, on the **Shop** tab, scroll down to the **Shopping experience** section and select the **Show offline apps** switch to turn it **On**. 
+15. In the **Settings** pane, on the **Shop** tab, scroll down to the **Shopping experience** section and select the **Show offline apps** toggle switch to turn it **On**. 
 
-16. In the **Microsoft 365 admin center**, on the menu bar at the top of the page, select **Adatum Corporation**. This is Adatum’s private store. 
+16. On the menu bar at the top of the page, select **Adatum Corporation**. This is Adatum’s private store. 
 
-17. As part of your pilot project, you want to change the name of your store to **Adatum private store**. On the **Adatum Corporation** private store page, select the **ellipsis (…)** icon to the right of **Adatum Corporation**, and in the menu that appears, select **Edit collection**. 
+17. As part of your pilot project, you want to change the name of your store to **Adatum private store**. On the **Adatum Corporation** private store page, select the **ellipsis (…)** icon that appears to the right of **Adatum Corporation** (above each of the product tiles), and in the menu that appears, select **Edit collection**. 
 
 18. On the **Edit collection** page, to the right of **Adatum Corporation**, select **Rename private store**.
 
@@ -49,7 +50,7 @@ In this task, you will install the Microsoft Store for Business and then you’l
 
 20. In the **Private store** dialog box, enter **Adatum private store** and then select **Save**. <br/>
 
-    Note the change to your private store name on the menu bar at the top of the page.
+    Note the change to your private store name on the menu bar at the top of the page; instead of **Adatum Corporation**, it now should say **Adatum private store**.
 
 21. On the menu bar, select **Adatum private store**.
 
@@ -60,4 +61,4 @@ In this task, you will install the Microsoft Store for Business and then you’l
 23. Leave the **Microsoft Store for Business** tab open in your Edge browser. You will use this in the next exercise. 
 
  
-# Proceed to Exercise 2
+# Proceed to Lab 9 - Exercise 2
