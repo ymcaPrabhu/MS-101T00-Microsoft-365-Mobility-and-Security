@@ -85,7 +85,7 @@ When someone files a DSR, you typically need to export the results. In this task
 
 17. Close the **eDiscovery Export Tool** by selecting the **Close** button, and then close the **Holly Dickson Subject Request_ReportsOnly** window.
 
-18. Close the **eDiscovery** browser tab.
+18. In your browser, close the **eDiscovery** tab and the **Data subject requests - Security and Compliance** tab.
 
 18. Leave **Holly** signed in at the **Security &amp; Compliance Center**.
 
