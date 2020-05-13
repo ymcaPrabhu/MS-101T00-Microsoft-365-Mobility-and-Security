@@ -91,6 +91,11 @@ In this task, you will create an eDiscovery case, add an In-Place Hold to the ca
 
     **Note:** It may take a couple of minutes for the query to run and the data to be displayed in the right-hand pane. Once the query is finished, wait for the preview results to be displayed. 
 
+26. Close the **eDiscovery** tab in your browser.
+
+10. Leave LON-CL2 open as well as all other browser tabs and continue with the next task.
+
+
 You have now created an eDiscovery case, added an In-Place Hold to preserve mailbox content, and created a search to discover data from the hold.
 
 
