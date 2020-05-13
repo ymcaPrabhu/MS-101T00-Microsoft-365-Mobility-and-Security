@@ -1,40 +1,40 @@
 # Module 11 - Lab 10 - Exercise 3 - Create Intune Policies 
 
-Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet some requirements. In Intune, these requirements are referred to as compliance policies. Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with Conditional Access, administrators can block users and devices that don't meet the rules.
+Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet some requirements. In Intune, these requirements are referred to as compliance policies. Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with Conditional Access requirements, administrators can block users and devices that do not meet the rules.
 
 ### Task 1: Create and apply compliance policy
 
-In this task you will create a compliance policy that governs Windows 10 devices at Adatum Corporation. This policy will dictate what the minimum requirements are for accessing Adatum&#39;s environment. It will also control how long a device can stay out of compliance before it&#39;s locked out from use; thereby, requiring administrator assistance to make it operational again. The policy will also control who it&#39;s assigned to, which in this case will be all devices enrolled in Microsoft Intune.
+In your role as Holly Dickson, Adatum's Enterprise Administrator, you will create a compliance policy that governs Windows 10 devices at Adatum Corporation. This policy will dictate what the minimum requirements are for accessing Adatum's environment. It will also control how long a device can stay out of compliance before it's locked out from use; thereby, requiring administrator assistance to make it operational again. The policy will also control who it's assigned to, which in this case will be all devices enrolled in Microsoft Intune.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** and into Microsoft 365 as **Holly Dickson**.
-2. In your **Edge** browser, in the **Azure** portal, select **All services** from the left-hand navigation pane, type **Intune** in the search field, and then select **Intune** in the detail pane on the right.
-3. On the **Microsoft Intune – Overview** window, in the middle pane under the **Manage** section, select **Device compliance**.
-4. On the **Device compliance** window, in the middle pane under the **Manage** section, select **Policies**.
-5. On the **Device compliance – Policies** window, in the details pane on the right, select **+Create Policy**.
-6. On the **Create Policy** window, enter the following information:
+1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+2. In your **Edge** browser, you should have a tab open for the **Azure portal** (displaying the **Microsoft Intune | Overview** window) and a tab open for the **Azure Active Directory admin center**. Select the **Azure portal** tab, which should be displaying the **Microsoft Intune | Overview** window. 
+3. On the **Microsoft Intune | Overview** window, in the left-hand navigation pane under the **Manage** section, select **Device compliance**.
+4. On the **Device compliance** window, in the left-hand pane under the **Manage** section, select **Policies**.
+5. On the **Device compliance | Policies** window, in the details pane on the right, select **+Create Policy**.
+6. On the **Create a policy** pane that appears, select the **Platform** field, and in the drop-down menu that appears, select **Windows 10 and later**. Select **Create**.
+7. On the **Windows 10 compliance policy** window, note the six steps that appear at the top of the page. You are currently in the **Step 1 - Basics** page. Enter **Compliance1** in the **Name** field and then select **Next**.
+8. On the **Step 2 - Compliance settings** page, select **Device Health** to expand it. Review the available settings and then select **Device Health** again to collapse it. 
+9. On the **Step 2 - Compliance settings** page, select **Device Properties** to expand it. In the **Minimum OS version** field, enter **10.0.16299.15** and then note the check mark that appears on the right side of the field. Select **Device Properties** again to collapse it. 
+10. On the **Step 2 - Compliance settings** page, review the other available options and then select **Next**.
+11. On the **Step 3 - Actions for noncompliance** page, you can create a list of actions that you want taken when a device becomes noncompliant. One default action is already defined (**Mark device noncompliant**); this action cannot be changed or deleted. This action is scheduled to be performed **Immediately** (which means, on the day the device becomes noncompliant). <br/>
 
-    - Name: **Compliance1**
-    - Platform: **Windows 10 and later**
+    Given the problems caused at Adatum by users with noncompliant devices, Holly also wants to remotely lock any device that becomes noncompliant. To create this action, select the field under the **Action** column, and then select **Remotely lock the noncompliant device** in the menu that appears. The **Schedule (days after noncompliance)** field is set to 0 by default, which means this action will be performed immediately on the day the device is flagged as noncompliant. Leave this field set to 0. <br/>
+    
+    To the right of this action is an ellipsis icon. Selecting this icon gives you the option to delete this action. Do not delete this action; the point of showing you this is to let you know that you can delete any actions that you manually create. Note also that a Delete option is not available for the default action that marks the device as noncompliant. <br/>
+    
+    Select **Next**.
+12. On the **Step 4 - Scope tags** page, no scope tags will be assigned to the policy, so select **Next**.
+13. On the **Step 5 - Assignments** page, you want to assign this policy to all the devices in the **Enrolled devices** group, which you created in the prior exercise. <br/>
 
-7. On the **Windows 10 compliance policy** pane that appears on the right, select **Device Health**, review the available settings, and then select the X in the upper right corner to close the pane.
-8. On the **Windows 10 compliance policy** pane, select **Device Properties**.
-9. On the **Device Properties** pane, in the **Minimum OS version** field, enter **10.0.16299.15** and then select **OK**.
-10. On the **Windows 10 compliance policy** pane, review the other available options and then select **OK**.
-11. On the **Create Policy** pane, select the **Actions for noncompliance** section.
-12. In the **Actions** pane, in the list of actions, note that there is already a **Mark device noncompliant** action assigned to this policy by default, and the action is scheduled for immediate implementation. Let&#39;s review the parameters for this action so that you can see why **Schedule** is set to **Immediately**. Select the **Mark device noncompliant** action.
-13. In the **Action parameters** pane, the **Schedule (days after noncompliance)** field is set to **0** by default. Setting this field 0 days after noncompliance is what triggers the **Schedule** to display **Immediately** for this action. Select **OK** to return to the **Actions** pane.
-14. In the **Actions** pane, select **OK** to return to the **Create Policy** pane.
-15. In the **Create Policy** pane, select **Create**.
-16. On the **Compliance1** window, in the middle pane under the **Manage** section, select **Assignments**.
-17. In the **Compliance1 – Assignments** window, in the details pane on the right, select **Select groups to include.**
-18. In the **Select groups to include** pane, select the **Enrolled Devices** group that you created in the prior task and then select **Select** at the bottom of the pane.
-19. In the **Compliance1 – Assignments** window, select **Save**.
-20. In the **Azure portal**, in the left-hand navigation pane, select **Azure Active Directory.**
-21. In the **Adatum Corporation – Overview** window, in the middle section under **Manage**, select **Mobility (MDM and MAM).**
-22. In the **Adatum – Mobility (MDM and MAM)** window, in the pane on the right, select **Microsoft Intune.**
-23. In the **Configure** window, in the **MAM User scope** row, select **All**.
-24. Select **Save** in the menu bar at the top of the window, and then select the **X** to close the **Configure** window.
-25. Leave the Azure portal open for later tasks.
+    The **Assign to** field is already set to **Selected groups** be default, so under the **Selected groups** section, select **+Select groups to include**. In the **Select groups to include** pane that appears, select **Enrolled devices** and then select the **Select** button at the bottom of the pane. Select **Next**.
+14.  On the **Step 6 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
+15. In your **Edge** browser, select the **Azure Active Directory admin center** tab. 
+16. In the the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory.**
+17. In the **Adatum Corporation | Overview** window, in the middle pane under **Manage**, select **Mobility (MDM and MAM).**
+18. In the **Adatum Corporation | Mobility (MDM and MAM)** window, in the pane on the right, select **Microsoft Intune.**
+19. In the **Configure** window, in the **MAM User scope** setting, select **All**.
+20. Select **Save** in the menu bar at the top of the window, and then select the **X** in the upper right corner to close the **Configure** window.
+21. Leave the Azure portal and the Azure Active Directory admin center tabs open in your browser for the next task.
 
 
 ### Task 2: Manually create an EFS DRA Certificate
