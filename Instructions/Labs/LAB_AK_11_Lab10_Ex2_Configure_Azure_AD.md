@@ -29,7 +29,7 @@ In this task, you will change the default settings for users to join their devic
 
 1. In the **Azure portal**, in the left-hand navigation pane, select **Azure Active Directory.**
 2. In the **Adatum Corporation | Overview** window, in the middle section under **Manage**, select **Devices**.
-3. In the **Devices | All devices** window, in the details pane on the right, verify LON-CL2 is listed, since Joni Sherman joined this device to Azure Active Directory back in lab X when she XXXXXXXXXXXXXXXXXXXXXXxx.
+3. In the **Devices | All devices** window, in the details pane on the right, verify that **LON-CL2** is displayed in the list of devices. Back in Lab 5, you performed a task that configured Mobile Device Management (MDM) auto-enrollment; this was a prerequisite to performing a later Windows Information Protection lab. When you performed this MDM configuration lab, it automatically enrolled the devices belonging to members of the WIP Users group. At the time, Joni Sherman was logged into Microsoft 365 on LON-CL2, and since she was a member of the WIP Users group, LON-CL2 was automatically enrolled into Intune as its MDM authority.
 4. In the **Devices | All devices** window, in the middle pane under **Manage** , select **Device settings**.
 5. In the details pane that appears on the right, in the **Users may join devices to Azure AD** row, verify that **All** is selected. This means that all Azure AD users can join their devices to Azure Active Directory.
 6. The **Additional local administrator on Azure AD joined devices** row is currently set to **None**. Select **Selected**.
