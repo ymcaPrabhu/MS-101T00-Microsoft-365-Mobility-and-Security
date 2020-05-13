@@ -99,5 +99,7 @@ In this task, you are going to sign into the Microsoft Store for Business as one
 
 	- The **Collection1** app that you created in the prior task that includes: **Fresh Paint, Microsoft Remote Desktop,** and **Translator**.
 
+9. In your browser, close the **Microsoft Store for Business** tab.
+
 
 # End of Lab 9
