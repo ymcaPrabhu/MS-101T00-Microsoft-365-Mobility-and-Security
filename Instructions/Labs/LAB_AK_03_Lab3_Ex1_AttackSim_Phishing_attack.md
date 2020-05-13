@@ -128,4 +128,4 @@ In this task, you will verify whether Lynne Robbins received the email that you 
 10. Leave your browser open in LON-CL1 and do not close any of the tabs.
     
 
-# Proceed to Exercise 2
+# Proceed to Lab 3 - Exercise 2
