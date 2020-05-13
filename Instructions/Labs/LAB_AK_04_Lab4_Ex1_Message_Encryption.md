@@ -149,4 +149,4 @@ In a prior task, you configured a mail flow encryption rule using the Exchange a
 4. Leave your browser session open for the next exercise.
 
 
-# Proceed to Exercise 2
+# Proceed to Lab 4 - Exercise 2
