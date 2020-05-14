@@ -43,11 +43,10 @@ Devices must be managed before you can give users access to company resources or
 6. In the **Device enrollment** page, note the information at the top of the detail pane. By default, Intune has been set as Adatum's MDM authority.
 7. In the navigation thread at the top of the page (**Home > Microsoft Intune > Device enrollment**), select **Microsoft Intune**.
 8. In the **Microsoft Intune | Overview** page, in the left-hand navigation pane, select **Device compliance**. Even though no data is currently available, review the information that will be presented for this option regarding device management.
-9. In the navigation thread at the top of the page (**Home > Microsoft Intune > Device enrollment**), select **Microsoft Intune**.
-10. In the **Microsoft Intune | Overview** page, in the left-hand navigation pane, select **Device configuration**. Even though no data is currently available, review the information that will be presented for this option regarding device management.
-11. In the navigation thread at the top of the page (**Home > Microsoft Intune > Device enrollment**), select **Microsoft Intune**.
-12. In the **Microsoft Intune | Overview** page, in the left-hand navigation pane, select **Device security**. Even though no data is currently available, review the information that will be presented for this option regarding device management.
-13. In the navigation thread at the top of the page (**Home > Microsoft Intune > Device enrollment**), select **Microsoft Intune**.
+9. Repeat steps 7-8, this time selecting **Device configuraton** on the **Microsoft Intune | Overview** page. 
+10. Repeat steps 7-8, this time selecting **Device enrollment** on the **Microsoft Intune | Overview** page.
+11. Repeat steps 7-8, this time selecting **Device security** on the **Microsoft Intune | Overview** page.
+12. In the navigation thread at the top of the page (**Home > Microsoft Intune > Device Security | Security baselines**), select **Microsoft Intune**.
 14. Leave LON-CL1 and the Azure portal tab open and proceed to the next exercise.
 
 You have now verified that Intune is the default MDM solution for your tenant.
