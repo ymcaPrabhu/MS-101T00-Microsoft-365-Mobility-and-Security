@@ -124,59 +124,61 @@ You have just created a new App Protection Policy (APP), which is also referred 
 
 Packaged apps, also known as Universal Windows apps, are based on an app model that ensures that all the files within an app package share the same identity. Therefore, it is possible to control the entire app using a single AppLocker rule as opposed to the non-packaged apps where each file within the app could have a unique identity. An AppLocker rule for a packaged app controls both the installation as well as the running of the app.
 
-1. In your Client 1 VM (LON-CL1), in the Search field on the taskbar at the bottom of the screen, enter **SecPol** and in the menu that appears, select **Local Security Policy**.
-2. In the **Local Security Policy** window, in the left-hand pane, expand **Application Control Policies**, expand **Applocker**, select **Packaged App Rules**, right-click on **Packaged App Rules**, and in the menu that appears, select **Create New Rule.**
-3. The **Create Packaged app Rules** wizard appears.
-4. On the **Before You Begin** page, select **Next.**
-5. On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then select **Next**.
-6. On the **Publisher** page, under the **Use an installed packaged app as a reference** option, select **Select**.<br/>
+1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+2. In the Search field on the taskbar at the bottom of the screen, enter **SecPol** and in the menu that appears, select **Local Security Policy**.
+3. In the **Local Security Policy** window, in the left-hand pane, expand **Application Control Policies**, expand **Applocker**, select **Packaged app Rules**, and then right-click on **Packaged app Rules**. In the menu that appears, select **Create New Rule.**
+4. This starts the **Create Packaged app Rules** wizard. On the **Before You Begin** page, select **Next.**
+5. On the **Permissions** page, make sure the **Action** option is set to **Allow** and the **User or group** is set to **Everyone**, and then select **Next**.
+6. On the **Publisher** page, under the **Use an installed packaged app as a reference** option, select the **Select...** button.<br/>
 
-    **Note:** It may take 20 seconds or more for the **Select applications** window to appear.
+    **Note:** It may take up to 20 seconds or more for the **Select applications** window to appear.
 
-7. In the **Select applications** window, pick the app that you want to use as the reference for your rule. For this lab, select the check box to the left of **OneNote**, and then select **OK**.
+7. In the **Select applications** window, pick the app that you want to use as the reference for your rule. For this lab, scroll to the bottom of the window and select the check box to the left of **OneNote for Windows10** (it's the ninth app from the bottom) and then select **OK**.
 8. On the **Publisher** page, select **Create**.
-9. If a dialog box that appears asking if you want to create the default rules, select **No**. You must not create default rules for your WIP policy.
+9. If a dialog box appears asking whether you want to create default rules, select **No**. You must not create default rules for your WIP policy.
 10. In the **Local Security Policy** window, in the left-hand pane, right-click on **AppLocker** and select **Export policy.**
-11. In the **Export policy** File Explorer window, you will export and saveyour new policy as an XML Select the **Documents** folder, enter **apprule1** in the **File name** field, verify the **Save as type** field displays **XML (\*.xml)**, and then select **Save**.
-12. An **AppLocker** dialog box appears displaying a message that **1 rules were exported from the policy**, select **OK.**
-13. In the **Local Security Policy** window, under **AppLocker**, select **Executable Rules**, and then right-click on **Executable Rules** and select **Create New Rule.**
+11. In the **Export policy** File Explorer window, you will export and save your new policy as an XML file. Select the **Documents** folder, enter **apprule1** in the **File name** field, verify the **Save as type** field displays **XML (\*.xml)**, and then select **Save**.
+12. An **AppLocker** dialog box appears displaying a message that **1 rules were exported from the policy**. Select **OK.**
+13. In the **Local Security Policy** window, under **AppLocker**, select **Executable Rules**, and then right-click on **Executable Rules**. In the menu that appears, select **Create New Rule.**
 14. On the **Before You Begin** page, select **Next.**
-15. On the **Permissions page**, make sure the Action is set to **Allow** and the **User or group** is set to **Everyone**, and then select **Next.**
+15. On the **Permissions** page, make sure the **Action** option is set to **Allow** and the **User or group** is set to **Everyone**, and then select **Next.**
 16. On the **Conditions** page, select the **Path** option and then select **Next**.
 17. On the **Path** page, select **Browse Folders....**.
 18. In the **Browse for Folder** window, scroll down and under **Local Disk (C:)**, select **Program Files**, and then select **OK**. Select **Next**.
 19. On the **Exceptions** page, you are not adding any exceptions, so select **Next**.
-20. On the **Name and Description** page, select the **Name** field and enter **exerule1** and then select **Create**.
-21. If a dialog box that appears asking if you want to create the default rules, select **No**.
-22. In the **Local Security Policy** window, in theleft-hand pane,right-click on **AppLocker** and select **Export policy.**
-23. In the **Export policy** File Explorer window, you will export and save your new policy as an XML Select the **Documents** folder, enter **exerule1** in the **File name** field, verify the **Save as type** field displays **XML (\*.xml)**, and then select **Save**.
-24. An **AppLocker** dialog box appears displaying a message that **2 rules were exported from the policy**, select **OK.**
+20. On the **Name and Description** page, select the **Name** field, replace the existing content by entering **exerule1**, and then select **Create**.
+21. If an **AppLocker** dialog box appears asking if you want to create the default rules, select **No**.
+22. In the **Local Security Policy** window, in the left-hand pane, right-click on **AppLocker** and select **Export policy.**
+23. In the **Export policy** File Explorer window, you will export and save your new policy as an XML file. Select the **Documents** folder, enter **exerule1** in the **File name** field, verify the **Save as type** field displays **XML (\*.xml)**, and then select **Save**.
+24. An **AppLocker** dialog box appears displaying a message that **2 rules were exported from the policy**. Select **OK.**
 25. Close the Local Security Policy window.
-26. After you've created your XML files, you need to import them by using **Microsoft Intune**, which you'll do in a later task.
+26. After you've created your XML files, you will import one of them by using **Microsoft Intune**, which you will do in the next task.
 
 
 ### Task 5: Import a list of protected apps using Microsoft Intune
 
-The purpose of this task is to show you how to use Intune to push an app to a device just like a GPO. In this task, you will use Notepad. In a previous task, Notepad was included as one of the recommended apps in the App protection policy that you created. In this task you will import the App protection policy (**apprule1.xml**) into Intune that you exported in the prior task.
+The purpose of this task is to show you how to use Intune to push an app to a device just like a Group Policy Object (GPO). In this task, you will use Notepad. In a previous task, Notepad was included as one of the recommended apps in the App protection policy that you created. In this task you will import the App protection policy (**apprule1.xml**) into Intune that you exported in the prior task.
 
-1. In your Client 1 VM (LON-CL1), select your **Edge** browser, which should display the **Microsoft Azure** portal and the **Client apps – App protection policies** window.
-2. In the right-hand pane, select **Win10Policy**.
-3. In the **Intune App Protection** window for **Win10Policy**, in the middle pane under **Manage**, select **Protected apps**.
-4. In the right-hand pane, select **Import apps**.
-5. In the **Import apps** window, select the folder icon that appears to the right of the **Select a file** field.
-6. In the **File Explorer** window that appears, select the **Documents** folder, select the **apprule1.xml** file, select **Open**, and then select **OK**.<br/>
+1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+2. In your **Edge** browser, you should have the **Microsoft Azure** portal open in a tab titled **Client apps | App protection policies - Microsoft Azure**. Select this tab.
+3. In the **Client apps – App protection policies** window, it displays the list of app protection policies. In this list, select **Win10Policy**.
+4. In the **Intune App Protection** window for **Win10Policy**, in the left-hand pane under **Manage**, select **Properties**.
+5. In the **Intune App Protection | Properties** window, select **Edit** that appears next to **Targeted apps**.
+6. In the **edit policy** window, scroll down past the list of Protected apps and then select **+Import**.
+7. In the **Import apps** pane that appears, select the folder icon that appears to the right of the **Select a file** field.
+8. In the **File Explorer** window that appears, select the **Documents** folder, select the **apprule1.xml** file, select **Open**, and then at the bottom of the **Import apps** pane, select **OK**.<br/>
 
-    **Note:** This imports the file and the apps are added to your **Protected apps** list in the right-hand pane.
-    
-7. You now want to create a file that you're going to encrypt using Windows Information Protection. In the search field on your taskbar, enter **Notepad** , and then in the menu, select **Notepad**.
-8. In the **Notepad** window, enter some text and then select **File**, select **Save as,** select the **Documents** folder, enter **apptest1** as the **File name**, and then select **Save.**
-9. Close Notepad.
-10. In the search field on your taskbar, enter **cmd** , and then in the menu, right-click on **Command Prompt** and select **Run as administrator**.
-11. In the Command Prompt window, at the prompt, enter the following command to encrypt the apptest1.txt file (the /e parameter directs the cipher command to encrypt the file):<br/>
+    **Note:** This imports the file, and the apps are added to your **Protected apps** list.
+9. On the **Edit policy** window, select the **Review + save** button that appears at the bottom of the window, and then select **Save**.   
+10. You now want to create a file that you're going to encrypt using Windows Information Protection. In the search field on your taskbar, enter **Notepad** , and then in the menu, select **Notepad**.
+11. In the **Notepad** window, enter some text and then select **File**, select **Save as,** select the **Documents** folder, enter **apptest1** as the **File name**, and then select **Save.**
+12. Close Notepad.
+13. In the search field on your taskbar, enter **cmd**, and then in the menu, right-click on **Command Prompt** and select **Run as administrator**.
+14. In the **Command Prompt** window, at the prompt, enter the following command to encrypt the apptest1.txt file (the /e parameter directs the cipher command to encrypt the file):<br/>
 
     **cipher /e   C:\Users\Admin\Documents\apptest1.txt**
 
-12. Leave the Command Prompt window open for the next task.
+15. Leave the Command Prompt window open for the next task.
 
 
 ### Task 6: Recover data using the EFS DRA certificate
