@@ -1,16 +1,19 @@
 # Module 11 - Lab 10 - Exercise 4 - Enroll a Windows 10 Device
 
-One of Adatum’s goals for their Microsoft 365 deployment is to enroll their Windows 10 devices to Azure AD and Intune so that the devices can be managed by MDM. As part of her pilot project, Holly Dickson wants to enroll the LON-CL2 PC to Intune. In this exercise, you will first verify that the device is not currently enrolled, and having done that, you will enroll the device to Azure AD and Intune and then verify the enrollment. 
+One of Adatum’s goals for their Microsoft 365 deployment is to enroll their Windows 10 devices to Azure AD and Intune so that the devices can be managed by MDM. As part of her pilot project, Holly Dickson wants to enroll the LON-CL1 PC to Intune. In this exercise, you will first verify that the device is not currently enrolled, and having done that, you will enroll the device to Azure AD and Intune and then verify the enrollment. 
 
 During her pilot project, Holly plans to use certificates with Intune to authenticate Adatum’s users to applications and corporate resources through VPN, Wi-Fi, and email profiles. By using certificates to authenticate these connections, Adatum’s end-users won't need to enter usernames and passwords, which helps to make their access seamless. 
 
 ### Task 1: Verify the device is not enrolled
+You should first verify that the device you want to enroll into Intune is not already enrolled. 
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** and into Microsoft 365 as **Holly Dickson**.
-2. In the **Azure portal**, in the navigation thread at the top of the screen (**Home > Microsoft Intune > Device configuration)**, select **Microsoft Intune**.
-3. In the **Microsoft Intune – Overview** page, in the middle pane under **Manage**, select **Devices**.
-4. On the **Devices** pane, scroll to the bottom of the detail pane on the right and verify that no device is currently enrolled to Intune.
-5. In the middle pane under **Manage**, select **All Devices** and verify that no device is listed in the details pane.
+1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+2. In your **Edge** browser, you should have the **Microsoft Azure** portal open in a tab titled **Create a profile - Microsoft Azure**. Select this tab, which displays the **Microsoft Azure** portal, and in particular, the **Device configuration | Profiles** window. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Device configuration | Profiles**. <br/>
+
+   In this thread, select **Microsoft Intune**.
+3. In the **Microsoft Intune | Overview** page, in the left=hand pane under **Manage**, select **Devices**.
+4. On the **Devices** window, verify that no device is currently enrolled to Intune.
+5. In the left-hand pane under **Manage**, select **All Devices** and verify that no device is listed in the details pane.
 6. Switch to **LON-CL2**. If necessary, log in as the **Admin** account with a password of **Pa55w.rd**.
 7. You now want to start the Certificates MMC for the local machine. In the Search field on the taskbar, enter **run**, and then on the menu, select **Run**.
 8. In the **Run** window, enter **certlm.msc** in the **Open** field and then select **OK**.
@@ -29,6 +32,7 @@ During her pilot project, Holly plans to use certificates with Intune to authent
 8. In the **Settings** app, in the **Access work or school** section, verify that the device is connected to Azure AD and then close the **Settings** app by selecting the **X** in the upper right-hand corner.
 
 ### Task 3: Verify the device is enrolled to Azure AD and Intune
+In an earlier lab you configured integration between Azure AD and Intune. Because of that, any device that is joined to Azure AD is automatically enrolled to Intune. In this task you will join LON-CL2 to Azure AD, which will automatically enroll it into Intune.
 
 1. In **LON-CL2** , maximize the **certlm – [Certificates – Local Computer]** console on the taskbar.
 2. In the **certlm – [Certificates – Local Computer]** console, in the left-hand navigation pane, the **Personal** folder should already be selected from the prior task. In the menu bar, select **Action** and then select **Refresh**.
