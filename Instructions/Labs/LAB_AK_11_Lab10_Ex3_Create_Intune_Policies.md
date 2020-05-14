@@ -183,15 +183,15 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 
 ### Task 6: Recover data using the EFS DRA certificate
 
-The purpose of this task is to show you how to recover a file that has been encrypted using WIP if the Windows 10 device on which it resides has been recovered after having been misplaced or stolen. In this case, you will decrypt the apptest1.txt file that you earlier encrypted.
+The purpose of this task is to show you how to recover a file that has been encrypted using WIP if the Windows 10 device on which it resides has been recovered after having been misplaced or stolen. In this case, you will decrypt the apptest1.txt file that you earlier encrypted. In a real-world scenario, you would start out by copying your WIP-encrypted file to a location where you have admin access; however, in this lab, we're simply going to point to the apptest1.txt file to keep things simple.
 
-1. In a real-world scenario, you would start out by copying your WIP-encrypted file (in this case, **apptest1.txt**) to a location where you have admin access. In this lab, we're simply going to point to the apptest1.txt file, so proceed to the next step.
+1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 2. You must then install the **DRAcert.PFX** file. To do so, select the **File Explorer** icon on the taskbar at the bottom of the screen. Maximize the **File Explorer** window.
 3. In **File Explorer**, expand **Local Disk (C:)**, expand **Users**, and select **Admin**.
 4. In the list of files in the **Admin** folder, double-click on the **DRAcert.PFX** file. This initiates the **Certificate Import Wizard**.
 5. On the **Welcome to the Certificate Import Wizard** page, keep the selection **Current User** and select **Next**.
 6. On the **File to import** page, select **Next.**
-7. On the **Private key protection** page, in the **Password** field, enter the password that you assigned to the DRAcert file that you created in Task 2 (you were instructed to write this down for future use). For this lab, enter **Pa55w.rd**, which was the password that you assigned to the DRAcert file, and then select **Next**.
+7. On the **Private key protection** page, in the **Password** field, enter the password that you assigned to the DRAcert file that you created in Task 2 (in a real-world scenario, you were instructed to write this down for future use). For this lab, enter **Pa55w.rd**, which was the password that you assigned to the DRAcert file, and then select **Next**.
 8. On the **Certificate store** page, select **Next.**
 9. On the **Completing the Certificate Import Wizard** page, select **Finish.**
 10. On the **Import was successful** dialog box, select **OK**.
@@ -200,33 +200,44 @@ The purpose of this task is to show you how to recover a file that has been encr
 
     **cipher /d  C:\Users\Admin\Documents\apptest1.txt**
 
-13.	Close the Command Prompt and Windows Explorer windows and leave the browser, with the Azure Portal website, open.
+13.	Close the Command Prompt and File Explorer windows
+14. Leave your Edge browser open.
 
 
 ### Task 7: Configure enrollment restrictions
+When enrolling devices to Microsoft Intune, you have the option to Allow or Block personally owned devices from being enrolled. This is done by restricting what device type platforms you want to allow when devices are enrolled. For example, if you configured Intune to only allow iOS devices to be enrolled and a user attempts to enroll an Android device, the operation would be blocked from enrolling.
 
-1. In your Client 1 VM (LON-CL1), select your **Edge** browser, which should display the **Microsoft Azure** portal.
-2. Select **Microsoft Intune** from the navigation thread at the top of the page.
-3. In the **Microsoft Intune – Overview** window, in the middle pane under the **Manage** section, select **Device enrollment.**
-4. In the **Device enrollment** window, review the available options. In the middle pane under the **Manage** section, select **Enrollment restrictions**.
-5. In the **Device enrollment – Enrollment restrictions** window, in the details pane on the right, in the **Device type restrictions** section, select **Default.**
-6. In the **All Users** window, in the middle pane under the **Manage** section, select **Properties.**
-7. In the detail pane on the right, select **Edit** that appears next to **Platform settings**.
-8. In the **Edit restriction** window, select **Block** below **PLATFORM** for the **iOS** and **macOS** rows, select **Review + save** and then review your changes. Both platform settings should display Blocked under the **PLATFORM** column. Select **Save.**
-9. In the navigation thread at the top of the page, select **Device enrollment – Enrollment restrictions**. 
-10. In the **Device enrollment – Enrollment restrictions** window, in the details pane on the right, in the **Device limit restrictions** section, select **Default.**
-11. In the **All Users** window, in the middle pane under the **Manage** section, select **Properties.**
-12. In the detail pane on the right, select **Edit** that appears next to **Device limit**.
-13. In the **Edit restriction** window, select the **Device limit** field, in the drop-down menu select **3**, and thenselect **Review + save.** Review your change and then select **Save.**
+1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+2. In your Edge browser, you should have a tab titled **Intune App Protection | Properties - Microsoft Azure**. Select this tab, which displays the **Microsoft Azure** portal, and in particular, the properties for the **Win10Policy** App protection policy that you created in a prior lab. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Client apps | App protection policies > Intune App Protection | Properties**. <br/>
+
+    In this thread, select **Microsoft Intune**.
+3. In the **Microsoft Intune | Overview** window, in the left-hand pane under the **Manage** section, select **Device enrollment.**
+4. In the **Device enrollment** window, review the available options. In the left-hand pane under the **Manage** section, select **Enrollment restrictions**.
+5. In the **Device enrollment | Enrollment restrictions** window, in the details pane on the right, in the **Device type restrictions** section, on the **Default** restriction type, select **All users**.
+6. In the **All Users** window, in the left-hand pane under the **Manage** section, select **Properties.**
+7. In the detail pane, select **Edit** which appears next to **Platform settings**.
+8. In the **Edit restriction** window, under the **Platform** column, select **Block** for the **iOS/iPadOS** and **macOS** types, select the **Review + save** button at the bottom of the screen, and then review your changes. Both platform settings should display **Block (edited)** under the **Platform** column. All other device types should be allowed. Select **Save.**
+9. In the navigation thread at the top of the page, select **Device enrollment | Enrollment restrictions**. 
+10. In the **Device enrollment | Enrollment restrictions** window, in the **Device limit restrictions** section, on the **Default** row, select **All users**.
+11. In the **All Users** window, in the left-hand pane under the **Manage** section, select **Properties.**
+12. In the **All Users | Properties** window, select **Edit** that appears next to **Device limit**.
+13. In the **Edit restriction** window, select the **Device limit** field, in the drop-down menu select **3**, and then select **Review + save.** Review your change and then select **Save.**
+14. Leave the Azure portal and all other tabs open in your browser for the next task.
 
 
 ### Task 8: Review device configuration profiles
+The purpose of this task is to simply review the different platforms that are available to be assigned to a device configuration profile. You will not create a profile; you will simply review the platforms that are available to assign to a profile.
 
-1. In the **Azure portal**, in the navigation thread at the top of the screen, select **Microsoft Intune**.
-2. In the **Microsoft Intune – Overview** page, in the middle pane under **Manage,** select **Device configuration**.
-3. On the **Device configuration** pane, select **Profiles** and then select **+Create profile**.
-4. On the **Create profile** pane, select different platforms and profile types and then review available options.
-5. **Do not configure any option.** Close the **Create profile** pane.
+1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+2. In your **Edge** browser, you should have the **Microsoft Azure** portal open in a tab titled **All Users | Properties - Microsoft Azure**. Select this tab, which displays the **Microsoft Azure** portal, and in particular, the properties for all users within enrollment restrictions. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Device enrollment | Enrollment restictions**. <br/>
+
+    In this thread, select **Microsoft Intune**.
+3. In the **Microsoft Intune – Overview** page, in the left-hand pane under **Manage,** select **Device configuration**.
+4. On the **Device configuration** pane, in the left-hand pane under **Manage,** select **Profiles**.
+5. On the **Device configuration | Profiles** page, select **+Create profile** that appears on the menu bar above the list of profiles.
+6. On the **Create a profile** pane, select the **Platform** field to see the different platforms that are available. **Do not configure any option.** The purpose of this task is to simply see what platforms are available that can be assigned to a new device profile, should you want to ever create one.
+7. Close the **Create a profile** pane.
+8. Leave the Azure portal and all other tabs open in your browser for the next task.
 
 
-# End of Lab for this Lesson
+# Proceed to Lab 10 - Exercise 4
