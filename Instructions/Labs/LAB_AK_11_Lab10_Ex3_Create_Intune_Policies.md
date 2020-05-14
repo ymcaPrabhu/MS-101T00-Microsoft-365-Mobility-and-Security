@@ -1,6 +1,6 @@
 # Module 11 - Lab 10 - Exercise 3 - Create Intune Policies 
 
-Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet some requirements. In Intune, these requirements are referred to as compliance policies. Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with Conditional Access requirements, administrators can block users and devices that do not meet the rules.
+Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet certain requirements. In Intune, these requirements are referred to as compliance policies. Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with Conditional Access requirements, administrators can block users and devices that do not meet the rules.
 
 ### Task 1: Create and apply compliance policy
 
@@ -27,7 +27,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you will creat
 13. On the **Step 5 - Assignments** page, you want to assign this policy to all the devices in the **Enrolled devices** group, which you created in the prior exercise. <br/>
 
     The **Assign to** field is already set to **Selected groups** be default, so under the **Selected groups** section, select **+Select groups to include**. In the **Select groups to include** pane that appears, select **Enrolled devices** and then select the **Select** button at the bottom of the pane. Select **Next**.
-14.  On the **Step 6 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
+14. On the **Step 6 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
 15. In your **Edge** browser, select the **Azure Active Directory admin center** tab. 
 16. In the the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory.**
 17. In the **Adatum Corporation | Overview** window, in the middle pane under **Manage**, select **Mobility (MDM and MAM).**
@@ -39,87 +39,88 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you will creat
 
 ### Task 2: Manually create an EFS DRA Certificate
 
-EFS is the Encrypted File System that is built into Windows. It allows anyone to encrypt a file. The encryption is done using digital **certificates**, and as part of that process, Windows assigns something called a Data Recovery Agent (DRA). In most cases a DRA will be the Administrator.
+EFS is the Encrypted File System that is built into Windows. It allows anyone to encrypt a file. The encryption is done using digital certificates, and as part of that process, Windows assigns something called a Data Recovery Agent (DRA). A data recovery agent is a Microsoft Windows user who has been granted the right to decrypt data that was encrypted by other users. The assignment of DRA rights to an approved individual provides an IT department with a way to unlock encrypted data in case of an emergency. Data Recovery Agents can be defined at the domain, site, organizational unit, or local machine level. In a small to mid-sized business, the network administrator is often the designated DRA.
 
-In this task, you're going to run a command prompt in which you enter the cipher command with a /R parameter. By default, /R creates a 2048 bit RSA recovery key and certificate and writes them both to a .PFX file, and it writes the certificate to a .CER file. An administrator can then add the contents of the .CER file to the EFS recovery policy to create the recovery key for users and import the .PFX file to recover individual files.
+In very simple terms, the network administrator uses Microsoft Windows Group Policy in Active Directory to assign everyone a public key for encryption and their own personal private key for decryption. This ensures that users can only decrypt the content they have created, and no one else's. The data recovery agent, however, is assigned a private key capable of unlocking all content encrypted with the public key.
 
-The purpose of this task is to create this RSA recovery key so that if the device on which they reside becomes compromised, you can recover the files with this certificate from Intune.
+The administrator must generate a Data Recovery Agent certificate which grants the user permission to access the encrypted resources. However, if the DRA certificate is created after the encryption of the resource, the resource cannot be decrypted by the DRA certificate. If you don't already have an EFS DRA certificate, you'll need to create and extract one from your system before you can use Windows Information Protection (WIP).
 
-1. In your Client 1 VM (LON-CL1), in the Search field on the taskbar at the bottom of the screen, enter **cmd,** and in the menu that appears, select **Command Prompt**.
-2. In the **Command Prompt** window, you are going to enter a **cipher** command, which displays or alters the encryption of file directories on NTFS partitions. The /R parameter generate an EFS recovery key and certificate and writes them to a .pfx file, which, for the purpose of this lab, you&#39;re going to name **DRAcert** (in the real-world, you can name it anything).<br/>
+In this task, you're going to run a command prompt in which you enter the cipher command with a /R parameter. By default, /R creates a 2048 bit RSA recovery key and DRA certificate and writes them both to a .PFX file, and it writes the DRA certificate to a .CER file. An administrator can then add the contents of the .CER file to the EFS recovery policy to create the recovery key for users and import the .PFX file to recover individual files.
 
-    Enter the following command and press Enter:<br/>
+The purpose of this task is to create this RSA recovery key so that if the device on which they reside becomes compromised, you can recover the files with this DRA certificate from Intune.
+
+1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+2. In the Search field on the taskbar at the bottom of the screen, enter **cmd,** and in the menu that appears, select **Command Prompt**.
+3. In the **Command Prompt** window, you are going to enter a **cipher** command, which displays or alters the encryption of file directories on NTFS partitions. The /R parameter generate an EFS recovery key and DRA certificate and writes them to a .pfx file, which, for the purpose of this lab, you're going to name **DRAcert** (in the real-world, you can name it anything).<br/>
+
+    At the command prompt, enter the following command and press Enter: <br/>
   
    **cipher /R:DRAcert**
 
-3. You will be prompted to type in a password to protect your .PFX file. Enter **Pa55w.rd** and press Enter.<br/>
+4. You will be prompted to type in a password to protect your .PFX file. Enter **Pa55w.rd** and press Enter.<br/>
 
-    **Note:** The cursor will NOT move when you type in the password, so you will not see what you&#39;re typing. You should also write down the password for future use; you will need this in a later task when you try to recover an encrypted file.
+    **Note:** The cursor will NOT move when you type in the password, so you will not see what you're typing. You should also write down the password for future use; you will need this in a later task when you try to recover an encrypted file.
 
-4. You will be prompted to type in the password again to confirm it. Press Enter when done.
-5. You should receive messages indicating that your .CER and .PFX files were created successfully.
-6. Close the Command Prompt window.
+5. You will be prompted to type in the password again to confirm it. Press Enter when done.
+6. You should receive messages indicating that your .CER and .PFX files were created successfully.
+7. Close the Command Prompt window.
+8. Leave your browser open for the next task.
 
 
 ### Task 3: Create an App Protection Policy
 
-You're now going to create an app protection policy that will protect selected applications from intrusion; that is, the apps will be protected so that they can only be accessed by individuals who are authorized to do so, such as employees from your company and other users from your Microsoft 365 tenant.
+In your role as Holly Dickson, Adatum's Enterprise Administrator, you are now going to create an app protection policy that will protect selected applications from intrusion. In other words, the apps will be protected so that they can only be accessed by individuals who are authorized to do so, such as Adatum employees and other users from your Microsoft 365 tenant. This enables you to use Windows Information Protection (WIP) policies with Windows 10 apps to protect apps without device enrollment.
 
-In this lab, you will be creating a WIP policy that protects an entire collection of recommended apps, as well as an app from the Microsoft Store, which in this case is **Microsoft Power BI**. Since this app produces reports and queries of company trends that may be confidential, Adatum wants to restrict access to it to selected individuals.
+In this task, you will create a WIP policy that protects an entire collection of recommended apps, as well as an app from the Microsoft Store, which in this case is **Microsoft Power BI**. Since this app produces reports and queries of company trends that may be confidential, Adatum wants to restrict access to it to selected individuals.
 
-1. In the **Microsoft Azure** portal, in the left-hand navigation pane, select **All services**.
-2. On the **All services** window, enter **Intune** in the **Search** box, and then in the details pane on the right, select **Intune**.
-3. In the **Microsoft Intune – Overview** window, in the middle pane under the **Manage** group, select **Client apps**.
-4. In the **Client apps** window, in the middle pane under the **Manage** group, select **App protection policies.**
-5. In the **Client apps – App protection policies** window, in the right-hand pane, select **+Create Policy.**
-6. In the **Create policy** window, enter the following information:
+1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+2. In your Edge browser, you should have a tab titled **Compliance1 - Microsoft Azure**. Select this tab, which displays the **Microsoft Azure** portal, and in particular, the **Compliance1** data compliance policy that you created in a prior lab. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Device compliance | Policies > Compliance1**. <br/>
+
+    In this thread, select **Microsoft Intune**.
+3. In the **Microsoft Intune | Overview** window, in the left-hand pane under the **Manage** group, select **Client apps**.
+4. In the **Client apps** window, in the left-hand pane under the **Manage** group, select **App protection policies.**
+5. In the **Client apps | App protection policies** window, in the menu bar that appears above the list of policies, select **+Create Policy.** In the menu that appears, select **Windows 10**.
+6. On the **Create policy** window, note the six steps that appear at the top of the page. You are currently in the **Step 1 - Basics** page. Enter the following information:
 
     - Name: **Win10Policy**
-    - Description: **Windows Information Protection Policy for Windows 10 computers**
-    - Platform: **Windows 10**
+    - Description: **Windows Information Protection policy for Windows 10 computers**
     - Enrollment state. **With Enrollment**
+7. Select **Next**.
+8. On the **Step 2 - Targeted apps** page, under the **Protected apps** group, select **+Add**. 
+9. In the **Add apps** pane that appears on the right, select the drop-down arrow in the field that currently displays **Recommended apps**. The menu that appears displays the available app options that you can add to this policy - **Recommended apps, Store apps**, and **Desktop apps**. Since you're first going to add all the recommended apps, select **Recommended apps**. <br/>
 
-7. Select the **Protected apps** group.
-8. In the **Protected apps** window, select **Add apps.** You're first going to add all the recommended apps.
-9. In the **Add apps** window, select the check box to the left of the **NAME** column heading to select all app, select **OK.**
-10. In the **Protected apps** window, select **Add apps.** In the remaining steps, you&#39;re going to add a Store app, which in this case is **Microsoft Power BI**.
-11. In the **Add apps** window, the drop-down field at the top of the page displays **Recommended apps**. Select this field, and in the drop-down menu, select **Store apps**.
-12. In the **Add apps** window, enter the following information:
+    The quickest way to add all the recommended apps is to select the check box to the left of the **Name** column heading; this will select the check boxes for all the apps in the list. Select the **OK** button at the bottom of the window.
+10. This returns you to the**Step 2 - Targeted apps** page. Scroll down past all the recommended apps that you just added and then select **+Add** again.
+11. In the **Add apps** pane, you're going to add **Microsoft Power BI**, which is an app from the Microsoft Store. Select the drop-down arrow in the field that currently displays **Recommended apps**, and in the menu that appears, select **Store apps**.
+12. In the **Add apps** window, enter the following information and then select **OK**:
 
     - Name: **Microsoft Power BI**
     - Publisher: **CN=Microsoft Corporation, o=Microsoft Corporation, L=Redmond, S=Washington, C=US**
     - Product Name: **Microsoft.microsoftpowerBIforWindows**
-    - Action: **Allow**
+13. Select **Next**.
+14. On the **Step 3 - Required settings** page, in the **Windows Information Protection mode** setting, select **Block**, and then select **Next**. <br/>
 
-13. Select **OK.**
-14. On the **Protected apps** window, select **OK.**
-15. On the **Create policy** window, select **Create.**
+    **Note:** By choosing the **Block** setting, WIP will look for inappropriate data sharing practices and stop the user from completing the action. Blocked actions can include sharing information across non-corporate-protected apps, and sharing corporate data between other people and devices outside the organization. Holly has decided to select this option given her concern over the Microsoft Power BI app, which can produce reports and queries of company trends that may be confidential.
+15. On the **Step 4 - Advanced settings** page, scroll down to the **Data protection** section. You will upload the DRA certificate that you created in the prior task, which will allow recovery of encrypted data. <br/>
 
-You have just created a new App Protection Policy (APP), also called a Windows Information Protection Policy (WIP).
+    To the right of the **Select a file** field, select the **file** icon. In the **File Explorer** window that appears, expand **Local Disk (C:)**, expand **Users**, and then select the **Admin** folder. Scroll down through the files in the **Admin** folder, select **DRAcert.CER**, and then select **Open**.<br/>
 
+    **Note:** DRAcert.CER should now appear in the certificate field in the **Data protection** section. The DRAcert certificate has now been uploaded to the App Protection policy titled **Win10Policy**. This certificate is now available for use in unencrypting protected files. <br/>
 
-### Task 4: Add the EFS DRA Certificate to your WIP Policy
+    **Important:** At this point in a real-world scenario, to maintain device integrity, you should copy your data recovery certificate to an offline location on a thumb drive or stored in a program for keys and passwords. You should also create a backup of this file and store it at another location. The certification is how you recover files using Intune. If the certificate is not saved, then you cannot recover the file using Windows Information Protection if the device ever becomes compromised. For the purpose of this lab, you will not be storing this certificate to an offline device.
+16. Select **Next**.
+17. On the **Step 5 - Assignments** page, under **Included groups**, select **+Select groups to include**. Holly wants to limit this policy to the members of the **WIP Users** group, which is the group of users selected to participate in compliace testing for Adatum's pilot project. <br/>
 
-You now want to use Microsoft Intune to add your EFS DRA certificate to the WIP policy you created in the prior task (Win10Policy). This will make the certificate available for use in unencrypting protected files.
+    In the **Select groups to include** pane, select **WIP users**, and then select the **Select** button at the bottom of the pane.
+18. Select **Next**.
+19. On the **Step 6 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
+20. On the **Client apps | App protection policies** window, **Win10Policy** should appear in the list of policies. However, note that its **Deployed** status is **No**. It only takes a few seconds for the policy to be deployed, so select **Refresh** on the menu bar and the **Deployed** status should change to **Yes**.
+21. Leave the Azure portal and the Azure Active Directory admin center tabs open in your browser for the next task.
 
-1. In the **Microsoft Azure portal**, in the navigation thread at the top of the, select **Microsoft Intune**.
-2. On the **Microsoft Intune – Overview** window, in the middle pane under the **Manage** section, select **Client apps**.
-3. In the **Client apps** window, in the middle pane under the **Manage** section, select **App protection policies**.
-4. In the **Client apps – App protection policies** window, in the detail pane on the right, select **Win10Policy**.
-5. In the **Intune App Protection** window for **Win10Policy**, in the middle pane under the **Manage** section, select **Advanced settings**.
-6. In the **Intune App Protection – Advanced settings** window, in the detail pane on the right, under the **Data protection** section, select the field under **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data**.
-7. In the **File Explorer** window that appears, expand **Local Disk (C:)**, expand **Users**, and then select the **Admin** Scroll down through the files in the Admin folder, select **DRAcert.CER**, and then select **Open**.<br/>
-
-    **Note:** DRAcert.CER should now appear in the certificate field in the Data protection section.
-
-8. Select **Save**.
-
-The DRAcert certificate has been uploaded to the App Protection policy titled Win10Policy. This certificate is now available for use in unencrypting protected files.
-
-**Important:** At this point in a real-world scenario, to maintain device integrity, you should copy your data recovery certificate to an offline location on a thumb drive or stored in a program for keys and passwords. You should also create a backup of this file and store it at another location. The certification is how you recover files using Intune. If the certificate is not saved, then you cannot recover the file using Windows Information Protection if the device ever becomes compromised. For the purpose of this lab, you will not be storing this certificate to an offline device.
+You have just created a new App Protection Policy (APP), which is also referred to as a Windows Information Protection (WIP) policy.
 
 
-### Task 5: Create a packaged App rule for the store apps
+### Task 4: Create a packaged App rule for the store apps
 
 Packaged apps, also known as Universal Windows apps, are based on an app model that ensures that all the files within an app package share the same identity. Therefore, it is possible to control the entire app using a single AppLocker rule as opposed to the non-packaged apps where each file within the app could have a unique identity. An AppLocker rule for a packaged app controls both the installation as well as the running of the app.
 
@@ -153,7 +154,8 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 25. Close the Local Security Policy window.
 26. After you've created your XML files, you need to import them by using **Microsoft Intune**, which you'll do in a later task.
 
-### Task 6: Import a list of protected apps using Microsoft Intune
+
+### Task 5: Import a list of protected apps using Microsoft Intune
 
 The purpose of this task is to show you how to use Intune to push an app to a device just like a GPO. In this task, you will use Notepad. In a previous task, Notepad was included as one of the recommended apps in the App protection policy that you created. In this task you will import the App protection policy (**apprule1.xml**) into Intune that you exported in the prior task.
 
@@ -177,7 +179,7 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 12. Leave the Command Prompt window open for the next task.
 
 
-### Task 7: Recover your data using the EFS DRA certificate in a test environment
+### Task 6: Recover your data using the EFS DRA certificate in a test environment
 
 The purpose of this task is to show you how to recover a file that has been encrypted using WIP if the Windows 10 device on which it resides has been recovered after having been misplaced or stolen. In this case, you will decrypt the apptest1.txt file that you earlier encrypted.
 
@@ -199,7 +201,7 @@ The purpose of this task is to show you how to recover a file that has been encr
 13.	Close the Command Prompt and Windows Explorer windows and leave the browser, with the Azure Portal website, open.
 
 
-### Task 8: Configure enrollment restrictions
+### Task 7: Configure enrollment restrictions
 
 1. In your Client 1 VM (LON-CL1), select your **Edge** browser, which should display the **Microsoft Azure** portal.
 2. Select **Microsoft Intune** from the navigation thread at the top of the page.
@@ -215,7 +217,8 @@ The purpose of this task is to show you how to recover a file that has been encr
 12. In the detail pane on the right, select **Edit** that appears next to **Device limit**.
 13. In the **Edit restriction** window, select the **Device limit** field, in the drop-down menu select **3**, and thenselect **Review + save.** Review your change and then select **Save.**
 
-### Task 9: Review device configuration profiles
+
+### Task 8: Review device configuration profiles
 
 1. In the **Azure portal**, in the navigation thread at the top of the screen, select **Microsoft Intune**.
 2. In the **Microsoft Intune – Overview** page, in the middle pane under **Manage,** select **Device configuration**.
