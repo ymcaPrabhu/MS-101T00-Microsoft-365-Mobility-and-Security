@@ -2,7 +2,7 @@
 
 Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet certain requirements. In Intune, these requirements are referred to as compliance policies. Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with Conditional Access requirements, administrators can block users and devices that do not meet the rules.
 
-### Task 1: Create and apply compliance policy
+### Task 1: Create and apply a compliance policy
 
 In your role as Holly Dickson, Adatum's Enterprise Administrator, you will create a compliance policy that governs Windows 10 devices at Adatum Corporation. This policy will dictate what the minimum requirements are for accessing Adatum's environment. It will also control how long a device can stay out of compliance before it's locked out from use; thereby, requiring administrator assistance to make it operational again. The policy will also control who it's assigned to, which in this case will be all devices enrolled in Microsoft Intune.
 
@@ -179,7 +179,7 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 12. Leave the Command Prompt window open for the next task.
 
 
-### Task 6: Recover your data using the EFS DRA certificate in a test environment
+### Task 6: Recover data using the EFS DRA certificate
 
 The purpose of this task is to show you how to recover a file that has been encrypted using WIP if the Windows 10 device on which it resides has been recovered after having been misplaced or stolen. In this case, you will decrypt the apptest1.txt file that you earlier encrypted.
 
