@@ -38,7 +38,7 @@ For this lab, you will not include a file of passwords; you will instead enter a
 
 8. Once the attack is complete, you will be returned to the **Attack simulator** page. 
 
-9. Leave your browser and the Security and Comnpliance Center open for the next task.   
+9. Leave your browser and the Security and Compliance Center open for the next task.   
 
 
 ### Task 2: Review the Brute Force results
@@ -49,7 +49,7 @@ You will now review the results of the Brute Force Password attack.
 
 2. On the **Attack details** page, view the report for the **Brute force test** that you completed. Review the information on the page, and note the results after having entered Lynne's actuall password among the list of passwords that were entered for the simulation. 
 
-3. In the **Attack details** page, select **Attack simulator* in the navigation thread at the top of the page (**Home > Attack simulator > Report**).
+3. In the **Attack details** page, select **Attack simulator** in the navigation thread at the top of the page (**Home > Attack simulator > Report**).
 
 4 Leave your browser open in LON-CL1 and do not close any of the tabs.
    
