@@ -8,7 +8,7 @@ During her pilot project, Holly plans to use certificates with Intune to authent
 You should first verify that the device you want to enroll into Intune is not already enrolled. 
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
-2. In your **Edge** browser, you should have the **Microsoft Azure** portal open in a tab titled **Create a profile - Microsoft Azure**. Select this tab, which displays the **Microsoft Azure** portal, and in particular, the **Device configuration | Profiles** window. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Device configuration | Profiles**. <br/>
+2. In your **Edge** browser, you should have the **Microsoft Azure** portal open in a tab that's displaying the **Device configuration | Profiles** window. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Device configuration | Profiles**. <br/>
 
    In this thread, select **Microsoft Intune**.
 3. In the **Microsoft Intune | Overview** page, in the left=hand pane under **Manage**, select **Devices**.
