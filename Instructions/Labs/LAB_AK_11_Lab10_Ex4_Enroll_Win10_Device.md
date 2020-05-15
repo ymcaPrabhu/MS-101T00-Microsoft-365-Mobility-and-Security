@@ -32,7 +32,7 @@ You should first verify that the device you want to enroll into Intune is not al
 7. On the **You're all set!** page, select **Done**.
 8. In the **Settings** app, in the **Access work or school** section, verify that the device is connected to Azure AD and then close the **Settings** app by selecting the **X** in the upper right-hand corner.
 9. On the **Devices | All devices** page in the Azure portal, in the left-hand pane under **Manage**, select **Azure AD devices**. You should see both **LON-CL1** and **LON-CL2**.
-9. Leave everything open for the next task.
+9. Leave all browser tabs open for the next task.
 
 ### Task 3: Verify the device is enrolled to Azure AD and Intune
 In an earlier lab you configured integration between Azure AD and Intune. Because of that, any device that is joined to Azure AD is automatically enrolled to Intune. In this task you will join LON-CL2 to Azure AD, which will automatically enroll it into Intune.
@@ -51,7 +51,7 @@ In an earlier lab you configured integration between Azure AD and Intune. Becaus
 8. In the **Devices | Azure AD devices** window, in the lef-hand pane under **Manage**, select **All devices**.
 9. In the **Devices | All devices** window, verify that both devices are listed. Note the value displayed in the **Ownership** column for each device. Since LON-CL1 was enrolled by Holly, an administrator, LON-CL1 is classified as a corporate device. Conversely, since Joni Sherman, a non-admin, enrolled LON-CL2, device ownership is classified as a personal device. <br/>
 
-10. Leave the Client 1 VM open for the next exercise.
+10. Leave all browser tabs open for the next task.
 
 
 # Proceed to Lab 4 - Exercise 5
