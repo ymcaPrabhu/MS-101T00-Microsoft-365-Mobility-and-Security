@@ -18,7 +18,7 @@ In this task, you're going to create device categories, which will then be assig
 7. On the **Step 2 - Scope tags** window, you will not define scope tags, so select **Next**. 
 8. On the **Step 3 - Review + create** window, select **Create**.
 9. Repeat steps 5-8 to create a second device category, this one titled **Desktops**.
-10. Leave all your browser tabs open for the next task.
+10. Leave all browser tabs open for the next task.
 
 ### Task 2: Manage the enrolled devices
 In this task, you're going to manage the Category property of the two devices that are joined to Azure AD and enrolled in Microsoft Intune. You will also review the properties and discovered apps on each device.
@@ -37,7 +37,7 @@ In this task, you're going to manage the Category property of the two devices th
 10. In the left-hand pane under the **Monitor** section, select **Discovered apps** and review the list of apps that were discovered on the device.
 11. In the **Lon-CL1 | Discovered apps** window, select **Devices | All devices** in the navigation thread at the top of the page.
 12. Repeat steps 4-10, but this time select **LON-CL2**, which is the device that Joni Sherman joined to Azure AD in an earlier lab. Change the **Device category** value to **Mobile Device**.
-13. Leave the Azure portal and all other tabs open in your browser for the next task.
+13. Leave all browser tabs open for the next task.
 
 
 ### Task 3: Create dynamic groups for the device categories
@@ -62,7 +62,7 @@ In this task, you're going to manage the Category property of the two devices th
 8. Select **Save** on the menu bar at the top of the page.
 9. On the **New Group** window, select **Create.** The **Mobile Device** group should now appear in the list of groups.
 10. Repeat steps 3-9 to create a group for desktop devices. The **Group Name** should be set to **Desktop Devices**, and in the **Dynamic membership rules** window, enter **Desktop Devices** in the **Value** field.
-11. Leave the Azure portal and all other tabs open in your browser for the next task.
+11. Leave all browser tabs open for the next task.
 
 
 ### Task 4: Create a conditional access policy
