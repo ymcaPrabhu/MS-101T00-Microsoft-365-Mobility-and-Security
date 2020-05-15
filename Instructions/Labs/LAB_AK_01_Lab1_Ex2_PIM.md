@@ -1,8 +1,8 @@
 # Module 1 - Lab 1 - Exercise 2 - PIM Resource Workflows
 
-As part of her Microsoft 365 pilot project, Holly Dickson, Adatum's Enterprise Administrator, wants to implement Privileged Identity Management within Azure Active Directory. One of Adatum's pain points in their existing system is that they have far too many users with administator privileges, and this has caused concern among management who sees this as a threat to their data security. They feel that too many people have been assigned admin roles that shouldn't have been, and as such, they have access to secure information and resources that they otherwise shouldn't have. There is a need for oversight for what those users are doing with their administrator privileges. By implementing PIM, Adatum can reduce the number of users with admin privileges and yet still be able to assign users with admin rights on an as-needed basis whenever necessary.
+As part of her Microsoft 365 pilot project, Holly Dickson, Adatum's Enterprise Administrator, wants to implement Privileged Identity Management within Azure Active Directory. One of Adatum's pain points in their existing system is that they have far too many users with administator roles, and this has caused concern among management who sees this as a threat to their data security. They feel that too many people have been assigned admin roles that shouldn't have been, and as such, they have access to secure information and resources that they otherwise shouldn't have. There is a need for oversight for what those users are doing with their administrator privileges. By implementing PIM, Adatum can reduce the number of users with admin roles and yet still be able to assign users with admin rights on an as-needed basis whenever necessary.
 
-In this lab, you will perform the basic steps involved in implementing PIM for a given role - Configuring the role to require approval, assign an eligible user to the role, submit a request from the eligible user to be assigned the role, and approve the request for the role. In this exercise, you will perform these tasks for the Global Admin role, and Patti Fernandez will be the user in this scenario.
+In this lab, you will perform the basic steps involved in implementing PIM for a given admin role - Configuring the role to require approval, assign an eligible user to the role, submit a request from the eligible user to be assigned the role, and approve the request for the role. In this exercise, you will perform these tasks for the Global Admin role, and Patti Fernandez will be the user in this scenario.
 
 
 ### Task 1 - Configure the Global Administrator role to require approval
@@ -35,7 +35,7 @@ Holly Dickson, Adatum's Enterprise Administrator, wants to limit access to this 
 12. Leave all browser tabs open for the next task.
 
 
-### Task 2: Assign an eligible user to the Global Admin role
+### Task 2 - Assign an eligible user to the Global Admin role
 For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole user who will be eligible to be assigned the Global admin role. In this task, Holly will enable Patti to be eligible for the Global admin role.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as Holly Dickson.
@@ -63,34 +63,45 @@ For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole u
 12. Leave all browser tabs open for the next task.
 
 
-### Task 3: Submit a request for the Global Admin role
+### Task 3 - Submit a request for the Global Admin role
 Now that Patti Fernandez has been made an eligible user for the Global Admin role, Holly wants to test out the PIM process in her pilot project. In this task, Patti will submit a request to be assigned Global Admin role privileges. In the next task, Holly will review her request and approve it.
 
-1.  Open an in Private Browsing session and login to https://portal.azure.com as Patti Fernandez.
+1.  In LON-CL1, right-click on the **Edge** icon on ther taskbar and in the menu that appears, select **New InPrivate window*. 
 
-1.  Open **Azure AD Privileged Identity Management**.
+2. In your InPrivate browser session, enter the following URL in the address bar: **https://portal.azure.com**
 
-1.  Select **My Roles**.
+3. In the **Sign in** window, enter **PattiF@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant suffix ID provided by your lab hosting provider) and then select **Next**. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
 
-     ![Screenshot](../Media/e84f0715-c71e-4b1c-87ed-4e5c0c38d501.png)
+4. In the **Welcome to Microsoft Azure** dialog box that appears, select **Maybe later**.
 
-1.  **Activate** the Global Administrator Role.
+5. In the **Microsoft Azure** portal, scroll down to the **Azure services** section, and then on the right side of the section, select **More services**.
 
-     ![Screenshot](../Media/55eb14b5-540a-4d26-aed7-0b96d162fb31.png)
+6. In the **All services** window, enter **priv** in the **Search** box at the top of the page. In the list of search results, select **Azure AD Privileged Identity Management**.
 
-1.  Verify Patti's identity using the wizard.
+7. In the **Privileged Identity Management | Quick start** window, in the navigation pane, select **My Roles**.
 
-1.  Return back to **My Roles** in **Azure AD Privileged Identity Management**.
+8. In the **My roles | Azure AD roles** window, the **Eligible roles** tab is displayed by default. Since Holly assigned Patti as an eligible user for the Global Administator role, this role appears in the list. Under the **Action** column, select **Activate**.
 
-1.  **Activate** the Global Administrator Role.
+9. In the **Activate** pane, a warning message is displayed at the top of the pane indicating additional verification is required. Select this message.
 
-1.  Click **Activate**.
+10. In the **More information required** window that appears, select **Next**. 
 
-1.  Enter the justification **I need to carry out some administrative tasks** and click **Acitvate**.
+11. In the **Additional security verification** window that appears, under **How should we contact you?**, leave the value set to **Authentication phone**. Select your country or region, and then in the field next to it, enter your phone number (xxx-xxx-xxxx). Select **Next**.
+
+12.In the **Additional security verification** window, under **We've sent a text message to your phone**, retrieve the verification code from the text sent to your phone and enter it here, then select **Verify**.
+
+13. Once verification is complete, select **Done**.
+
+14. In the **Activate - Global Administrator** pane that appears, enter **Testing PIM** in the **Reason** field, and then select the **Activate** button at the bottom of the pane.
+
+15. On the **My roles | Azure AD roles** window, select the **Active roles** tab on the menu bar. Note that no roles appear. <br/>
+
+     **Note:** If you recall, back in Task 1 Holly set up the Global Admin role so that activation to a user account will require approval. What Patti just did was request that the Global Admin role be activated for her user account. This will send a request to Holly, who can then either approve or deny Patti's request for role activation. Holly will review this request in the next task.
+
+16. Leave the InPrivate browser session open. You will return to it in the next task once Holly approves Patti's request.
 
 
-### Task 3: Approve or deny requests for Azure resource roles in PIM
-
+### Task 4 -  Approve the request for the Global Admin role
 
 With Azure AD Privileged Identity Management (PIM), you can configure roles to require approval for activation, and choose one or multiple users or groups as delegated approvers. Follow the steps in this article to approve or deny requests for Azure resource roles.
 
@@ -120,4 +131,4 @@ As a delegated approver, you will receive an email notification when an Azure re
      ![Screenshot](../Media/fe734263-57c8-4cc9-b79f-848d7d4f9488.png)
 
 
-# continue to exercise 6
+# End of Lab 1
