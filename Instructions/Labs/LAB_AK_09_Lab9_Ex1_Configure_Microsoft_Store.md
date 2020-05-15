@@ -18,7 +18,7 @@ In this task, you will begin by installing the Microsoft Store for Business on y
 
 5. On the **Microsoft Store for Business** page, in the menu bar at the top of the page, select **Shop for my group**. 
 
-6. Scroll down to the **Made by Microsoft** section and select **Show all** (which appears on the far right side of the **Made by Microsoft** section).
+6. Scroll down to the **Made by Microsoft** section and select **Show all** (which appears on the right side of the **Made by Microsoft** section).
 
 7. In the **Made by Microsoft** page, select **Microsoft Remote Desktop.**
 
