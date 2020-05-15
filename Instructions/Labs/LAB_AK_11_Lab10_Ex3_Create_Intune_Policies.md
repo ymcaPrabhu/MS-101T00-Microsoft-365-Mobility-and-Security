@@ -7,7 +7,7 @@ Many mobile device management (MDM) solutions help protect organizational data b
 In your role as Holly Dickson, Adatum's Enterprise Administrator, you will create a compliance policy that governs Windows 10 devices at Adatum Corporation. This policy will dictate what the minimum requirements are for accessing Adatum's environment. It will also control how long a device can stay out of compliance before it's locked out from use; thereby, requiring administrator assistance to make it operational again. The policy will also control who it's assigned to, which in this case will be all devices enrolled in Microsoft Intune.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
-2. In your **Edge** browser, you should have a tab open for the **Azure portal** (displaying the **Microsoft Intune | Overview** window) and a tab open for the **Azure Active Directory admin center**. Select the **Azure portal** tab, which should be displaying the **Microsoft Intune | Overview** window. 
+2. In your **Edge** browser, you should have a tab open for the **Azure portal** (displaying the **Microsoft Intune | Overview** window) and a tab open for the **Azure Active Directory admin center**. Select the **Azure portal** tab. 
 3. On the **Microsoft Intune | Overview** window, in the left-hand navigation pane under the **Manage** section, select **Device compliance**.
 4. On the **Device compliance** window, in the left-hand pane under the **Manage** section, select **Policies**.
 5. On the **Device compliance | Policies** window, in the details pane on the right, select **+Create Policy**.
@@ -74,7 +74,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you are now go
 In this task, you will create a WIP policy that protects an entire collection of recommended apps, as well as an app from the Microsoft Store, which in this case is **Microsoft Power BI**. Since this app produces reports and queries of company trends that may be confidential, Adatum wants to restrict access to it to selected individuals.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
-2. In your Edge browser, you should have a tab titled **Compliance1 - Microsoft Azure**. Select this tab, which displays the **Microsoft Azure** portal, and in particular, the **Compliance1** data compliance policy that you created in a prior lab. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Device compliance | Policies > Compliance1**. <br/>
+2. In your Edge browser, you should have a tab open for the **Microsoft Azure** portal that is displaying the **Compliance1** data compliance policy that you created in a prior lab. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Device compliance | Policies > Compliance1**. <br/>
 
     In this thread, select **Microsoft Intune**.
 3. In the **Microsoft Intune | Overview** window, in the left-hand pane under the **Manage** group, select **Client apps**.
@@ -208,7 +208,7 @@ The purpose of this task is to show you how to recover a file that has been encr
 When enrolling devices to Microsoft Intune, you have the option to Allow or Block personally owned devices from being enrolled. This is done by restricting what device type platforms you want to allow when devices are enrolled. For example, if you configured Intune to only allow iOS devices to be enrolled and a user attempts to enroll an Android device, the operation would be blocked from enrolling.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
-2. In your Edge browser, you should have a tab titled **Intune App Protection | Properties - Microsoft Azure**. Select this tab, which displays the **Microsoft Azure** portal, and in particular, the properties for the **Win10Policy** App protection policy that you created in a prior lab. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Client apps | App protection policies > Intune App Protection | Properties**. <br/>
+2. In your Edge browser, you should have a tab open for the **Microsoft Azure** portal that's displaying the properties for the **Win10Policy** App protection policy that you created in a prior lab. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Client apps | App protection policies > Intune App Protection | Properties**. <br/>
 
     In this thread, select **Microsoft Intune**.
 3. In the **Microsoft Intune | Overview** window, in the left-hand pane under the **Manage** section, select **Device enrollment.**
@@ -229,7 +229,7 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 The purpose of this task is to simply review the different platforms that are available to be assigned to a device configuration profile. You will not create a profile; you will simply review the platforms that are available to assign to a profile.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
-2. In your **Edge** browser, you should have the **Microsoft Azure** portal open in a tab titled **All Users | Properties - Microsoft Azure**. Select this tab, which displays the **Microsoft Azure** portal, and in particular, the properties for all users within enrollment restrictions. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Device enrollment | Enrollment restrictions**. <br/>
+2. In your **Edge** browser, you should have a tab open for the **Microsoft Azure** portal that's displaying all users with enrollment restrictions. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Device enrollment | Enrollment restrictions**. <br/>
 
     In this thread, select **Microsoft Intune**.
 3. In the **Microsoft Intune – Overview** page, in the left-hand pane under **Manage,** select **Device configuration**.
