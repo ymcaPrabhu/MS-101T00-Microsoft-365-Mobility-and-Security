@@ -1,4 +1,4 @@
-# Module 1 - Lab 2 - Exercise 5 - PIM Resource Workflows
+# Module 1 - Lab 1 - Exercise 2 - PIM Resource Workflows
 
 
 ### Task 1:  Configure the Global Administrator role to require approval.
