@@ -140,7 +140,7 @@ In this exercise you will use the AIP label that you created in the previous tas
 
 	- Select permissions: **Viewer – View Only**
 
-	- Select users, groups, or organizations: Since Outlook is not running on the client, enter **JoniS@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Note: If Outlook was running, you couldl select the **address book** icon and then select **Joni Sherman**. <br/>
+	- Select users, groups, or organizations: Since Outlook is not running on the client, enter **JoniS@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Note: If Outlook was running, you could select the **address book** icon and then select **Joni Sherman**. <br/>
 
 	- Expire access: Select the **Calendar** icon and then select tomorrow's date
 
@@ -173,7 +173,7 @@ In the prior task, you created a Word document and protected it with Azure Infor
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. If you have **Outlook on the web** open in a tab in your **Edge** browser, then select it now and proceed to the next step; otherwise, if you have a tab with the **Microsoft Office Home** page, then select the tab, select **Outlook**, and then proceed to the next step**.** If you have neither tab open, then in a new tab enter **https://outlook.office365.com** and sign in as **holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+2. If you have **Outlook on the web** open in a tab in your **Edge** browser, then select it now and proceed to the next step; otherwise, if you have a tab with the **Microsoft Office Home** page, then select the tab, select **Outlook**, and then proceed to the next step. If you have neither tab open, then in a new tab enter **https://outlook.office365.com** and sign in as **holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 3. In **Outlook on the web**, select **+New Message** in the upper left part of the screen.
 
