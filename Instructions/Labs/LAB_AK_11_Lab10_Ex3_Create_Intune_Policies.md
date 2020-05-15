@@ -20,7 +20,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you will creat
 
     Given the problems caused at Adatum by users with noncompliant devices, Holly also wants to remotely lock any device that becomes noncompliant. To create this action, select the field under the **Action** column, and then select **Remotely lock the noncompliant device** in the menu that appears. The **Schedule (days after noncompliance)** field is set to 0 by default, which means this action will be performed immediately on the day the device is flagged as noncompliant. Leave this field set to 0. <br/>
     
-    To the right of this action is an ellipsis icon. Selecting this icon gives you the option to delete this action. Do not delete this action; the point of showing you this is to let you know that you can delete any actions that you manually create. Note also that a Delete option is not available for the default action that marks the device as noncompliant. <br/>
+    **Note:** To the right of this action is an ellipsis icon, which provides the option to delete this action. Do not delete this action; the point of indicating this is to let you know that you can delete any actions that you manually create. Note also that a **Delete** option is not available for the default action that marks the device as noncompliant. <br/>
     
     Select **Next**.
 12. On the **Step 4 - Scope tags** page, no scope tags will be assigned to the policy, so select **Next**.
@@ -41,7 +41,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you will creat
 
 EFS is the Encrypted File System that is built into Windows. It allows anyone to encrypt a file. The encryption is done using digital certificates, and as part of that process, Windows assigns something called a Data Recovery Agent (DRA). A data recovery agent is a Microsoft Windows user who has been granted the right to decrypt data that was encrypted by other users. The assignment of DRA rights to an approved individual provides an IT department with a way to unlock encrypted data in case of an emergency. Data Recovery Agents can be defined at the domain, site, organizational unit, or local machine level. In a small to mid-sized business, the network administrator is often the designated DRA.
 
-In very simple terms, the network administrator uses Microsoft Windows Group Policy in Active Directory to assign everyone a public key for encryption and their own personal private key for decryption. This ensures that users can only decrypt the content they have created, and no one else's. The data recovery agent, however, is assigned a private key capable of unlocking all content encrypted with the public key.
+In very simple terms, the network administrator uses Microsoft Windows Group Policy in Active Directory to assign everyone a public key for encryption and their own personal private key for decryption. This ensures that users can only decrypt the content they have created. The data recovery agent, however, is assigned a private key capable of unlocking all content encrypted with the public key.
 
 The administrator must generate a Data Recovery Agent certificate which grants the user permission to access the encrypted resources. However, if the DRA certificate is created after the encryption of the resource, the resource cannot be decrypted by the DRA certificate. If you don't already have an EFS DRA certificate, you'll need to create and extract one from your system before you can use Windows Information Protection (WIP).
 
@@ -90,7 +90,7 @@ In this task, you will create a WIP policy that protects an entire collection of
 9. In the **Add apps** pane that appears on the right, select the drop-down arrow in the field that currently displays **Recommended apps**. The menu that appears displays the available app options that you can add to this policy - **Recommended apps, Store apps**, and **Desktop apps**. Since you're first going to add all the recommended apps, select **Recommended apps**. <br/>
 
     The quickest way to add all the recommended apps is to select the check box to the left of the **Name** column heading; this will select the check boxes for all the apps in the list. Select the **OK** button at the bottom of the window.
-10. This returns you to the**Step 2 - Targeted apps** page. Scroll down past all the recommended apps that you just added and then select **+Add** again.
+10. This returns you to the **Step 2 - Targeted apps** page. Scroll down past all the recommended apps that you just added and then select **+Add** again.
 11. In the **Add apps** pane, you're going to add **Microsoft Power BI**, which is an app from the Microsoft Store. Select the drop-down arrow in the field that currently displays **Recommended apps**, and in the menu that appears, select **Store apps**.
 12. In the **Add apps** window, enter the following information and then select **OK**:
 
@@ -100,16 +100,16 @@ In this task, you will create a WIP policy that protects an entire collection of
 13. Select **Next**.
 14. On the **Step 3 - Required settings** page, in the **Windows Information Protection mode** setting, select **Block**, and then select **Next**. <br/>
 
-    **Note:** By choosing the **Block** setting, WIP will look for inappropriate data sharing practices and stop the user from completing the action. Blocked actions can include sharing information across non-corporate-protected apps, and sharing corporate data between other people and devices outside the organization. Holly has decided to select this option given her concern over the Microsoft Power BI app, which can produce reports and queries of company trends that may be confidential.
+    **Note:** By choosing the **Block** setting, WIP will look for inappropriate data sharing practices and stop the user from completing the action. Blocked actions can include sharing information across non-corporate-protected apps and sharing corporate data between other people and devices outside the organization. Holly has decided to select this option given her concern over the Microsoft Power BI app, which can produce reports and queries of company trends that may be confidential.
 15. On the **Step 4 - Advanced settings** page, scroll down to the **Data protection** section. You will upload the DRA certificate that you created in the prior task, which will allow recovery of encrypted data. <br/>
 
     To the right of the **Select a file** field, select the **file** icon. In the **File Explorer** window that appears, expand **Local Disk (C:)**, expand **Users**, and then select the **Admin** folder. Scroll down through the files in the **Admin** folder, select **DRAcert.CER**, and then select **Open**.<br/>
 
     **Note:** DRAcert.CER should now appear in the certificate field in the **Data protection** section. The DRAcert certificate has now been uploaded to the App Protection policy titled **Win10Policy**. This certificate is now available for use in unencrypting protected files. <br/>
 
-    **Important:** At this point in a real-world scenario, to maintain device integrity, you should copy your data recovery certificate to an offline location on a thumb drive or stored in a program for keys and passwords. You should also create a backup of this file and store it at another location. The certification is how you recover files using Intune. If the certificate is not saved, then you cannot recover the file using Windows Information Protection if the device ever becomes compromised. For the purpose of this lab, you will not be storing this certificate to an offline device.
+    **Important:** At this point in a real-world scenario, to maintain device integrity, you should copy your data recovery certificate to an offline location on a thumb drive or stored in a program for keys and passwords. You should also create a backup of this file and store it at another location. The certification is how you recover files using Intune. If the certificate is not saved, then you cannot recover the file using Windows Information Protection if the device ever becomes compromised. For this lab, you will not store the certificate to an offline device.
 16. Select **Next**.
-17. On the **Step 5 - Assignments** page, under **Included groups**, select **+Select groups to include**. Holly wants to limit this policy to the members of the **WIP Users** group, which is the group of users selected to participate in compliace testing for Adatum's pilot project. <br/>
+17. On the **Step 5 - Assignments** page, under **Included groups**, select **+Select groups to include**. Holly wants to limit this policy to the members of the **WIP Users** group, which is the group of users selected to participate in compliance testing for Adatum's pilot project. <br/>
 
     In the **Select groups to include** pane, select **WIP users**, and then select the **Select** button at the bottom of the pane.
 18. Select **Next**.
@@ -170,7 +170,7 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 
     **Note:** This imports the file, and the apps are added to your **Protected apps** list.
 9. On the **Edit policy** window, select the **Review + save** button that appears at the bottom of the window, and then select **Save**.   
-10. You now want to create a file that you're going to encrypt using Windows Information Protection. In the search field on your taskbar, enter **Notepad** , and then in the menu, select **Notepad**.
+10. You now want to create a file that you're going to encrypt using Windows Information Protection. In the search field on your taskbar, enter **Notepad**, and then in the menu, select **Notepad**.
 11. In the **Notepad** window, enter some text and then select **File**, select **Save as,** select the **Documents** folder, enter **apptest1** as the **File name**, and then select **Save.**
 12. Close Notepad.
 13. In the search field on your taskbar, enter **cmd**, and then in the menu, right-click on **Command Prompt** and select **Run as administrator**.
@@ -229,7 +229,7 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 The purpose of this task is to simply review the different platforms that are available to be assigned to a device configuration profile. You will not create a profile; you will simply review the platforms that are available to assign to a profile.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
-2. In your **Edge** browser, you should have the **Microsoft Azure** portal open in a tab titled **All Users | Properties - Microsoft Azure**. Select this tab, which displays the **Microsoft Azure** portal, and in particular, the properties for all users within enrollment restrictions. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Device enrollment | Enrollment restictions**. <br/>
+2. In your **Edge** browser, you should have the **Microsoft Azure** portal open in a tab titled **All Users | Properties - Microsoft Azure**. Select this tab, which displays the **Microsoft Azure** portal, and in particular, the properties for all users within enrollment restrictions. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Device enrollment | Enrollment restrictions**. <br/>
 
     In this thread, select **Microsoft Intune**.
 3. In the **Microsoft Intune – Overview** page, in the left-hand pane under **Manage,** select **Device configuration**.
