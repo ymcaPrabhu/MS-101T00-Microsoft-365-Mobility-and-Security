@@ -4,7 +4,7 @@ You are now at the point in your pilot project where you want to test the MRM an
 
 ### Task 1 – Test an MRM Policy to Archive Email Messages
 
-In this exercise, you will send an email from Holly Dickson to one of your test users, Lynne Robbins. You will then log into Microsoft 365 as Lynne on the Client 2 VM, locate the email in her Inbox, and then assign the email a custom retention tag that you created. This personal retention tag will override the parent folder tag for this specific message, which will be moved to Lynne’s In-Place archive mailbox after 3 years rather than 2 years.
+In this exercise, you will send an email from Holly Dickson to one of your test users, Lynne Robbins. You will then log into Microsoft 365 as Lynne on the LON-CL2 VM, locate the email in her Inbox, and then assign the email a custom retention tag that you created. This personal retention tag will override the parent folder tag for this specific message, which will be moved to Lynne’s In-Place archive mailbox after 3 years rather than 2 years.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
@@ -89,7 +89,7 @@ Therefore, when you send an email with two IP addresses in this task, all you ca
 
 	- Message area: type **I will configure this IP address: 192.168.0.1.**
 
-	**Note:** When drafting this email with sensitive data (in this case, an IP address) that triggers the DLP policy, a policy tip should be displayed indicating the email violated a DLP policy. Unfortunately, the policy tip will not be dispalyed as previously mentioned. 
+	**Note:** When drafting this email with sensitive data (in this case, an IP address) that triggers the DLP policy, a policy tip should be displayed indicating the email violated a DLP policy. Unfortunately, the policy tip will not be displayed as previously mentioned. 
 
 5. Select **Send.**
 
@@ -101,13 +101,13 @@ Therefore, when you send an email with two IP addresses in this task, all you ca
 
 	- Message area: **Test IP address 192.168.0.1 and then IP address 172.16.0.1.**
 
-	**Note:** When drafting this email with sensitive data (in this case, two IP addresses) that triggers the DLP policy, a policy tip should be displayed indicating the email violated a DLP policy. Because there are two IP addresses, the policy tip would indicate that the email will be blocked, but it would give you the option to override the blockage by entering a business justification for sending this sensitive data. Unfortunately, the policy tip will not be dispalyed as previously mentioned. 
+	**Note:** When drafting this email with sensitive data (in this case, two IP addresses) that triggers the DLP policy, a policy tip should be displayed indicating the email violated a DLP policy. Because there are two IP addresses, the policy tip would indicate that the email will be blocked, but it would give you the option to override the blockage by entering a business justification for sending this sensitive data. Unfortunately, the policy tip will not be displayed as previously mentioned. 
 
 8. Immediately after sending the email, Holly should receive two emails in her Inbox from **Microsoft Outlook**. <br/>
 
 	- The first email should have the subject **Rule detected - High volume of content detected IP address DLP policy**. Select this email and review its contents.  <br/>
 	
-	- The second email should be a **Message Blocked** notiification for the email that you just sent. Select this email to review its contents.  <br/>
+	- The second email should be a **Message Blocked** notification for the email that you just sent. Select this email to review its contents.  <br/>
 	
 9. Switch to LON-CL2. 
 
