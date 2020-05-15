@@ -26,7 +26,7 @@ In this task you will verify that Adatum has installed the Enterprise Mobility +
 6. In the **Assign licenses to users** pane, select the **Enter a name or email address** field, and in the list of users that appears, select **Holly Dickson**, and then select the **Assign** button at the bottom of the pane.
 7. Close the **You assigned a license to Holly Dickson** window.
 
-8. Leave your Client 1 VM aopen for the remainder of this lab.
+8. Leave your Client 1 VM open for the remainder of this lab.
 
 You have now verified the available Enterprise Mobility + Security E5 licenses in your tenant and assigned an EMS E5 license to Holly.
 
@@ -43,7 +43,7 @@ Devices must be managed before you can give users access to company resources or
 6. In the **Device enrollment** page, note the information at the top of the detail pane. By default, Intune has been set as Adatum's MDM authority.
 7. In the navigation thread at the top of the page (**Home > Microsoft Intune > Device enrollment**), select **Microsoft Intune**.
 8. In the **Microsoft Intune | Overview** page, in the left-hand navigation pane, select **Device compliance**. Even though no data is currently available, review the information that will be presented for this option regarding device management.
-9. Repeat steps 7-8, this time selecting **Device configuraton** on the **Microsoft Intune | Overview** page. 
+9. Repeat steps 7-8, this time selecting **Device configuration** on the **Microsoft Intune | Overview** page. 
 10. Repeat steps 7-8, this time selecting **Device enrollment** on the **Microsoft Intune | Overview** page.
 11. Repeat steps 7-8, this time selecting **Device security** on the **Microsoft Intune | Overview** page.
 12. In the navigation thread at the top of the page (**Home > Microsoft Intune > Device Security | Security baselines**), select **Microsoft Intune**.
