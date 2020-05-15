@@ -92,7 +92,7 @@ In this task, you will create a conditional access policy that Holly plans to im
 
     **Note:** You created a conditional access policy to become familiar with the available options; however, the policy is not effective because you didn't enable it.
 18. To enable the policy, select the **Conditional1** policy in the policy list.  
-19. In the **Conditional1** pane, scroll to the bottom, and in the **Enable policy** field, select **On**. Select **Save**.
+19. In the **Conditional1** pane, scroll to the bottom and in the **Enable policy** field, select **On**, and then select **Save**.
 
 You have now created a conditional access policy and enabled it for Adatum's pilot project.
 
