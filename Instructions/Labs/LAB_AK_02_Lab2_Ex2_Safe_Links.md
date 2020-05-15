@@ -64,7 +64,7 @@ In this task, you will test the Safe Links Policy that you just created that blo
 12. Below the body of the message is a long row of formatting icons. Select the **Insert hyperlink** icon, which depicts two overlapping circles.
 13. In the **Insert link** window, the text that you highlighted in the body of the message should be displayed in the **Display as** field. In the **Web address (URL)** field, enter the following URL: **http://tailspintoys.com/aboutus/freetoys**.
 14. Select **OK**.
-15. In the body of the email, the message should still be selected. Click anywhere in the body of the message to remove the highlighting. The color of the text should now be blue and it should be underlined, indicating that this message is hyperlinked to a URL.
+15. In the body of the email, the message should still be selected. Click anywhere in the body of the message to remove the highlighting. The color of the text should now be blue, and it should be underlined, indicating that this message is hyperlinked to a URL.
 16. Select either **Send** button (top or bottom of the form).
 17. You now want to go the MOD Administrator&#39;s Inbox in Outlook and validate whether the ATP policy you created in the prior task worked on the email that you just sent from Holly to the MOD Administrator.<br/>
 
