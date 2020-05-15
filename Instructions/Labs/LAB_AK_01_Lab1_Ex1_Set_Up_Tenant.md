@@ -92,7 +92,7 @@ In your role as Holly Dickson, Adatum&#39;s Enterprise Administrator, you have b
 
 Holly Dickson is Adatum's Enterprise Administrator. Since she doesn't have a personal Microsoft 365 user account set up for herself, Holly initially signed into Microsoft 365 as the company's default MOD Administrator account in the prior task. In this task, she will create a Microsoft 365 user account for herself, and she will assign her user account the Microsoft 365 Global Administrator role, which gives her the ability to perform all administrative functions within Microsoft 365 for the company's Microsoft 365 pilot project. 
 
-**Important:** As a best practice in your real-world deployments, you should always write down the first Global admin account's credentials (in this lab, the MOD Administrator) and store it away for security reasons. This account is a non-personalized identity that owns the highest privileges possible in a tenant. It is **not** MFA activated (because it is not personalized) and the password for this account is typically shared among several users. Therefore, this first Global admin is a perfect target for attacks, so it's always recommended to create personalized service admins and keep as few Global admins as possible. For those Gobal admins that you do create, they should each be mapped to a single identity, and they should each have MFA enforced.
+**Important:** As a best practice in your real-world deployments, you should always write down the first Global admin account's credentials (in this lab, the MOD Administrator) and store it away for security reasons. This account is a non-personalized identity that owns the highest privileges possible in a tenant. It is **not** MFA activated (because it is not personalized) and the password for this account is typically shared among several users. Therefore, this first Global admin is a perfect target for attacks, so it's always recommended to create personalized service admins and keep as few Global admins as possible. For those Global admins that you do create, they should each be mapped to a single identity, and they should each have MFA enforced.
 
 1. In LON-CL1, in the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users**, and then under it select **Active users**.<br/>
 
@@ -128,7 +128,7 @@ Holly Dickson is Adatum's Enterprise Administrator. Since she doesn't have a per
 7. In the **Optional settings** window, select the drop-down arrow to the right of **Roles.**
 8. In the **Roles** section, select **Admin center access**. By doing so, the most commonly used Microsoft 365 administrator roles are enabled below this option. 
 
-	**Note:** All of the admin roles will be displayed if you select **Show all by category**. For Holly, you do not need to view all the admin roles by category, since Holly will be assigned the Global admin role that appears in the list of most commonly used roles.
+	**Note:** All the admin roles will be displayed if you select **Show all by category**. For Holly, you do not need to view all the admin roles by category, since Holly will be assigned the Global admin role that appears in the list of most commonly used roles.
 
 9. Select **Global admin** and then select **Next**.
 
@@ -167,7 +167,9 @@ Holly Dickson is Adatum's Enterprise Administrator. Since she doesn't have a per
 
 ### Task 4 – Set up Microsoft 365 User Accounts and Groups
 
-In the prior task, you noticed that your Microsoft 365 trial tenant came equipped with a list of active users. As Holly Dickson, Adatum&#39;s Enterprise Admin, you have selected the following users to help you with your pilot project: Alex Wilber, Joni Sherman, Lynne Robbins, as well as the system admin, whose user account is the MOD Administrator. Each user is an administrator at Adatum, and they are key members of your pilot project team. While their user accounts are already present in Microsoft 365, you need to configure their passwords so that they can more easily sign into Microsoft 365 when needed in the upcoming lab exercises. You also need to add an Office 365 group that will be used in a later lab exercise.
+In the prior task, you noticed that your Microsoft 365 trial tenant came equipped with a list of active users. As Holly Dickson, Adatum&#39;s Enterprise Admin, you have selected the following users to help you with your pilot project: Alex Wilber, Joni Sherman, Lynne Robbins, as well as the system admin, whose user account is the MOD Administrator. 
+
+Each user is an administrator at Adatum, and they are key members of your pilot project team. While their user accounts are already present in Microsoft 365, you need to configure their passwords so that they can more easily sign into Microsoft 365 when needed in the upcoming lab exercises. You also need to add an Office 365 group that will be used in a later lab exercise.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users**, and then under it, select **Active users**.
@@ -204,7 +206,7 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In the **Microsoft 365 admin center**, if necessary select **Show all** in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **SharePoint**. This will open the SharePoint admin center.
+2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **SharePoint**. This will open the SharePoint admin center.
 
 3. In the **SharePoint admin center**, in the left-hand navigation pane, select **Settings**. 
 
@@ -234,7 +236,7 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 
 ### Task 7 – Prepare Users for Content Searches
 
-In this exercise, you will add Joni Sherman and Holly Dickson as members of the eDiscovery Manger role. The reason you are doing this now is that it can take a while for newly-assigned permissions to successfully propagate. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would have received error messages involving parameter fields because their permissions would not have finished propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to the Module 8 lab. 
+In this exercise, you will add Joni Sherman and Holly Dickson as members of the eDiscovery Manger role. The reason you are doing this now is that it can take a while for newly assigned permissions to successfully propagate. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would have received error messages involving parameter fields because their permissions would not have finished propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to the Module 8 lab. 
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
