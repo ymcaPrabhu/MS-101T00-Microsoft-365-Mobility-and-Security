@@ -50,17 +50,17 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 5. In the **Search query** pane that appears, enter **Confidential** in the **Enter keywords** field.
 
-6. In the **Locations** section, select the **Specific locations** option and then select **Modify**. This opens the **Modify locations** window. There are three groups of locations. Turn the toggle switch On (if necessary) for the first group, but turn the toggle switches Off for the other two. At least one group must be set to **On**; otherwise, you will receive an error. Select **Save**. <br/>
+6. In the **Locations** section, select the **Specific locations** option and then select **Modify**. This opens the **Modify locations** window. There are three groups of locations. Turn the toggle switch **On** (if necessary) for the first group, but turn the toggle switches **Off** for the other two. At least one group must be set to **On**; otherwise, you will receive an error. Select **Save**. <br/>
 
 	**Note:** While you could have simply selected the **All locations** option, you were asked to select a specific set of locations just so that you could see all the various locations that can possibly be searched in an eDiscovery search.
 
 7. Select **Save**. In the **Save search** pane that appears, enter **Confidential search** in the **Name** field and then select **Save**.  <br/>
 
-	**Important:** When you save a new search, the system saves the search and then immediately runs it. By saving this eDiscovery search, the eDiscovery alert should be triggered, thereby creating an email notiification that should be sent to the Inbox of all users with tenant admin permissions. You do NOT have to wait for the Search to finish before testing whether the alert sent the email notification. The alert notification system will process the email at the time the search is saved. <br/>
+	**Important:** When you save a new search, the system saves the search and then immediately runs it. By saving this eDiscovery search, the eDiscovery alert should be triggered, thereby creating an email notification that should be sent to the Inbox of all users with tenant admin permissions. You do NOT have to wait for the Search to finish before testing whether the alert sent the email notification. The alert notification system will process the email at the time the search is saved. <br/>
 	
 	Do NOT wait for the search to finish. Proceed to the next step.
 	
-8. For the purpose of this lab, you should cancel the search to remove the overhead from your limnited system resources. The screen should currently indicate that it is **Searching**. Select the **Cancel** button to stop the search, and then select **Yes** to confirm the cancellation. Canceling the search takes a minute or so to complete. 
+8. For the purpose of this lab, you should cancel the search to remove the overhead from your limited system resources. The screen should currently indicate that it is **Searching**. Select the **Cancel** button to stop the search, and then select **Yes** to confirm the cancellation. Canceling the search takes a minute or so to complete. 
 	
 9. To test this alert, open a new tab in your browser and go to **Outlook on the web** by entering the following URL in the address pane: **https://outlook.office365.com**
 
