@@ -34,7 +34,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you will creat
 18. In the **Adatum Corporation | Mobility (MDM and MAM)** window, in the pane on the right, select **Microsoft Intune.**
 19. In the **Configure** window, in the **MAM User scope** setting, select **All**.
 20. Select **Save** in the menu bar at the top of the window, and then select the **X** in the upper right corner to close the **Configure** window.
-21. Leave the Azure portal and the Azure Active Directory admin center tabs open in your browser for the next task.
+21. Leave all browser tabs open for the next task.
 
 
 ### Task 2: Manually create an EFS DRA Certificate
@@ -64,7 +64,7 @@ The purpose of this task is to create this RSA recovery key so that if the devic
 5. You will be prompted to type in the password again to confirm it. Press Enter when done.
 6. You should receive messages indicating that your .CER and .PFX files were created successfully.
 7. Close the Command Prompt window.
-8. Leave your browser open for the next task.
+8. Leave all browser tabs open for the next task.
 
 
 ### Task 3: Create an App Protection Policy
@@ -115,7 +115,7 @@ In this task, you will create a WIP policy that protects an entire collection of
 18. Select **Next**.
 19. On the **Step 6 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
 20. On the **Client apps | App protection policies** window, **Win10Policy** should appear in the list of policies. However, note that its **Deployed** status is **No**. It only takes a few seconds for the policy to be deployed, so select **Refresh** on the menu bar and the **Deployed** status should change to **Yes**.
-21. Leave the Azure portal and the Azure Active Directory admin center tabs open in your browser for the next task.
+21. Leave all browser tabs open for the next task.
 
 You have just created a new App Protection Policy (APP), which is also referred to as a Windows Information Protection (WIP) policy.
 
@@ -152,7 +152,7 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 23. In the **Export policy** File Explorer window, you will export and save your new policy as an XML file. Select the **Documents** folder, enter **exerule1** in the **File name** field, verify the **Save as type** field displays **XML (\*.xml)**, and then select **Save**.
 24. An **AppLocker** dialog box appears displaying a message that **2 rules were exported from the policy**. Select **OK.**
 25. Close the Local Security Policy window.
-26. After you've created your XML files, you will import one of them by using **Microsoft Intune**, which you will do in the next task.
+26. After you've created your XML files, you will import one of them by using **Microsoft Intune**, which you will do in the next task. 
 
 
 ### Task 5: Import a list of protected apps using Microsoft Intune
@@ -200,8 +200,8 @@ The purpose of this task is to show you how to recover a file that has been encr
 
     **cipher /d  C:\Users\Admin\Documents\apptest1.txt**
 
-13.	Close the Command Prompt and File Explorer windows
-14. Leave your Edge browser open.
+13.	Close the Command Prompt and File Explorer windows.
+14. Leave all browser tabs open for the next task.
 
 
 ### Task 7: Configure enrollment restrictions
@@ -222,7 +222,7 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 11. In the **All Users** window, in the left-hand pane under the **Manage** section, select **Properties.**
 12. In the **All Users | Properties** window, select **Edit** that appears next to **Device limit**.
 13. In the **Edit restriction** window, select the **Device limit** field, in the drop-down menu select **3**, and then select **Review + save.** Review your change and then select **Save.**
-14. Leave the Azure portal and all other tabs open in your browser for the next task.
+14. Leave all browser tabs open for the next task.
 
 
 ### Task 8: Review device configuration profiles
@@ -237,7 +237,7 @@ The purpose of this task is to simply review the different platforms that are av
 5. On the **Device configuration | Profiles** page, select **+Create profile** that appears on the menu bar above the list of profiles.
 6. On the **Create a profile** pane, select the **Platform** field to see the different platforms that are available. **Do not configure any option.** The purpose of this task is to simply see what platforms are available that can be assigned to a new device profile, should you want to ever create one.
 7. Close the **Create a profile** pane.
-8. Leave the Azure portal and all other tabs open in your browser for the next task.
+8. Leave all browser tabs open for the next task.
 
 
 # Proceed to Lab 10 - Exercise 4
