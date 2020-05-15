@@ -193,7 +193,9 @@ Each user is a key member of your pilot project team. While their user accounts 
 13. In the **Sales Group** pane, select the **Members** tab.
 14. Under the **Members** section, select **View all and manage members**.
 15. In the **View members** window for the Sales Group, select the **+Add members** button.
-16. In the list of users that appears, select **Alex Wilber, Joni Sherman**, and **Lynne Robbins**, select the **Save** button, and then select the **Close** button to finish the add process. 
+16. In the list of users that appears, select **Alex Wilber, Joni Sherman**, and **Lynne Robbins**, select the **Save** button, and then select the **Close** button to finish the add process. <br/>
+
+	**Note:** You will not add Patti Fernandez to this group. Patti's key role in the pilot project is to test the Privileged Identity Management functionality in the next lab exercise. 
 17. The **Sales Group** window now displays the three members of the group. Select **Close**.
 18. In the **Sales Group** pane, scroll down and verify the three members appear. Select the **X** in the upper right-hand corner to close the window.
 19. Leave the **Microsoft 365 admin center** tab open in your browser and proceed to the next task.
