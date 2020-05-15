@@ -8,7 +8,7 @@ As part of managing devices in Intune, Holly will create dynamic groups in the A
 In this task, you're going to create device categories, which will then be assigned to devices in the next task.
 
 1. In the LON-CL1 VM, you should still be logged in as the **Admin** account, and you should still be logged into Microsoft 365 as **Holly Dickson**.
-2. In your **Edge** browser, you should have the **Microsoft Azure portal** open and displaying the **Devices|All devices** window. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Devices | All devices**. <br/>
+2. In your **Edge** browser, you should have the **Microsoft Azure portal** open and displaying the **Devices | All devices** window. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Devices | All devices**. <br/>
 
    In this thread, select **Microsoft Intune**.
 3. In the **Microsoft Intune | Overview** page, in the left-hand pane under **Manage,** select **Device enrollment**.
@@ -85,10 +85,11 @@ In this task, you will create a conditional access policy that Holly plans to im
 11. On the **Device platforms** pane, in the **Configure** field, select **Yes**. In the **Include** tab, select the **Select device platforms** option, select the **Windows** check box, and then select **Done.**
 12. On the **Conditions** pane, select **Done**.
 13. On the **New** pane, under **Access Controls**, select the **Grant** section.
-14.  On the **Grant** pane, select the **Require device to be marked as compliant** check box, and then select **Select**.
+14.  On the **Grant** pane, select the **Require device to be marked as compliant** check box, and then select the **Select** button.
 15. On the **New** pane, under **Access Controls**, select the **Session** section.
 16. In the **Session** pane, review the explanation but do not select any option. Select the **X** in upper right corner to close the pane.
 17. On the **New** pane, select the **Create** button at the bottom of pane. The **Conditional1** policy now appears in the policy list.<br/>
+
     **Note:** You created a conditional access policy to become familiar with the available options; however, the policy is not effective because you didn't enable it.
 18. To enable the policy, select the **Conditional1** policy in the policy list.  
 19. In the **Conditional1** pane, scroll to the bottom, and in the **Enable policy** field, select **On**. Select **Save**.
