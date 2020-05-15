@@ -18,9 +18,9 @@ In this exercise, you will log into Microsoft 365 on LON-CL2 as Joni Sherman, an
 
 5. On the **Name your search** page, enter **Content Search Test** into the **Name** field and then select **Next**.
 
-6. On the **Locations** page, verify the **Specific locations** option is selected; if not, then select it now. As you scroll down through the **Locations** window, note that there are 3 groups of locations. Each group has an On/Off toggle switch, and they are all set to "Off". If you select all locations or set all 3 toggle switches On, the query will run for an hour or more. <br/>
+6. On the **Locations** page, verify the **Specific locations** option is selected; if not, then select it now. As you scroll down through the **Locations** window, note that there are 3 groups of locations. Each group has an On/Off toggle switch, and they are all set to Off. If you select all locations or set all 3 toggle switches to On, the query will run for an hour or more. <br/>
 
-    For this lab, select the toggle switch for the first group of locations to turn it **On**, but leave the other two groups turned Off, and then select **Next**.
+    For this lab, select the toggle switch for the first group of locations to turn it **On**, but leave the other two groups turned **Off**, and then select **Next**.
 
 7. On the **Condition card** page, enter **IP address** into the **Keywords** field and then select **Finish**.
 
