@@ -167,19 +167,19 @@ Holly Dickson is Adatum's Enterprise Administrator. Since she doesn't have a per
 
 ### Task 4 – Set up Microsoft 365 User Accounts and Groups
 
-In the prior task, you noticed that your Microsoft 365 trial tenant came equipped with a list of active users. As Holly Dickson, Adatum&#39;s Enterprise Admin, you have selected the following users to help you with your pilot project: Alex Wilber, Joni Sherman, Lynne Robbins, as well as the system admin, whose user account is the MOD Administrator. 
+In the prior task, you noticed that your Microsoft 365 trial tenant came equipped with a list of active users. As Holly Dickson, Adatum&#39;s Enterprise Admin, you have selected the following users to help you with your pilot project: Alex Wilber, Joni Sherman, Lynne Robbins, Patti Fernandez, as well as the system admin, whose user account is the MOD Administrator. 
 
-Each user is an administrator at Adatum, and they are key members of your pilot project team. While their user accounts are already present in Microsoft 365, you need to configure their passwords so that they can more easily sign into Microsoft 365 when needed in the upcoming lab exercises. You also need to add an Office 365 group that will be used in a later lab exercise.
+Each user is a key member of your pilot project team. While their user accounts are already present in Microsoft 365, you need to configure their passwords so that they can more easily sign into Microsoft 365 when needed in the upcoming lab exercises. You also need to add an Office 365 group that will be used in a later lab exercise.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users**, and then under it, select **Active users**.
-3. In the **Active Users** window, when you hover your mouse over a user's **Display name** (or you select the check mark field to the left of the **Display name**), a **key icon** appears to the right of the user&#39;s name. By selecting the key icon, you can reset a user&#39;s password. You need to reset Alex, Joni, and Lynne&#39;s passwords to Pa55w.rd.<br/>
+3. In the **Active Users** window, when you hover your mouse over a user's **Display name** (or you select the check mark field to the left of the **Display name**), a **key icon** appears to the right of the user&#39;s name. By selecting the key icon, you can reset a user&#39;s password. You need to reset Alex, Joni, Lynne, adn Patti's passwords to **Pa55w.rd**.<br/>
 
     Select the key icon for **Alex Wilber**.
 
 4. In the **Reset password** pane for Alex, select **Let me create the password**, enter **Pa55w.rd** in the **Password** field, select and copy this value so that you can paste it in for Joni and Lynne's accounts, and then unselect the **Require this user to change their password when they first sign in** check box.
 5. Select **Reset** and then select **Close**.
-6. Repeat steps 3-5 for **Joni Sherman** and **Lynne Robbins**. For these two accounts, paste in the **Pa55w.rd** password that you copied for Alex. You do not need to change the password for the **MOD Administrator** because you will continue using the default password provided by your lab hosting provider for this first global admin account that was assigned with the test tenant.
+6. Repeat steps 3-5 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, paste in the **Pa55w.rd** password that you copied for Alex. You do not need to change the password for the **MOD Administrator** because you will continue using the default password provided by your lab hosting provider for this first global admin account that was assigned with the test tenant.
 7. In the left-hand navigation pane, select **Groups**, and then under it, select **Groups**.
 8. In the **Groups** window, select **Add a group** that appears on the menu bar.
 9. In the **Choose a group type** pane, select **Office 365 (recommended)** and then select **Next**.
