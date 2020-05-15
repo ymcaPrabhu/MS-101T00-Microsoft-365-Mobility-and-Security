@@ -53,7 +53,7 @@ In Lab 1, you enabled Information Rights Management for Adatum in SharePoint Onl
 
 You will begin by having Holly create a new SharePoint site collection. You will then configure it for Information Rights Management, share it with Alex Wilber, and then have Alex validate IRM for the site. 
 
-1. Switch to the LON-CL1 VM where you should still be logged into the Microsoft 365 admin center as Holly Dickson.
+1. Switch to the LON-CL1 VM where you should still be logged into the **Microsoft 365 admin center** as **Holly Dickson**.
 
 2. In the **Microsoft 365 admin center**, scroll down through left-hand navigation pane and under **Admin centers**, select **SharePoint**. This will open the SharePoint admin center.
 
@@ -81,7 +81,7 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 7. Select **OK.** 
 
-8. If the new **Marketing** site collection does not appear in the **Site Collections** list after a couple of minutes, select the **Refresh** icon to the left of the address bar. If it still doesn't appear, wait another minute or two and refresh the list again. Continue until the new site collection apears. 
+8. If the new **Marketing** site collection does not appear in the **Site Collections** list after a couple of minutes, select the **Refresh** icon to the left of the address bar. If it still doesn't appear, wait another minute or two and refresh the list again. Continue until the new site collection appears. 
 
 9. In your web browser, open a new tab and enter the following URL in the address bar: **https://M365xZZZZZZ.sharepoint.com/sites/marketing** (where ZZZZZZ is your tenant ID provided by your lab hosting provider)
 
@@ -107,7 +107,7 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 20. In the **Share ‘Marketing’** window, in the **Invite people** field, enter **Alex**, then select **Alex Wilber** from the user list, and then select **Share**.
 
-21. Select the **Start** icon in the bottom left corner fo the taskbar, and then in the Program menu, select **Microsoft Word**.
+21. Select the **Start** icon in the bottom left corner of the taskbar, and then in the Program menu, select **Microsoft Word**.
 
 22. When **Microsoft Word** opens, select **Blank document**.  
 
@@ -115,7 +115,7 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 24. Close Word.
 
-25. Since Holly has her Outlook mailbox open, she is simply going to email the file that she just created to Alex. Select the **Outlook pon the Web** tab in your browser that contains Holly's mailbox that you just used in the prior task when you emailed Alex.
+25. Since Holly has her Outlook mailbox open, she is simply going to email the file that she just created to Alex. Select the **Outlook on the Web** tab in your browser that contains Holly's mailbox that you just used in the prior task when you emailed Alex.
 
 26. Send an email to Alex Wilber and attach the file that you just created and stored on the Desktop. 
 
@@ -123,7 +123,7 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 	‎Switch to the **LON-CL2** VM, where you should still have **Outlook on the Web** open in your **Microsoft Edge** browser from the prior task. You should still be logged in as **Alex Wilber**.
 
-28. In the **Outlook on the Web** tab, open the email that you just received from Holly that contains the file Holly created eaarlier. Save the file to the **Documents** folder on your **C** drive.
+28. In the **Outlook on the Web** tab, open the email that you just received from Holly that contains the file Holly created earlier. Save the file to the **Documents** folder on your **C** drive.
 
 29. ‎In the browser, open a new tab and enter the following URL in the address bar to navigate directly to the Marketing site: **https://M365xZZZZZZ.sharepoint.com/sites/marketing** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider)
 
@@ -137,7 +137,7 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 	This will upload the file to the **Documents** page in the **Marketing** site collection.
 
-34. In the list of Documents, right-click on the file that you just uploaded*, select **Open** in the menu that appers, and then select **Open in browser**. 
+34. In the list of Documents, right-click on the file that you just uploaded, select **Open** in the menu that appears, and then select **Open in browser**. 
 
 35. In Word Online, if a **Your privacy option** window appears, then close it. Verify that a warning message appears at the top of the page indicating a **Marketing policy for downloads** applies to the file. 
 
