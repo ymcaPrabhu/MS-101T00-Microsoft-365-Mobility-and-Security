@@ -18,7 +18,7 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 
 5. In the **Add a group** window, enter the following information:
 
-6. In the **Add a group** window, adding a group is a four step process, as depicted in the flow diagram on the left-hand side of the window. As you progress through the steps, enter the following information to create a new group:
+6. In the **Add a group** window, adding a group is a four-step process, as depicted in the flow diagram on the left-hand side of the window. As you progress through the steps, enter the following information to create a new group:
 
 	- Type: **Mail-enabled security**
 
@@ -69,7 +69,7 @@ In this task you will activate MDM auto-enrollment for new devices in your Adatu
 
 8. In the **Select groups** pane that appears, scroll down through the list of groups, select **WIP Users**, and then at the bottom of the pane select the **Select** button. <br/>
 
-	**Note:** You configured the **MDM user scope** to automatically enroll devices that belong to members of the **WIP Users** group into MDM management with Microsoft Intune. Once Holly tests this feature in Adatum's pilot project, and assuming she is satified with the results, she will then set the **MDM user scope** to **All**.
+	**Note:** You configured the **MDM user scope** to automatically enroll devices that belong to members of the **WIP Users** group into MDM management with Microsoft Intune. Once Holly tests this feature in Adatum's pilot project, and assuming she is satisfied with the results, she will then set the **MDM user scope** to **All**.
 	
 9. This returns the **Configure** window. Select **Restore default MDM URLs** to ensure the correct URLs are set. This simply displays a dashed rectangle around **Restore default MDM URLs**.
 
@@ -81,7 +81,7 @@ In this task you will activate MDM auto-enrollment for new devices in your Adatu
 
 13. In the **Tenant admin | Tenant status** page, verify the **MDM authority** is set to **Microsoft Intune**.
 
-14. In your Microsoft Edge browser, you can close the Enpoint Manager admin center tab and the Azure Active Directory admin center tab. Leave the Office 365 home page and Microsoft 365 admin center tabs open.
+14. In your Microsoft Edge browser, you can close the Endpoint Manager admin center tab and the Azure Active Directory admin center tab. Leave the Office 365 home page and Microsoft 365 admin center tabs open.
 
 You have configured automatic enrollment in Intune for devices of users in the WIP Users group, and you have verified the MDM authority for Adatum's tenant is set to Microsoft Intune.
 
