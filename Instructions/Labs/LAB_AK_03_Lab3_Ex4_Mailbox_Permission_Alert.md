@@ -33,7 +33,7 @@ In this exercise you will configure and test an alert that will notify Lynne Rob
 
 8. On the **Decide if you want to notify people when this alert is triggered** window, enter the following information:
 
-	- Email recipients: Selecf the "X" to the right of **Holly Dickson's** account to remove her, enter **Lynne**, and then select **Lynne Robbins** from the user list
+	- Email recipients: Select the "X" to the right of **Holly Dickson's** account to remove her, enter **Lynne**, and then select **Lynne Robbins** from the user list
 
 	- Daily notification limit: **No limit**
 
@@ -54,7 +54,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 1. You should still be logged into the Client 1 VM (LON-CL1) as the **Admin** account, and you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In the **Microsoft 365 admin center**, in the left-hand navigation pange, select **Show all** (if necessary). In the list of admin centers, select **Exchange**.
+2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary). In the list of admin centers, select **Exchange**.
 
 3. This opens a new tab in your browser for the **Exchange admin center.** Select **recipients** from the left-hand navigation pane. In the **recipients** window, the **mailboxes** tab is displayed by default.
 
@@ -70,9 +70,9 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 9. Since **Holly Dickson** has changed the mailbox permissions for Alex Wilbur by giving Joni Sherman FullAccess permissions to his mailbox, an alert email should automatically be sent to Lynne Robbins’ Inbox that notifies her of this event.
 
-	‎Switch to the Client 2 VM (LON-CL2) and log in as the **Admin** account with a password of **Pa55w.rd**. 
+	‎Switch to LON-CL2 and log in as the **Admin** account with a password of **Pa55w.rd**. 
 
-10. In Lab 1, you had signed into the Client 2 VM as the **Admin** account, and you logged into Outlook as the MOD Administrator. You should sign out of the MOD Administrator account by selecting the **MA** user icon in the upper-right corner of the screen, and then in the **My Account** pane, select **Sign out**. 
+10. In Lab 1, you had signed into LON-CL2 as the **Admin** account, and you logged into Outlook as the MOD Administrator. You should sign out of the MOD Administrator account by selecting the **MA** user icon in the upper-right corner of the screen, and then in the **My Account** pane, select **Sign out**. 
 
 11.  Once you’re signed out, enter the following URL in the address bar: **https://outlook.office365.com**
 
@@ -94,9 +94,9 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 18. In the **Microsoft 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Alerts,** and then under it, select **View Alerts**. The notification that was just created based on the **Mailbox permission change** alert should appear in the list.
 
-19. In your browser, close the Exhange admin center tab (**mailboxes - Microsoft Exchange**), but leave the other browser tabs open.
+19. In your browser, close the Exchange admin center tab (**mailboxes - Microsoft Exchange**), but leave the other browser tabs open.
 
-20. Leave your Client 1 and Client 2 VMs open for the remaining tasks in this lab.
+20. Leave your LON-CL1 and LON-CL2 VMs open for the remaining tasks in this lab.
 
 You have just successfully tested a mailbox permission alert that sent an alarm message on granting FullAccess to a user mailbox.
 
