@@ -47,7 +47,7 @@ As part of your pilot project for Adatum, you will configure MRM retention throu
 
 11. On the menu bar on the top of the page, select the **retention policies** tab.
 
-12. In the **retention policies page**, note that there is one default retention policy. Since this policy is selected by default, its corresponding properties are displayed in the detail pane on the right-side of the screen. This information indicates that all the default retention tags that have been assigned to this polilcy. <br/>
+12. In the **retention policies page**, note that there is one default retention policy. Since this policy is selected by default, its corresponding properties are displayed in the detail pane on the right-side of the screen. This information indicates that all the default retention tags that have been assigned to this policy. <br/>
 
 	You want to create a custom retention policy, so select the **plus (+) sign** icon in the toolbar that appears across the list of existing retention policies. 
 
