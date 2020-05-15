@@ -29,13 +29,15 @@ In this task, you will change the default settings for users to join their devic
 
 1. In your browser, in the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory.**
 2. In the **Adatum Corporation | Overview** window, in the middle section under **Manage**, select **Devices**.
-3. In the **Devices | All devices** window, in the details pane on the right, verify that **LON-CL2** is displayed in the list of devices. Back in Lab 5, you performed a task that configured Mobile Device Management (MDM) auto-enrollment; this was a prerequisite to performing a later Windows Information Protection lab. When you performed this MDM configuration lab, it automatically enrolled the devices belonging to members of the WIP Users group. At the time, Joni Sherman was logged into Microsoft 365 on LON-CL2, and since she was a member of the WIP Users group, LON-CL2 was automatically enrolled into Intune as its MDM authority.
+3. In the **Devices | All devices** window, in the details pane on the right, verify that **LON-CL2** is displayed in the list of devices. <br/>
+
+   **Note:** Back in Lab 5, you performed a task that configured Mobile Device Management (MDM) auto-enrollment; this was a prerequisite to performing a later Windows Information Protection lab. When you performed this MDM configuration lab, it automatically enrolled the devices belonging to members of the WIP Users group. At the time, Joni Sherman was logged into Microsoft 365 on LON-CL2, and since she was a member of the WIP Users group, LON-CL2 was automatically enrolled into Intune as its MDM authority.
 4. In the **Devices | All devices** window, in the middle pane under **Manage** , select **Device settings**.
 5. In the details pane that appears on the right, in the **Users may join devices to Azure AD** row, verify that **All** is selected. This means that all Azure AD users can join their devices to Azure Active Directory.
 6. The **Additional local administrator on Azure AD joined devices** row is currently set to **None**. Select **Selected**.
 7. Below this field, in the **Selected** section (where it displays **No member selected),** hover your mouse over this section and note how it highlights the section. Select this section.
 8. In the **Local administrators on devices** window, select **+Add**.
-9. In the **Add members** pane on the right, select **Alex Wilber** , select the **Select** buton at the bottom of the screen, and then select **OK**.
+9. In the **Add members** pane on the right, select **Alex Wilber**, select the **Select** button at the bottom of the screen, and then select **OK**.
 10. Back in the **Devices | Device settings** detail pane, scroll down and verify that **Require Multi-Factor Auth to join devices** is set to **No**. The **Maximum number of devices per user** is currently set to **50.** Select this field and in the menu that appears, select **10.**
 11. Scroll back to the top of the page, and in the menu bar, select **Save**.
 12. Leave the Azure portal and the Azure Active Directory admin center tabs open in your browser for the next task.
@@ -56,7 +58,7 @@ In this task, Holly wants to create a new Security group for enrolled devices wi
     - Group type: **Security**
     - Group name: **Enrolled Devices**
     - Membership type: **Dynamic Device**
-    - Owner: select **no owners selected**, then in the **Add Owners** window, select **Alex Wilber** and select **Select**
+    - Owner: select **no owners selected**, then in the **Add Owners** window, select **Alex Wilber** and then select the **Select** button
     
 5. At the bottom of the **New Group** window, under **Dynamic device members**, select **Add dynamic query**.
 6. In the **Dynamic membership rules** window, configure the following fields for this expression:
@@ -75,4 +77,4 @@ In this task, Holly wants to create a new Security group for enrolled devices wi
 11. Leave the Azure portal and the Azure Active Directory admin center tabs open in your browser for the next task.
 
 
-# Proceed to Lab 10 -Exercise 3
+# Proceed to Lab 10 - Exercise 3
