@@ -2,13 +2,13 @@
 
 As part of her Microsoft 365 pilot project, Holly Dickson, Adatum's Enterprise Administrator, wants to implement Privileged Identity Management within Azure Active Directory. One of Adatum's pain points in their existing system is that they have far too many users with administator privileges, and this has caused concern among management who sees this as a threat to their data security. They feel that too many people have been assigned admin roles that shouldn't have been, and as such, they have access to secure information and resources that they otherwise shouldn't have. There is a need for oversight for what those users are doing with their administrator privileges. By implementing PIM, Adatum can reduce the number of users with admin privileges and yet still be able to assign users with admin rights on an as-needed basis whenever necessary.
 
-In this lab, you will perform the basic steps involved in implementing PIM - Configuring a global admin role to require approval, enabling a user for global admin privileges, and managing requests for Azure resource roles in PIM.
+In this lab, you will perform the basic steps involved in implementing PIM for a given role - Configuring the role to require approval, assign an eligible user to the role, submit a request from the eligible user to be assigned the role, and approve the request for the role. In this exercise, you will perform these tasks for the Global Admin role, and Patti Fernandez will be the user in this scenario.
 
 
 ### Task 1 - Configure the Global Administrator role to require approval
 Since the Microsoft 365 Global Administrator role provides a user with basically unlimited access to all Microsoft 365 resources, the number of users assigned to this role should obviously be kept to a bare minimum for security purposes. 
 
-Holly Dickson, Adatum's Enterprise Administrator, wants to limit access to this role using PIM. To do so, she must first configure the role to require approval before it can be assigned as an eligible role for a user, and then she wants to assign herself as the approver whenever an eligible user requests activating the role.
+Holly Dickson, Adatum's Enterprise Administrator, wants to limit access to this role using Privileged Identity Management. To do so, she must first configure the role to require approval before it can be assigned as an eligible role for a user, and then she wants to assign herself as the approver whenever an eligible user requests activating the role.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as Holly Dickson.
 
@@ -63,8 +63,8 @@ For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole u
 12. Leave all browser tabs open for the next task.
 
 
-### Task 2: Assign an eligible user to the Global Admin role
-For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole user who will be eligible to be assigned the Global admin role. In this task, Holly will enable Patti to be eligible for the Global admin role.
+### Task 3: Submit a request for the Global Admin role
+Now that Patti Fernandez has been made an eligible user for the Global Admin role, Holly wants to test out the PIM process in her pilot project. In this task, Patti will submit a request to be assigned Global Admin role privileges. In the next task, Holly will review her request and approve it.
 
 1.  Open an in Private Browsing session and login to https://portal.azure.com as Patti Fernandez.
 
