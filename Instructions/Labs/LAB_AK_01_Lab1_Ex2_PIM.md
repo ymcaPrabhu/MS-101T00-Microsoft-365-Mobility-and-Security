@@ -5,8 +5,10 @@ As part of her Microsoft 365 pilot project, Holly Dickson, Adatum's Enterprise A
 In this lab, you will perform the basic steps involved in implementing PIM - Configuring a global admin role to require approval, enabling a user for global admin privileges, and managing requests for Azure resource roles in PIM.
 
 
-### Task 1 - Configure the Global Administrator role to require approval.
-Since the Microsoft 365 Global Administrator role provides a user with basically unlimited access to all Microsoft 365 resources, the number of users assigned to this role should obviously be kept to a bare minimum. To limit access to this role using PIM, Holly wants to first configure the Global Admin role to require approval for activation, and then assign herself as the approver whenever a user requests a Global Admin role assignment.
+### Task 1 - Configure the Global Administrator role to require approval
+Since the Microsoft 365 Global Administrator role provides a user with basically unlimited access to all Microsoft 365 resources, the number of users assigned to this role should obviously be kept to a bare minimum for security purposes. 
+
+Holly Dickson, Adatum's Enterprise Administrator, wants to limit access to this role using PIM. To do so, she must first configure the role to require approval before it can be assigned as an eligible role for a user, and then she wants to assign herself as the approver whenever an eligible user requests activating the role.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as Holly Dickson.
 
@@ -16,36 +18,53 @@ Since the Microsoft 365 Global Administrator role provides a user with basically
 
 4. In the **All services** window, under the **Identity** section, select **Azure AD Privileged Identity Management**.
 
-3. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Azure AD roles**.
+5. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Azure AD roles**.
 
-4. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
+6. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
 
-5. In the **Adatum Corporation | Settings** window, select the **Global Administrator** role.
+7. In the **Adatum Corporation | Settings** window, select the **Global Administrator** role.
 
-6. In the **Role setting details -  Global Administrator** window, select **Edit** on the menu bar at the top of the page.
+8. In the **Role setting details -  Global Administrator** window, select **Edit** on the menu bar at the top of the page.
 
-7. In the **Edit role setting - Global Administrator** window, select the **Require Approval to activate** check box. 
+9. In the **Edit role setting - Global Administrator** window, select the **Require Approval to activate** check box. 
 
-8. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** pane that opens on the right, scroll down through the list of users and select **Holly Dickson**, and then select the **Select** button.
+10. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** pane that opens on the right, scroll down through the list of users and select **Holly Dickson**, and then select the **Select** button.
 
-9. In the **Edit role setting - Global Administrator** window, select **Update**.
+11. In the **Edit role setting - Global Administrator** window, select **Update**.
+
+12. Leave all browser tabs open for the next task.
 
 
-### Task 2: Enable Patti for Global Administrator privileges.
+### Task 2: Assign an eligible user to the Global Admin role
+For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole user who will be eligible to be assigned the Global admin role. In this task, Holly will enable Patti to be eligible for the Global admin role.
 
-1.  Open **Azure AD Privileged Identity Management**.
+1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as Holly Dickson.
 
-1.  Click **Azure AD roles**.
+2. In your **Edge** browser, you should still have the **Azure Active Directory admin center** open in a tab that's displaying the **Adatum Corporation | Settings** window. In the navigation thread at the top of the page (**All services > Privileged Identity Management > Quick start**), select **Privileged Identity Management**.
 
-1.  Click the **Quick Start** and select **Assign eligibility**.
+3. In the **Privileged Identity Management | Quick start** window, in the middle pane under **Manage**, select **Azure AD roles**.
 
-     ![Screenshot](../Media/ae3755ac-bd82-4e70-a102-ccbfc3aee48f.png)
+4. In the **Adatum Corporation | Quick start** window, in the **Privileged Identity Management** pane, under the **Assign** group, select **Assign Eligibility**.
 
-1.  Select **Global Administrator**.
+5. In the **Adatum Corporation | Roles** window, scroll down through the list of roles and select **Global Administrator**.
 
-1.  Select **+ Add Member** and select **Patti Fernandez**. Click **Select**.
+6. In the **Global Administrator | Assignments** window, select **+Add assignments** on the menu bar. 
 
-2.  In Membership settings click **Save** and then click **Add**.
+7. In the **Add assignments** window, the **Membership** tab is displayed by default. Under the **Select member(s)**, select **No member selected**.
+
+8. In the **Select a member** pane that appears on the right, scroll down through the list of users and select **Patti Fernandez**, and then select the **Select** button.
+
+9. In the **Add assignments** window, select **Next** (this does the same thing as selecting the **Settings** tab). 
+
+10. In the **Add assignments** window, under the **Settings** tab, verify the **Assignment type** option is set to **Eligible**, and then select **Assign**. 
+
+11. In the **Global Administrator | Assignments** window, note that Patti Fernandez is now an eligible user who can be assigned the Global Admin role.
+
+12. Leave all browser tabs open for the next task.
+
+
+### Task 2: Assign an eligible user to the Global Admin role
+For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole user who will be eligible to be assigned the Global admin role. In this task, Holly will enable Patti to be eligible for the Global admin role.
 
 1.  Open an in Private Browsing session and login to https://portal.azure.com as Patti Fernandez.
 
