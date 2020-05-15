@@ -4,6 +4,8 @@ As part of her Microsoft 365 pilot project, Holly Dickson, Adatum's Enterprise A
 
 In this lab, you will perform the basic steps involved in implementing PIM for a given admin role - Configuring the role to require approval, assign an eligible user to the role, submit a request from the eligible user to be assigned the role, and approve the request for the role. In this exercise, you will perform these tasks for the Global Admin role, and Patti Fernandez will be the user in this scenario.
 
+**Note:** In Task 3, Patti Fernandez will submit a request to be assigned the Global Admin role. The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You can still complete Tasks 1 and 2, and you may be able to partner up with another student to watch them complete the remaining two tasks.
+
 
 ### Task 1 - Configure the Global Administrator role to require approval
 Since the Microsoft 365 Global Administrator role provides a user with basically unlimited access to all Microsoft 365 resources, the number of users assigned to this role should obviously be kept to a bare minimum for security purposes. 
@@ -66,6 +68,8 @@ For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole u
 ### Task 3 - Submit a request for the Global Admin role
 Now that Patti Fernandez has been made an eligible user for the Global Admin role, Holly wants to test out the PIM process in her pilot project. In this task, Patti will submit a request to be assigned Global Admin role privileges. In the next task, Holly will review her request and approve it.
 
+**Note:** The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You may be able to partner up with another student to watch them complete the remaining two tasks.
+
 1.  In LON-CL1, right-click on the **Edge** icon on ther taskbar and in the menu that appears, select **New InPrivate window*. 
 
 2. In your InPrivate browser session, enter the following URL in the address bar: **https://portal.azure.com**
@@ -103,16 +107,11 @@ Now that Patti Fernandez has been made an eligible user for the Global Admin rol
 
 ### Task 4 -  Approve the request for the Global Admin role
 
-With Azure AD Privileged Identity Management (PIM), you can configure roles to require approval for activation, and choose one or multiple users or groups as delegated approvers. Follow the steps in this article to approve or deny requests for Azure resource roles.
+Back in Task 1, Holly set herself up as the approver for the Global Administrator role. Since Patti has submitted a request to be assigned this role, Holly must review the request and determine whether to accept or deny it. 
 
+As a delegated approver, Holly will be notified via email that an Azure role request is pending her approval. She should be able to review adn act upon Patti's request in PIM.
 
-###### View pending requests
-
-
-As a delegated approver, you will receive an email notification when an Azure resource role request is pending your approval. You can view these pending requests in PIM.
-
-
-1.  Switch back to the browser you are signed in with your Global Administrative account Holly Dickson.
+1.  In LON-CL1, switch back to the original browser session in which you are signed into **Microsoft 365** as **Holly Dickson**.
 
 1.  Open **Azure AD Privileged Identity Management**.
 
