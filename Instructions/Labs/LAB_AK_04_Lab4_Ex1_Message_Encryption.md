@@ -69,7 +69,7 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 
 	**Note:** The results should appear as follows:  
 	
-	Results : Acquiring RMS Templates ...
+	Results: Acquiring RMS Templates ...
 
  		- PASS: RMS Templates acquired. Templates available: Confidential \ All	Employees, Highly Confidential \ 
 		All Employees, Encrypt, Do Not Forward.
@@ -95,7 +95,7 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 
 In this task, you will create an encryption rule for messages inside your Exchange Online environment by using the Exchange admin center. In the next task, you will do the same thing but using PowerShell instead. 
 
-1. On the LON-CL1 VM, you should still be logged into the Microsoft 365 admin center as Holly Dickson. If you closed your Edge browser or the Microsoft 365 admin center tab, then in your Edge browser navigate to **https://portal.office.com**, sign in as **Holly@M365xZZZZZZ.onmicrosoft.com**, and select **Admin**. 
+1. On the LON-CL1 VM, you should still be logged into the **Microsoft 365 admin center** as **Holly Dickson**. If you closed your Edge browser or the **Microsoft 365 admin center** tab, then in your Edge browser navigate to **https://portal.office.com**, sign in as **Holly@M365xZZZZZZ.onmicrosoft.com**, and select **Admin**. 
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then under **Admin centers**, select **Exchange**. This will open the Exchange admin center.
 
