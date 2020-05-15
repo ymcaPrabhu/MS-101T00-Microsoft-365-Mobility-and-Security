@@ -18,7 +18,7 @@ In this exercise you will activate the automatic client enrollment to Intune for
 
 7. Below the list of MDM-related fields, select **Restore default MDM URLs** to ensure the correct URLs for client enrollment are configured.
 8. In the menu bar at the top of the **Configure** window, select **Save**.
-9. Leave the Azure portal and the Azure Active Directory admin center tabs open in your browser for the next task.
+9. Leave all browser tabs open for the next task.
 
 You have now configured your tenant so that all users can enroll their Windows 10 clients into Intune as soon they log into their devices with their Azure AD account credentials.
 
@@ -40,7 +40,7 @@ In this task, you will change the default settings for users to join their devic
 9. In the **Add members** pane on the right, select **Alex Wilber**, select the **Select** button at the bottom of the screen, and then select **OK**.
 10. Back in the **Devices | Device settings** detail pane, scroll down and verify that **Require Multi-Factor Auth to join devices** is set to **No**. The **Maximum number of devices per user** is currently set to **50.** Select this field and in the menu that appears, select **10.**
 11. Scroll back to the top of the page, and in the menu bar, select **Save**.
-12. Leave the Azure portal and the Azure Active Directory admin center tabs open in your browser for the next task.
+12. Leave all browser tabs open for the next task.
 
 You have changed the default settings for users to join their devices to your Azure AD tenant.
 
@@ -74,7 +74,7 @@ In this task, Holly wants to create a new Security group for enrolled devices wi
 8. Select **Save** in the menu bar at the top of the window.
 9. In the **New Group** window, scroll to the bottom of the window and select the **Create** button.
 10. In the **Groups | All groups** window, the **Enrolled Devices** group should now appear in the list of groups.
-11. Leave the Azure portal and the Azure Active Directory admin center tabs open in your browser for the next task.
+11. Leave all browser tabs open for the next task.
 
 
 # Proceed to Lab 10 - Exercise 3
