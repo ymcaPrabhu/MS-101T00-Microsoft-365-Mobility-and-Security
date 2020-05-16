@@ -1,10 +1,19 @@
 # Module 1 - Lab 1 - Exercise 2 - PIM Resource Workflows
 
-As part of her Microsoft 365 pilot project, Holly Dickson, Adatum's Enterprise Administrator, wants to implement Privileged Identity Management within Azure Active Directory. One of Adatum's pain points in their existing system is that they have far too many users with administator roles, and this has caused concern among management who sees this as a threat to their data security. They feel that too many people have been assigned admin roles that shouldn't have been, and as such, they have access to secure information and resources that they otherwise shouldn't have. There is a need for oversight for what those users are doing with their administrator privileges. By implementing PIM, Adatum can reduce the number of users with admin roles and yet still be able to assign users with admin rights on an as-needed basis whenever necessary.
+As part of her Microsoft 365 pilot project, Holly Dickson, Adatum's Enterprise Administrator, wants to implement Privileged Identity Management within Azure Active Directory. One of Adatum's pain points in their existing system is they have far too many users with permanent administator roles. This has caused concern among management, who sees this as a threat to Adatum's data security. They feel that too many people were assigned admin roles that shouldn't have been, and as such, they have access to secure information and resources that could potentially compromise the organization. 
 
-In this lab, you will perform the basic steps involved in implementing PIM for a given admin role - Configuring the role to require approval, assign an eligible user to the role, submit a request from the eligible user to be assigned the role, and approve the request for the role. In this exercise, you will perform these tasks for the Global Admin role, and Patti Fernandez will be the user in this scenario.
+Because there is a need to reduce the number of users with permanent administrator roles and yet still provide admin privileges to selected users when business justification warrants it, Holly has been tasked with implementing Azure Active Directory's Privileged Identity Management service. By implementing PIM, Adatum can reduce the number of users with admin roles and yet still be able to assign users with admin rights on an as-needed basis whenever necessary.
 
-**Note:** In Task 3, Patti Fernandez will submit a request to be assigned the Global Admin role. The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You can still complete Tasks 1 and 2, and you may be able to partner up with another student to watch them complete the remaining two tasks.
+In this lab, you will perform the basic steps involved in implementing PIM for a given admin role:
+
+- Configuring the role to require approval
+- Assign an eligible user to the role
+- Submit a request from the eligible user to be assigned the role
+- Approve the request for the role
+
+In this exercise, you will perform these tasks for the Global Administrator role. Holly will take on the role of the approver, and Patti Fernandez will be the user requesting access to the role.
+
+**Note:** In Task 3, Patti Fernandez will submit a request to be assigned the Global Admin role. The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You can still complete Tasks 1 and 2, and you may be able to partner up with another student to watch them complete the remaining tasks.
 
 
 ### Task 1 - Configure the Global Administrator role to require approval
