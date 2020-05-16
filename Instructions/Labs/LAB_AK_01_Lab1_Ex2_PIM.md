@@ -109,25 +109,23 @@ Now that Patti Fernandez has been made an eligible user for the Global Admin rol
 
 Back in Task 1, Holly set herself up as the approver for the Global Administrator role. Since Patti has submitted a request to be assigned this role, Holly must review the request and determine whether to accept or deny it. 
 
-As a delegated approver, Holly will be notified via email that an Azure role request is pending her approval. She should be able to review adn act upon Patti's request in PIM.
-
 1.  In LON-CL1, switch back to the original browser session in which you are signed into **Microsoft 365** as **Holly Dickson**.
 
-1.  Open **Azure AD Privileged Identity Management**.
+2.  In your browser, select the **Azure Active Directory admin center** tab, which should be displaying the **Global Administrator | Assignments** window. In the navigation thread at the top of the page (**All services > Privileged Identity Management > Adatum Corporation | Roles > Global Administrator | Assignments**, select **Privileged Identity Management**.
 
-1.  Click **Approve requests**.
+3. In the **Privileged Identity Management | Quick start** window, in the middle pane under **Tasks**, select **Approve requests**.
 
-     ![Screenshot](../Media/fbc2f18d-f5a2-4139-b92d-7c19311aec1c.png)
+4. In the **Approve requests | Azure AD roles** window, in the **Requests for role activations** section, select the request from Patti Fernandez. In the pane that appears on the right that displays the details of Patti's request, select **Approve**.
 
-1.  Select the request from Patti and click **Approve**.
+5.  Enter a reason **Granted for this task** and click **Approve**.
 
-1.  Enter a reason **Granted for this task** and click **Approve**.
+6.  Switch back to the InPrivate browser session where Patti is signed in. In the **My roles |Azure AD roles** window that should still be displayed, the **Eligible roles** tab is currently being displayed. On the menu bar, select the **Active roles** tab. Note how the Global Administrator role is now activated for Patti. 
 
-1.  A notification appears with your approval.
+7. Close the InPrivate browser session.
 
-1.  Switch back to the In Private Browsing session where Patti is signed in and click **My Roles** and then select **Active roles** note the status is now activated for Global Administrator.
+8. In your Edge browser session, close the **Azure Active Directory** tab. 
 
-     ![Screenshot](../Media/fe734263-57c8-4cc9-b79f-848d7d4f9488.png)
+9. In your Edge browser, leave the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab open for the next task.
 
 
 # End of Lab 1
