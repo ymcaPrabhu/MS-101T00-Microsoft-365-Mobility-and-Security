@@ -1,12 +1,12 @@
 # Module 1 - Lab 1 - Exercise 2 - PIM Resource Workflows
 
-As part of her Microsoft 365 pilot project, Holly Dickson, Adatum's Enterprise Administrator, wants to implement Privileged Identity Management within Azure Active Directory. One of Adatum's pain points in their existing system is they have far too many users with permanent administator roles. This has caused concern among management, who sees this as a threat to Adatum's data security. They feel that too many people were assigned admin roles that shouldn't have been, and as such, they have access to secure information and resources that could potentially compromise the organization. 
+As part of her Microsoft 365 pilot project, Holly Dickson, Adatum's Enterprise Administrator, wants to implement Privileged Identity Management within Azure Active Directory. One of Adatum's pain points in their existing system is they have far too many users who have been assigned administrator roles. This has caused concern among management, who sees this as a threat to Adatum's data security. They feel that too many people were assigned admin roles that shouldn't have been, and as such, they have access to secure information and resources that could potentially compromise the organization. 
 
 Because there is a need to reduce the number of users with permanent administrator roles and yet still provide admin privileges to selected users when business justification warrants it, Holly has been tasked with implementing Azure Active Directory's Privileged Identity Management service. By implementing PIM, Adatum can reduce the number of users with admin roles and yet still be able to assign users with admin rights on an as-needed basis whenever necessary.
 
 In this lab, you will perform the basic steps involved in implementing PIM for a given admin role:
 
-- Configuring the role to require approval
+- Configure the role to require approval and assign an approver
 - Assign an eligible user to the role
 - Submit a request from the eligible user to be assigned the role
 - Approve the request for the role
@@ -79,7 +79,7 @@ Now that Patti Fernandez has been made an eligible user for the Global Admin rol
 
 **Note:** The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You may be able to partner up with another student to watch them complete the remaining two tasks.
 
-1.  In LON-CL1, right-click on the **Edge** icon on ther taskbar and in the menu that appears, select **New InPrivate window*. 
+1.  In LON-CL1, right-click on the **Edge** icon on ther taskbar and in the menu that appears, select **New InPrivate window**. 
 
 2. In your InPrivate browser session, enter the following URL in the address bar: **https://portal.azure.com**
 
@@ -93,7 +93,7 @@ Now that Patti Fernandez has been made an eligible user for the Global Admin rol
 
 7. In the **Privileged Identity Management | Quick start** window, in the navigation pane, select **My Roles**.
 
-8. In the **My roles | Azure AD roles** window, the **Eligible roles** tab is displayed by default. Since Holly assigned Patti as an eligible user for the Global Administator role, this role appears in the list. Under the **Action** column, select **Activate**.
+8. In the **My roles | Azure AD roles** window, the **Eligible roles** tab is displayed by default. Since Holly assigned Patti as an eligible user for the Global Administrator role, this role appears in the list. Under the **Action** column, select **Activate**.
 
 9. In the **Activate** pane, a warning message is displayed at the top of the pane indicating additional verification is required. Select this message.
 
@@ -101,7 +101,7 @@ Now that Patti Fernandez has been made an eligible user for the Global Admin rol
 
 11. In the **Additional security verification** window that appears, under **How should we contact you?**, leave the value set to **Authentication phone**. Select your country or region, and then in the field next to it, enter your phone number (xxx-xxx-xxxx). Select **Next**.
 
-12.In the **Additional security verification** window, under **We've sent a text message to your phone**, retrieve the verification code from the text sent to your phone and enter it here, then select **Verify**.
+12. In the **Additional security verification** window, under **We've sent a text message to your phone**, retrieve the verification code from the text sent to your phone and enter it here, then select **Verify**.
 
 13. Once verification is complete, select **Done**.
 
@@ -109,7 +109,7 @@ Now that Patti Fernandez has been made an eligible user for the Global Admin rol
 
 15. On the **My roles | Azure AD roles** window, select the **Active roles** tab on the menu bar. Note that no roles appear. <br/>
 
-     **Note:** If you recall, back in Task 1 Holly set up the Global Admin role so that activation to a user account will require approval. What Patti just did was request that the Global Admin role be activated for her user account. This will send a request to Holly, who can then either approve or deny Patti's request for role activation. Holly will review this request in the next task.
+     **Note:** If you recall, back in Task 1 Holly set up the Global Administrator role so that activation to a user account will require approval. What Patti just did was request that the Global Admin role be activated for her user account. This will send a request to Holly, who can then either approve or deny Patti's request for role activation. Holly will review this request in the next task.
 
 16. Leave the InPrivate browser session open. You will return to it in the next task once Holly approves Patti's request.
 
@@ -126,15 +126,13 @@ Back in Task 1, Holly set herself up as the approver for the Global Administrato
 
 4. In the **Approve requests | Azure AD roles** window, in the **Requests for role activations** section, select the request from Patti Fernandez. In the pane that appears on the right that displays the details of Patti's request, select **Approve**.
 
-5.  Enter a reason **Granted for this task** and click **Approve**.
+5.  Switch back to the InPrivate browser session where Patti is signed in. In the **My roles | Azure AD roles** window that should still be displayed, the **Eligible roles** tab is currently selected. On the menu bar, select the **Active roles** tab. Note how the Global Administrator role is now activated for Patti. 
 
-6.  Switch back to the InPrivate browser session where Patti is signed in. In the **My roles |Azure AD roles** window that should still be displayed, the **Eligible roles** tab is currently being displayed. On the menu bar, select the **Active roles** tab. Note how the Global Administrator role is now activated for Patti. 
+6. Close the InPrivate browser session.
 
-7. Close the InPrivate browser session.
+7. In your Edge browser session, close the **Azure Active Directory** tab. 
 
-8. In your Edge browser session, close the **Azure Active Directory** tab. 
-
-9. In your Edge browser, leave the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab open for the next task.
+8. In your Edge browser, leave the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab open for the next task.
 
 
 # End of Lab 1
