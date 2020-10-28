@@ -1,181 +1,200 @@
-# Module 7 - Lab 7 - Exercise 1 - Implement Azure Information Protection  
+# Module 7 - Lab 7 - Exercise 1 - Implement Sensitivity labels with Azure Information Protection  Unfied labels client
 
 
-In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment. As you proceed with your Microsoft 365 pilot project, your next steps are to implement Azure Information Protection (AIP) and Windows Information Protection (WIP) at Adatum. You will begin by configuring AIP and then using AIP on a client and verifying an AIP policy. You will then perform similar steps for WIP by configuring it for Adatum and then implementing WIP.
+In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment. As you proceed with your Microsoft 365 pilot project, your next steps are to implement Sensitivity Labels with Azure Information Protection (AIP) and Windows Information Protection (WIP) at Adatum. You will begin by configuring AIP and then using AIP on a client and verifying an AIP policy. You will then perform similar steps for WIP by configuring it for Adatum and then implementing WIP.
 
-### Task 1 – Install the Azure Information Protection client
+### Task 1 – Install the Azure Information Protection Unified Labeling client
 
-To implement Azure Information Protection as part of your pilot project at Adatum, you must first install the AIP client from the Microsoft Download Center.
+To implement Sensitivity labels as part of your pilot project at Adatum, you must first install the AIP client from the Microsoft Download Center.
 
 1. You should still be logged into LON-CL1 as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson** with a password of **Pa55w.rd**. 
 
-2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://portal.azurerms.com**
+2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://www.microsoft.com/en-us/download/confirmation.aspx?id=53018**, this will start the download for the AIP Unified label client.
 
-3. On the **Microsoft Azure Information Protection** page, scroll to the bottom of the page to view the 3 boxes. In box #1, select **Install the Azure Information Protection application**.
+3. In the Microsoft download center tab, the **AzinfoProtection_UL.exe** will prompt a request to **run, save or cancel**. Select **Run** 
 
-4. On the **Microsoft Azure Information Protection** page, under the **Azure Information Protection client** section, select the **Windows icon** to download the client to a Windows computer.
+4. Once the Download has completed. The **AIP Unifed labeling client** interface will open. select the **I agree** button. You will then be prompted by the User **Accont Control notification** that requests if you want to all the app to make changes to this device? Select Yes.
 
-5. On the **Download Center** page, scroll down to the **Microsoft Azure Information Protection** section and select **Download**.
+5. The **AIP Unfied labeling client installer** will finish the installation. Select Close
 
 6. In the **Choose the download you want** window, select **AzInfoProtection.exe** and then select **Next.**
 
-7. In the taskbar that appears at the bottom of the page, select **Save**.
-
-8. Once the download has successfully completed, in the taskbar that appears at the bottom of the page, select **Run.**
-
-9. If the first page of the **Microsoft Azure Information Protection installation wizard** does not display, select the icon for it on the taskbar to display the wizard.
-
-10. On the license and terms page, uncheck the **Help improve Azure Information Protection by sending usage statistics to Microsoft** option and then select **I agree**.
-
-11. On the **Completed Successfully** window, select **Close**. 
-
-12. Leave your VM and browser open and proceed to the next task.
+You have successfully installed the AIP Unfied Label client on Client 1 VM.
 
 
-You have successfully installed the AIP client on Client 1 VM.
+### Task 2 – Configure Sensitivity Labels
 
-
-### Task 2 – Configure Azure Information Protection
-
-In this exercise you will create an AIP label and add it to the default policy so that it’s valid for all users of the Adatum tenant.
+In this exercise you will create an Sensitvity label and add it to the default policy so that it’s valid for all users of the Adatum tenant.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://portal.azure.com/**
+2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://protection.office.com/**
 
-3. On the **Welcome to Azure** window, scroll down to the **Azure services** section and select **More services**.
+3. In the **Sign in** dialog box, enter **HOlly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant suffice ID username provided by your lab hosting provider) and then select **Next****.
 
-4. In the **All services** window, in the **Search** box at the top of the page, enter **Azure Information**, and then in the list of services, select **Azure Information Protection**. 
+	**Important:** Your Microsoft 365 tenant came with a default system administrator account already created. The name of this user account is **MOD Administrator**. The user name that you just entered, **admin@M365xZZZZZZ.onmicrosoft.com**, is the user name for the MOD Administrator. 
+4. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider for the **admin@M365xZZZZZZ.onmicrosoft.com** account and then select **Sign in**.
 
-5. In the **Azure Information Protection | Quick start** window (which may take a minute or so to load), in the navigation pane on the left, under the **Classifications** section select **Labels**.
+5. At this point you should be in the **Microsoft 365 Security & Complaince Admin center**. On the **Navigation pane** select **classification**, then select **Sensitivity Labels.**
 
-6. In the **Azure Information Protection | Labels** window, select **Add a new label**.
+6. In the **Sensitivity Labels** window, there is a Button that states **Turn on now** select the button. this will enable the ability to apply the Sensitivity labels inisde your Micrsoft 365 enviroment.
 
-7. In the **Label** window, enter the following information:
+7. In the **Microsoft 365 Security & Complaince | Sensitivity Labels** window, select **Create a label**.
 
-	- Enabled: select **On**
+8. In the **new Senesitivity Label** window, enter the following information:
 
 	- Label display name: **PII**
 
-	- Description **Documents, files, and emails with PII**
+	- Description : **Documents, files, and emails with PII**
 
-	- Color: **Black** is selected by default; you can use black or select **Custom** and then enter the Hex code for the color of your choice (you can locate a color and its corresponding Hex code [from this website](https://www.w3schools.com/colors/colors_names.asp).
+	- Description for admins : **Documents, files, and emails with PII**
 
-	- Set permissions for documents and emails containing this label: select **Protect** (Note: If you selected a Custom color option in the prior setting, the color of the options for this setting will reflect the code code that you entered). 
+9. Select **Next**.
 
-		- In the Protection pane that appears on the right, under **Select the protection action type** option, select **Set user-defined permissions (Preview)**. Note the options that are selected be default; do NOT change them. Select **OK**.
+10. In the **Scope** Section confirm that the**Files & Emails** box is checked. Then select **Next**.
 
-	- Set visual marking (such as header or footer):
+11. In the **Sensitivity Labels** window, under **Files** Select both check boxes for **Encrypt files and emails** and **Mark the content of files**, then select **Next**.
 
-		- Documents with this label have a header: **Off**
+12. In the **Sensitivity Labels** window, under **Encryption** Select  the **Remove encryption if the file is encrypted**, then select **Next**.
 
-		- Documents with this label have a footer: **Off**
+13. In the **Sensitivity Labels** window, under **Content Marking** set the switch to the**On** postion, then select all check boxes and enter the folloiwing. :
+	- Add a watermark : Sensitive do not share.
+		- font size : 25
+		- Font Color : Red
+		- Text layout : Diagonal
+			- Select **Save**.
 
-		- Documents with this label have a watermark: **On**
+	- Add a header : Sensitive do not share.
+		- font size : 25
+		- Font Color : Red
+		- Align text : Center
+			- select **Save**.
+	- Add a footer : Sensitive do not share.
+		- font size : 25
+		- Font Color : Red
+		- Align text :  Center
+			- select **Save**.
 
-			- Watermark text: **Personal Identifiable Information (PII)**
+14. In the **Sensitivity Labels** window, under **Content Marking** select **Next**. 
 
-			- Watermark font size: **Auto**
+15. In the **Sensitivity Labels** window, under **Auto-Labeling for Office apps**  set the switch to the**On** postion. then enter the following. :
 
-			- Watermark font name: **Custom**, and then enter **Segoe UI** in the font name field
+	- Detect content that matches these condistions :
+		- content contains:
+			- Default
+			- All of these
+			- Select the **Add** dropdown then **Sensitve info types**.
+			- a new window will open then select **Select All**. then select **Add**.
+		- When Contnent Matches these conditions :
+			- **Automatically apply the Label**.
 
-			- Watermark color: **Custom**, and then enter **#B22222** in the color field (Fire Brick red)
+		- Display this message to users when the label is applied :
+			- **Sensitivie content has been dectected and will be encrypted**.
+		
 
-			- Watermark layout: **Diagonal**
+16. In the **Sensitivity Labels** window, under **Auto-Labeling for Office apps** select **Next**.
 
-8. Select **Save** in the upper left corner.
+17. In the **Sensitivity Labels** window, under **Define Protection settings for groups and sites** select **Next**.
 
-9. In the **Save settings** pop-up window that appears asking if you’re sure about saving and publishing the changes, select **OK.**
+18. In the **Sensitivity Labels** window, under **Review your settings and Finish** review and validate the settings that you have implemented and then select **Create label**.
 
-10. In the **Azure Information Protection | Labels** window, under **Classifications** in the left-hand navigation pane, select **Policies**.
+19. There should be an error message the pops up. this message is stating the rule is to long. this is to show you the maxium amount selections you can make at one time per rule which is **49152**. To correct this issue go back to **Auto-labeling for Office apps** under the **Files** section, and select the **Trash can** next to the **Default** action and repeat **step 15** but instead of selecting  **Select all**, just select **ABA routing number** and **U.S. Social security Number.**
 
-11. In the **Azure Information Protection | Policies** window, in the list of policies, select the **Global** policy to edit it.
+20. In the **Sensitivity Labels** window, under **Review your settings and Finish** review and validate the settings that you have implemented and then select **Create label**. 
 
-12. In the **Policy: Global** window, below the list of labels, select **Add or remove labels**.
+21. Congratulations you have successfully added a New custom label name PII,
+Select **Done**.
 
-13. In the **Policy: Add or remove labels** pane that appears on the right, under **Label display name**, select the check box to the left of **PII** and then select **OK**. 
+22. Now its time to publish the **PII** label. In the **Sensitivity labels** section, select **Publish Labels**.
 
-14. In the **Policy: Global** window, scroll down towards the bottom of the pane and in the **Users must provide justification to set a lower classification label, remove a label, or remove protection** option, select **On**.
+23. In the **Sensitivity Labels policy** window, under **Choose sensitivty labels to publish** select choose **Choose sensitivty labels to publish**. Then select **PII** and select **Add**.
 
-15. Select **Save** in the menu bar at the top of the page.
+24. In the **Sensitivity Labels policy** window, under **Choose sensitivty labels to publish** select **Next**.
 
-16. In the **Save settings** pop-up window that appears asking if you’re sure about saving and publishing the changes, select **OK.**
+25. In the **Sensitivity Labels policy** window, under **Publish to users and groups** select **Choose users or groups**.
 
-17. Close the **Policy: Global** window by selecting the **X** in the upper right corner (you may have to scroll to the right to see the **X**).
+26. In the **Publish to users and groups** window, under **Edit Locations**  select **Add**. A new window will appear select **All company** and then select **Add**.
 
-18. Close the **Azure Information Protection - Policies** window by selecting the **X** in the upper right corner (you may have to scroll to the right to see the **X**).
+27. In the **Publish to users and groups** window, under **Edit Locations**  select **Done**
 
-19. This takes you back to the **All services** window. Leave this Azure portal tab open as you will use it in the next exercise when you configure Windows Information Protection. 
+28. In the **Sensitivity Labels policy** window, under **Publish to users and groups** select **Next**.
 
-You have now configured a new custom AIP label named PII and added it to the default AIP policy.
+29. In the **Sensitivity Labels policy** window, under **Policy settings** select **PII** under the **Apply this label by default to documents and emails** section. then select the **Users must provide justification to remove a label or lower classification label** checkbox. Then select **Next**.
 
+30. In the **Sensitivity Labels policy** window, under **Name your policy** enter the following information:
 
-### Task 3 – Assign an AIP label to a document
+	- Name : **PII Policy**
 
-In this exercise you will use the AIP label that you created in the previous task to classify a document. For this task, you will sign into Microsoft Azure Information Protection as Alex Wilber, who is a regular user without any elevated privileges.
+	- Description : *This policy is to detect and apply an encryption to emails and documents that have sensitive information such as ABA bank routing numbers and US social security numbers. the user must provide an explanation for removing the classification label.*
+
+31. In the **Sensitivity Labels policy** window, under **Name your policy** select **Next**.
+
+32. In the **Sensitivity Labels policy** window, under **Review your policy** select **Finish**.
+
+33. Congratulations you have successfully added a New custom label Policy name PII policy, Select **Done**.
+
+### Task 3 – Assign an Sensitivity label to a document
+
+In this exercise you will use the Sensitivity label that you created in the previous task to classify a document. For this task, you will sign into Microsoft Apps as Alex Wilber, who is a regular user without any elevated privileges.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In the **Search** box on the taskbar at the bottom of the window, type **Word**. In the menu that appears, select **Word.** 
+2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://portal.office.com/** 
 
-3. After **Microsoft Word** opens, a **Microsoft Azure Information Protection Sign-in** window appears. In the **Pick an account** window, select **Use another account**, then sign in as **AlexW@M365xZZZZZZ.onmicrosoft** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) and then select **Next**.
+3. then sign in as **AlexW@M365xZZZZZZ.onmicrosoft** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) and then select **Next**.
 
 4. On the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
 
-5. In **Word,** select **Blank document**.
+5. Open **Word online,** select **Blank document**.
+	
 
-6. If the **What’s New** pane appears on the right, close it.
+
+6. If the **Privacy** window appears, close it.
 
 7. In the **Word** document, type **Testing personally identifiable information (PII).**
 
-8. There are two new additions to Word that appear as a result of having installed AIP at the start of this exercise: <br/>
+8. There are two new additions to Word that appear as a result of having Sensitivity labels enabledat the start of this exercise: <br/>
 
-	- In the **Home** ribbon, locate the **Protection** group. 
+	- In the **Home** ribbon, locate the **Sensitivity** group. 
 	
-	- Below the **Home** ribbon, locate the **Azure Information Protection** bar. Since you created a label titled **PII** in the prior task, **PII** will appear in the middle of the AIP bar. 
+	- Below the **Home** ribbon, locate the **Sensitivity dropdown**tab Congratulations you have successfully added a New custom label name PII, (**Note:** you may not see it if it hasn't been 24 hours) Select **Search**.bar. then type **Sensitivity** the select the arrow to view the newly created a label titled **PII** in the prior task, **PII** will appear in the left side of the Sensitivity label bar. 
 	
-	Select the **PII** button on the **Azure Information Protection** bar.
+	Select the **PII** button on the **Sensitivity** bar.
 
-9. In the **Microsoft Azure Information Protection** window that appears, select the following options:
+9. In the **Justification Required** window appears, select the following options:
 
-	- Select permissions: **Viewer – View Only**
+	- Select Other (explain): **Testing what happens when i remove the label**
 
-	- Select users, groups, or organizations: Since Outlook is not running on the client, enter **JoniS@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Note: If Outlook was running, you could select the **address book** icon and then select **Joni Sherman**. <br/>
+10. In the **Justification Required** window appears, select  "Change".
 
-	- Expire access: Select the **Calendar** icon and then select tomorrow's date
+11. Re-apply the Senstivity label by selecting the**Sensitivity** group and then selecting **PII**
 
-10. Select **Apply** to finish the protection process.
+12. Enter the following text: **111-11-1111**
 
-11. Scroll down through the document and note the watermark that was applied. This is based on the PII label that you created in the prior task that you then applied to this document. The watermark should appear in Fire Brick red, and it should appear diagonally across the page.
+13. Save the file by selecting **Docutment1** from the **Header** tab in the Middle of word online. 
 
-12. Select **File** from the top menu bar.
+14. Confirm the file **Location** says **Alex Wilber>Documents**. 
 
-13. Select **Save As** on the left menu.
+15. In the **Word Online** rename the file to **ProtectedDocument** as the name of the file and then select out of the **file name** section.
 
-14. Under the **Save As** pane, select **Browse**. 
+16. Select the **Share** option in the top right corner.
 
-15. In the **File Explorer** window, you should see the **Documents** folder by default; if not, navigate to **Documents** folder. Enter **ProtectedDocument** as the name of the file and then select **Save**.
+17. Select the Anyone with the link can edit. change this to **Specific people** then select **Apply**.
 
-16. In the **Word** doc, note how the **RESTRICTED ACCESS bar** now displays below the ribbon at the top of the page. This is a result of the **Protect** option you set for the **Permissions** parameter in the **PII label** that you created earlier. In this bar, select **Change Permission…**
+18. In the **Enter a name or Email address**, Enter **Joni Sherman** and select **Send**.
 
-17. In the **Permissions** window that appears, note how Joni Sherman (**JoniS@M365xZZZZZZ.onmicrosoft.com**) has been assigned **Read-only** permissions, but no one has been assigned the ability to change the document. In the next task, you will test out this policy. Select **OK** to close the Permissions window. 
-
-18. Close Word.
-
-19. Leave the Client 1 VM and your browser open and proceed to the next task.
-
-You have just successfully created an AIP protected Word document that expires the next day, is read-only protected, and is accessible only by its creator, Alex Wilber, and Joni Sherman (with Read-only permission).
+You have just successfully created an AIP protected Word document that is read-only protected, and is accessible only by its creator, Alex Wilber, and Joni Sherman (with Read-only permission).
 
 
-### Task 4 – Verify AIP policy
+### Task 4 – Verify Sensitivity label policy
 
-In the prior task, you created a Word document and protected it with Azure Information Protection by inserting a watermark and restricted permissions. To verify whether the protection that you assigned to the document works, you will first email the document to Joni Sherman and to your own personal email address. You will then test what functionality is possible for both Joni and yourself.
+In the prior task, you created a Word document and protected it with a Sensitivty label by inserting a watermark and restricted permissions. To verify whether the protection that you assigned to the document works, you will first email the document to Joni Sherman and to your own personal email address. You will then test what functionality is possible for both Joni and Alex Wilber.
 
-1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Alex Wilber**. 
 
-2. If you have **Outlook on the web** open in a tab in your **Edge** browser, then select it now and proceed to the next step; otherwise, if you have a tab with the **Microsoft Office Home** page, then select the tab, select **Outlook**, and then proceed to the next step. If you have neither tab open, then in a new tab enter **https://outlook.office365.com** and sign in as **holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+2. If you have **Outlook on the web** open in a tab in your **Edge** browser, then select it now and proceed to the next step; otherwise, if you have a tab with the **Microsoft Office Home** page, then select the tab, select **Outlook**, and then proceed to the next step. If you have neither tab open, then in a new tab enter **https://outlook.office365.com** and sign in as **AlexW@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-3. In **Outlook on the web**, select **+New Message** in the upper left part of the screen.
+3. In **Outlook on the web**, select **New Message** in the upper left part of the screen.
 
 4. In the right-hand pane, enter the following email information:
 
@@ -187,7 +206,7 @@ In the prior task, you created a Word document and protected it with Azure Infor
 
 	- Add a message or drop a file here: **If you can open the protected and restricted document attached to this email, then try to change it.**
 
-	- Select **Attach** from the top menu and select **Browse this computer**. In the **File Explorer** window, select the **Documents** folder, select the **ProtectedDocument.docx** file that you created in the prior task, and then select **Open.**
+	- Select **Attach** from the top menu and under  **Suggested Attachments**.  select **ProtectedDocument.docx** file that you created in the prior task, and then select **Open.**
 
 5. Select **Send**.
 
@@ -195,9 +214,9 @@ In the prior task, you created a Word document and protected it with Azure Infor
 
 7. In LON-CL2, you should be logged into **Outlook on the Web** as **Lynne Robbins** from a previous lab exercise. Sign out as Lynne and then navigate to **https://outlook.office365.com** and sign back in as Joni Sherman (**JoniS@M365xZZZZZZ.onmicrosoft.com**, where ZZZZZZ is the tenant suffix ID provided by your lab hosting provider) with a password of **Pa55w.rd**.
 
-8. In Joni’s **Inbox** in **Outlook on the web**, select the email that Holly just sent her, and then select the attached **ProtectedDocument.docx** file to open it. 
+8. In Joni’s **Inbox** in **Outlook on the web**, select the email that Holly just sent her, and then select **Open** file to open it. 
 
-9. You should receive an error message indicating that the file is protected by Information Rights Management (IRM); therefore, you must use Microsoft Word to open it. Select the **X** in the upper right-hand corner of the larger window to close it.
+9. You should receive an notification indicating that the file is protected 
 
 10. This will return you to **Outlook on the web** with the email still displayed in the right-hand pane. In the body of the email, the document appears in a tile, with a drop-down arrow in the lower right corner of the tile. Select the drop-down arrow, and in the menu, select **Download**.
 
@@ -207,7 +226,7 @@ In the prior task, you created a Word document and protected it with Azure Infor
 
 13. **Microsoft Word** should open along with a **Sign in** window (it may open behind the Outlook window, in which case select the **Word** icon on the taskbar to bring it forward). 
 
-14. Because the file is RMS protected and no AIP client is installed on LON-CL2, you need to use the native RMS features of Word ProPlus and register this installation to Joni’s account. <br/>
+14. Because the file is RMS protected and no AIP unified labeling client is installed on LON-CL2, you need to use the native RMS features of Word Microsoft Apps and register this installation to Joni’s account. <br/>
 
 	‎In the **Sign in** window, enter **JoniS@M365xZZZZZZ.onmicrosoft.com** and then select **Next.** 
 

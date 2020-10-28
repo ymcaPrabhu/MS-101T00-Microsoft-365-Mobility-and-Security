@@ -36,18 +36,17 @@ You have now verified the available Enterprise Mobility + Security E5 licenses i
 Devices must be managed before you can give users access to company resources or manage settings on those devices. This begins with enabling device management with Intune. With Adatum's tenant, Holly will discover that Intune has bee set by default as Adatum's MDM authority.
 
 1. You should still be logged into LON-CL1 as the **Admin** account and into Microsoft 365 as Holly Dickson.
-2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://portal.azure.com**.
-3. In the **Microsoft Azure portal**, scroll down to the **Azure services** section and select **More services**.
-4. In the **All services** window, enter **Intune** in the **Search** box, and then in the list of search results, select **Intune**.
-5. In the **Microsoft Intune | Overview** page, in the left-hand navigation pane, select **Device enrollment**.
-6. In the **Device enrollment** page, note the information at the top of the detail pane. By default, Intune has been set as Adatum's MDM authority.
-7. In the navigation thread at the top of the page (**Home > Microsoft Intune > Device enrollment**), select **Microsoft Intune**.
-8. In the **Microsoft Intune | Overview** page, in the left-hand navigation pane, select **Device compliance**. Even though no data is currently available, review the information that will be presented for this option regarding device management.
-9. Repeat steps 7-8, this time selecting **Device configuration** on the **Microsoft Intune | Overview** page. 
-10. Repeat steps 7-8, this time selecting **Device enrollment** on the **Microsoft Intune | Overview** page.
-11. Repeat steps 7-8, this time selecting **Device security** on the **Microsoft Intune | Overview** page.
-12. In the navigation thread at the top of the page (**Home > Microsoft Intune > Device Security | Security baselines**), select **Microsoft Intune**.
-14. Leave all browser tabs open for the next task.
+2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://endpoint.Microsoft.com**.
+3. In the **Microsoft Endpoint Manager admin center**, select**Devices** section on the Navigation pane.
+4. In the **Devices|Overview ** page, note the information under enrollment status of the detail pane. By default, Intune has been set as Adatum's MDM authority.
+5. 
+6. In the navigation thread at the top of the page (**Home > Devices > enroll devices**), select **Devices**.
+7. In the **Devices | Overview** page, in the left-hand navigation pane, select **compliance policies**. Even though no data is currently available, review the information that will be presented for this option regarding device management.
+8. Repeat steps 6-7, this time selecting **Conditional Access** on the **Devices | Overview** page. 
+9. Repeat steps 6-7, this time selecting **Enrollment restrictions** on the **Devices | Overview** page.
+10. Repeat steps 6-7, this time selecting **Configuration profiles** on the **Devices | Overview** page.
+11. In the navigation pane on the left-hand side of the page , select **Devices**.
+12. Leave all browser tabs open for the next task.
 
 You have now verified that Intune is the default MDM solution for your tenant.
 

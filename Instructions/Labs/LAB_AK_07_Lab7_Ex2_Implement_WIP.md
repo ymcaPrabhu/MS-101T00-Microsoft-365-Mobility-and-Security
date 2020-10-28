@@ -1,6 +1,6 @@
 # Module 7 - Lab 7 - Exercise 2 - Implement Windows Information Protection  
 
-Now that Holly Dickson has implemented Azure Information Protection (AIP) as part of her pilot project at Adatum, she is now ready to implement Windows Information Protection (WIP). In your role as Holly Dickson, you will use this exercise to create a WIP policy that will be applied to any member of the WIP Users group who has an MDM-enrolled device in Intune.
+Now that Holly Dickson has implemented Sensitivity labels as part of her pilot project at Adatum, she is now ready to implement Windows Information Protection (WIP). In your role as Holly Dickson, you will use this exercise to create a WIP policy that will be applied to any member of the WIP Users group who has an MDM-enrolled device in Intune.
 
 ### Task 1 – Configure Windows Information Protection
 
@@ -8,53 +8,46 @@ In this lesson you will create a WIP policy and assign it to the WIP Users group
 
 1. Switch to LON-CL1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson.** 
 
-2. In **Microsoft Edge**, if you have the Azure portal open in a tab, then select it now; otherwise, enter **https://portal.azure.com/** and, if necessary, sign in as **holly@M365xZZZZZZ.onmicrosoft.com.**
+2. In **Microsoft Edge**, if you have the Azure portal open in a tab, then select it now; otherwise, enter **https://endpoint.microsoft.com/** and, if necessary, sign in as **holly@M365xZZZZZZ.onmicrosoft.com.**
 
-3. In the **Azure portal**, if the **All services** window is still displayed from the prior exercise, then skip to the next step; otherwise, in the left-hand navigation pane, select **All services**.
+3. In the **Microsoft Endpoint manager Admin center**, select **Apps* then  select **App protection policies** and then select **Create Policy** for **Windows 10**.
 
-4. In the **All services** window, enter **client** in the **Search** box at the top of the window, and then in the right-hand pane, select **Client apps.**
-
-5. In the **Client apps** window, in the navigation pane under **Manage**, select **App protection policies**.
-
-6. In the **Client apps | App protection policies** window, select **+Create policy** from the top menu bar, and then select **Windows 10** from drop-down menu that appears.
-
-7. In the **Create policy** window, the steps to create a policy are displayed at the top of the page. You are currently in **Step 1 - Basics**. Enter the following information:
+4. In the **Create policy** window, the steps to create a policy are displayed at the top of the page. You are currently in **Step 1 - Basics**. Enter the following information:
 
 	- Name: **WIP Client Protection**
 
 	- Description: leave blank
 
-	- Enrollment state: **With enrollment**
+	- Enrollment state: **With enrollment****
 
-8. Select **Next**.
+5. In the **Create Policy** window, in the navigation pane under **Apps**, select **Next**.
 
-9. In the **Create policy** window, you are now in **Step 2 - Targeted apps**. Enter the following information:
+6. In the **Create policy** window, you are now in **Step 2 - Targeted apps**. Enter the following information:
 
 	- Protected apps: select **+ Add**. In the **Add apps** pane that appears on the right, scroll to the bottom and select **Office-365-ProPlus-1810-Allowed.xml**, and then select **OK**. 
 
 	- Exempt apps: leave blank as there are no exempt apps in this policy
 
-10. Select **Next**.
-
-11. In the **Create policy** window, you are now in **Step 3 - Required settings**. Enter the following information:
+7. Select **Next**.
+8. In the **Create policy** window, you are now in **Step 3 - Required settings**. Enter the following information:
 
 	- Windows Information Protection mode: **Block**
 	
 	- Corporate identity: verify that it displays **M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your tenant ID provided by your lab hosting provider) and then select **OK.**
 
-12. Select **Next**.
+9. Select **Next**.
 
-13. In the **Create policy** window, you are now in **Step 4 - Advanced settings**. Do not change any of the default settings, so select **Next**.
+10. 13. In the **Create policy** window, you are now in **Step 4 - Advanced settings**. Do not change any of the default settings, so select **Next**.
 
-14. In the **Create policy** window, you are now in **Step 5 - Assignments**. Enter the following information:
+11. In the **Create policy** window, you are now in **Step 5 - Assignments**. Enter the following information:
 
 	- Selected groups: select **+Select groups to include**. In the **Select groups to include** pane that appears on the right, select the **WIP Users** group and then select the **Select** button at bottom of the pane.
 
-15. Select **Next**.
+12. Select **Next**.
 
-16. In the **Create policy** window, you are now in **Step 6 - Review + create**. Review the settings and then select the **Create** button at the bottom of the page.
+13. In the **Create policy** window, you are now in **Step 6 - Review + create**. Review the settings and then select the **Create** button at the bottom of the page.
 
-17. On the **Client apps | App protection policies** window, note the value of the **Deployed** column is **No** for the **WIP Client Protection** policy that you just created. Select **Refresh** on the menu bar above the list of policies. The **Deployed** status should now display **Yes**.
+17. On the **Apps | App protection policies** window, note the value of the **Deployed** column is **No** for the **WIP Client Protection** policy that you just created. Select **Refresh** on the menu bar above the list of policies. The **Deployed** status should now display **Yes**.
 
 18. Leave your Client 1 VM and browser open for the next lab.
 

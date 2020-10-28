@@ -34,13 +34,12 @@ In this task, you will change the default settings for users to join their devic
    **Note:** Back in Lab 5, you performed a task that configured Mobile Device Management (MDM) auto-enrollment; this was a prerequisite to performing a later Windows Information Protection lab. When you performed this MDM configuration lab, it automatically enrolled the devices belonging to members of the WIP Users group. At the time, Joni Sherman was logged into Microsoft 365 on LON-CL2, and since she was a member of the WIP Users group, LON-CL2 was automatically enrolled into Intune as its MDM authority.
 4. In the **Devices | All devices** window, in the middle pane under **Manage** , select **Device settings**.
 5. In the details pane that appears on the right, in the **Users may join devices to Azure AD** row, verify that **All** is selected. This means that all Azure AD users can join their devices to Azure Active Directory.
-6. The **Additional local administrator on Azure AD joined devices** row is currently set to **None**. Select **Selected**.
-7. Below this field, in the **Selected** section (where it displays **No member selected),** hover your mouse over this section and note how it highlights the section. Select this section.
-8. In the **Local administrators on devices** window, select **+Add**.
-9. In the **Add members** pane on the right, select **Alex Wilber**, select the **Select** button at the bottom of the screen, and then select **OK**.
-10. Back in the **Devices | Device settings** detail pane, scroll down and verify that **Require Multi-Factor Auth to join devices** is set to **No**. The **Maximum number of devices per user** is currently set to **50.** Select this field and in the menu that appears, select **10.**
-11. Scroll back to the top of the page, and in the menu bar, select **Save**.
-12. Leave all browser tabs open for the next task.
+6. The **Additional local administrator on Azure AD joined devices** is not present however select the **highled text** then review that there is no additional assignements.
+7. In the **Device Addministrators|Assignments** window, select **+Add Assignemnts**.
+8. In the **Add Assignments** pane on the right, select **Alex Wilber**, select the **Select** button at the bottom of the screen, and then select **Add**.
+9. Back in the **Devices | Device settings** detail pane, scroll down and verify that **Require Multi-Factor Auth to join devices** is set to **No**. The **Maximum number of devices per user** is currently set to **50.** Select this field and in the menu that appears, select **10.**
+10. Scroll back to the top of the page, and in the menu bar, select **Save**.
+11. Leave all browser tabs open for the next task.
 
 You have changed the default settings for users to join their devices to your Azure AD tenant.
 

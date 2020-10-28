@@ -8,10 +8,10 @@ During her pilot project, Holly plans to use certificates with Intune to authent
 You should first verify that the device you want to enroll into Intune is not already enrolled. 
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
-2. In your **Edge** browser, you should have the **Microsoft Azure** portal open in a tab that's displaying the **Device configuration | Profiles** window. At the top of the screen is the following navigation thread: **All services > Microsoft Intune > Device configuration | Profiles**. <br/>
+2. In your **Edge** browser, you should have the **Microsoft Endpoint Manger admin center** portal open in a tab that's displaying the **Device configuration | Profiles** window. At the top of the screen is the following navigation thread: **Home > Devices |Configuration Profiles**. <br/>
 
-   In this thread, select **Microsoft Intune**.
-3. In the **Microsoft Intune | Overview** page, in the left=hand pane under **Manage**, select **Devices**.
+   In this thread, select **Home**.
+3. In the **Microsoft Endpoint Manger admin center** page, in the  navigation pane  select **Devices**.
 4. On the **Devices** window, in the left-hand pane under **Manage**, select **All Devices** and verify that LON-CL2 is listed in the details pane. <br/>
 
    **Note:** LON-CL2 was enrolled into Intune in an earlier lab when you configured integration between Azure AD and Intune. When you joined LON-CL2 to Azure AD, it was automatically enrolled to Intune.  
@@ -31,7 +31,7 @@ You should first verify that the device you want to enroll into Intune is not al
 6. On the **Make sure this is your organization** dialog box, review the information and if everything looks correct, select **Join**.
 7. On the **You're all set!** page, select **Done**.
 8. In the **Settings** app, in the **Access work or school** section, verify that the device is connected to Azure AD and then close the **Settings** app by selecting the **X** in the upper right-hand corner.
-9. On the **Devices | All devices** page in the Azure portal, in the left-hand pane under **Manage**, select **Azure AD devices**. You should see both **LON-CL1** and **LON-CL2**.
+9. On the **Devices | All devices** page in the Microsoft Endpoint Manger admin center, in the Navigation pane under select **Devices**. You should see both **LON-CL1** and **LON-CL2**.
 9. Leave all browser tabs open for the next task.
 
 ### Task 3: Verify the device is enrolled to Azure AD and Intune
@@ -48,7 +48,7 @@ In an earlier lab you configured integration between Azure AD and Intune. Becaus
 7. In the details pane on the right, both **LON-CL1** and **LON-CL2** are displayed. In the **MDM** column, note that both are enrolled to **Microsoft Intune**.  <br/>
 
     **Note:** This view lists devices that are joined to Azure AD. Remember that you configured integration between Azure AD and Intune, and because of that, any device that is joined to Azure AD is automatically enrolled to Intune.
-8. In the **Devices | Azure AD devices** window, in the lef-hand pane under **Manage**, select **All devices**.
+8. In the **Devices** window, in the lef-hand pane under **Overview**, select **All devices**.
 9. In the **Devices | All devices** window, verify that both devices are listed. Note the value displayed in the **Ownership** column for each device. Since LON-CL1 was enrolled by Holly, an administrator, LON-CL1 is classified as a corporate device. Conversely, since Joni Sherman, a non-admin, enrolled LON-CL2, device ownership is classified as a personal device. <br/>
 
 10. Leave all browser tabs open for the next task.
