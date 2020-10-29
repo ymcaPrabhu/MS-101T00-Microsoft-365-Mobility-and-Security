@@ -207,13 +207,13 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 12. Select **Reset** and then select **Close**.
 
-13. Repeat steps 3-5 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, paste in the **Pa55w.rd** password that you copied for Alex. You do not need to change the password for the **MOD Administrator** because you will continue using the default password provided by your lab hosting provider for this first global admin account that was assigned with the test tenant.
+13. Repeat steps 10-12 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, paste in the **Pa55w.rd** password that you copied for Alex. You do not need to change the password for the **MOD Administrator** because you must continue using the default password provided by your lab hosting provider for this tenant admin account.
 
 14. In the left-hand navigation pane, select **Groups**, and then under it, select **Groups**.
 
 15. In the **Groups** window, select **Active Groups** and finally select **Add a group** that appears on the menu bar.
 
-16. In the **Choose a group type** pane, select **Office 365 (recommended)** and then select **Next**.
+16. In the **Choose a group type** pane, select **Microsoft 365 (recommended)** and then select **Next**.
 
 17. In the **Set up the basics** pane, enter **Sales Group** in the **Name** field. You must select into the **Description** field to enable the **Next** button. Leave the **Description** field blank and select **Next**. 
 
