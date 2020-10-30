@@ -13,7 +13,7 @@ In this lab, you will perform the basic steps involved in implementing PIM for a
 
 In this exercise, you will perform these tasks for the Global Administrator role. Holly will take on the role of the approver, and Patti Fernandez will be the user requesting access to the role.
 
-**Note:** In Task 3, Patti Fernandez will submit a request to be assigned the Global Admin role. The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You can still complete Tasks 1 and 2, and you may be able to partner up with another student to watch them complete the remaining tasks.
+**IMPORTANT:** In Task 3, Patti Fernandez will submit a request to be assigned the Global administrator role. The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You can still complete Tasks 1 and 2, and you may be able to partner up with another student to watch them complete the remaining tasks.
 
 
 ### Task 1 - Configure the Global Administrator role to require approval
@@ -21,7 +21,7 @@ Since the Microsoft 365 Global Administrator role provides a user with basically
 
 Holly Dickson, Adatum's Enterprise Administrator, wants to limit access to this role using Privileged Identity Management. To do so, she must first configure the role to require approval before it can be assigned as an eligible role for a user, and then she wants to assign herself as the approver whenever an eligible user requests activating the role.
 
-1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as Holly Dickson.
+1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as Holly Dickson from the previous lab exercise.
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** section, select **Azure Active Directory**
 
@@ -75,7 +75,7 @@ For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole u
 
 
 ### Task 3 - Submit a request for the Global Admin role
-Now that Patti Fernandez has been made an eligible user for the Global Admin role, Holly wants to test out the PIM process in her pilot project. In this task, Patti will submit a request to be assigned Global Admin role privileges. In the next task, Holly will review her request and approve it.
+Now that Patti Fernandez has been made an eligible user for the Global administrator role, Holly wants to test out the PIM process in her pilot project. In this task, Patti will submit a request to be assigned Global administrator role privileges. In the next task, Holly will review her request and approve it.
 
 **Note:** The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You may be able to partner up with another student to watch them complete the remaining two tasks.
 
@@ -83,7 +83,7 @@ Now that Patti Fernandez has been made an eligible user for the Global Admin rol
 
 2. In your InPrivate browser session, enter the following URL in the address bar: **https://portal.azure.com**
 
-3. In the **Sign in** window, enter **PattiF@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant suffix ID provided by your lab hosting provider) and then select **Next**. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
+3. In the **Sign in** window, enter **PattiF@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
 
 4. In the **Welcome to Microsoft Azure** dialog box that appears, select **Maybe later**.
 
