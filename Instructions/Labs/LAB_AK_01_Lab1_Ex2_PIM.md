@@ -79,7 +79,7 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 **Note:** The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You may be able to partner up with another student to watch them complete the remaining two tasks.
 
-1.  In LON-CL1, right-click on the **Edge** icon on ther taskbar and in the menu that appears, select **New InPrivate window**. 
+1.  In LON-CL1, right-click on the **Edge** icon on the taskbar and in the menu that appears, select **New InPrivate window**. 
 
 2. In your InPrivate browser session, enter the following URL in the address bar: **https://portal.azure.com**
 
