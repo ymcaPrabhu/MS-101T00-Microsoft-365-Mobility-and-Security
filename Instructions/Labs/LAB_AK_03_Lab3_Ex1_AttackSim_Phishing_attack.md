@@ -40,7 +40,7 @@ To use Microsoft's Attack Simulator to simulate a phishing attack, you must firs
 
 15. Select the **Edge** icon on your taskbar to open a new browser session, and then open the **Office 365 Security and Compliance center** by entering the following URL in the address bar: **https://protection.office.com**
 
-16. In the **Pick an Account** window, select **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant suffix ID provided by your lab hosting provider). In the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
+16. In the **Pick an Account** window, select **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
 
 17. Because MFA is enabled for Holly, a **More information required** window appears. Select **Next**.
 
@@ -111,7 +111,7 @@ In this task, you will verify whether Lynne Robbins received the email that you 
 
 2. Select the Edge browser icon on taskbar, maximize the window, and then enter the following URL in the address bar: **https://outlook.office.com**.
  
-3. In the **Sign in** window, enter **LynnR@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant suffix ID provided by your lab hosting provider), and then in the **Enter password** window, enter **Pa55w.rd** and select **Sign in**. Select **Yes** on the **Stay signed in?** window.
+3. In the **Sign in** window, enter **LynnR@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix ID provided by your lab hosting provider), and then in the **Enter password** window, enter **Pa55w.rd** and select **Sign in**. Select **Yes** on the **Stay signed in?** window.
 
 4. Close the **Welcome** window.
 
